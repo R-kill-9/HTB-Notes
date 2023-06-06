@@ -53,7 +53,7 @@ smbclient -N -L \\\\10.129.117.14\\
 It is a command-line tool used for performing brute-force scans or directory and subdomain enumeration on a website.
 - To find subdirectories:
 ````bash
-#wordlist example:/usr/share/wordlists/dirb
+#wordlist example:/usr/share/wordlists/dirb/big.txt
 #machine example: 10.10.192.23
 gobuster dir -u <machine-ip> -w <wordlist> -o gobuster.out
 ````
@@ -144,4 +144,9 @@ When we do a reverse shell, sometimes, we will need to upgrade our shell.
 
 ```bash
 python3 -c 'import pty; pty.spawn("/bin/bash")'
+# we need to *restart* to apply the changes, so we do:  
+CTRL+Z  
+stty raw -echo  
+fg  
+export TERM=xterm
 ```

@@ -13,3 +13,11 @@ It's a very useful online tool that allows you to create a reverse shell in a lo
 If we are using Parrot or Kali we can find in this directory a lot of reverse shells and backdoors.
 For example, if we want to do a reverse shell in php we can use:
 - /usr/share/webshells/php/php-reverse-shell.php
+
+## Cookie-Editor
+Cookie-Editor lets you efficiently create, edit and delete a cookie for the current tab. Perfect for developing, quickly testing or even manually managing your cookies for your privacy.
+It can be useful if we need to extract the cookies while we are doing an [[SQL]] injection test with sqlmap,
+- The cookies in HTTP messages of requests are usually set the following way:  
+```bash
+PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1
+```

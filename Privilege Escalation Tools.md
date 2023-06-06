@@ -8,7 +8,7 @@ This is a file that we can find in all the Linux machines. Once we have gained a
  - Home Directory
  - Shell
 ```bash
-ls /etc/passwd
+cat /etc/passwd
 
 #Example of a row:
 nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
@@ -33,6 +33,18 @@ locate bugtracker
 /usr/bin/bugtracker
 ```
 
+## find
+This command is used to search for files and directories within a specified directory hierarchy. It searches recursively through the directory structure, starting from the given directory, and matches files and directories based on specified criteria.
+
+- Parameters:
+	 - `-name <pattern>`: Matches files and directories with the specified name pattern.
+	- `-type <type>`: Matches files or directories of the specified type, such as `f` for regular files or `d` for directories.
+	- `-size <size>`: Matches files based on size, such as `+10M` for files larger than 10 megabytes or `-100K` for files smaller than 100 kilobytes.
+	- `-user <username>`: Matches files owned by the specified username.
+
+```bash
+find [path] [expression]
+```
 ## Files privilege
 When gaining privileges, paying attention to the permissions assigned to each file can provide a significant advantage. For instance, if a file has execution permissions and it belongs to the root user, but you can execute it as a regular user, this can be a potential vulnerability.
 

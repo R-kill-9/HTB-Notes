@@ -4,6 +4,21 @@
 
 ## SQL INJECTION <a name="sqli"></a>
 
+### SQLmap
+SQLmap is an open-source tool used in penetration testing to detect and exploit SQL  injection flaws. SQLmap automates the process of detecting and exploiting SQL  injection. SQL Injection attacks can take control of databases that utilize SQL.
+
+If we needed authentication to access to the web we will need to add the cookies value to the command. For doing that we can use Cookie-Editor, explained in [[Tools]].
+- Parameters:
+	- `-u`: Specifies the target URL to be tested for SQL injection vulnerabilities. In this case, the target URL is `http://10.129.95.174/dashboard.php?search=any+query`
+    
+	- `--cookie`: Sets the cookie value for the HTTP request. Cookies are often used to maintain session information. Here, the cookie being set is `PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1`.
+    
+	- `--os-shell`: This parameter instructs SQLMap to attempt to obtain an operating system shell on the vulnerable server if it successfully exploits a SQL injection vulnerability. An operating system shell allows direct interaction with the underlying operating system.
+```bash
+sqlmap -u 'http://10.129.95.174/dashboard.php?search=any+query' --  
+cookie="PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1" --os-shell
+```
+
 ### '#'
 The **#** character is used for commenting. So, if the line responsible for the login is: 
 ````bash
