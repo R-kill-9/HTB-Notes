@@ -14,6 +14,14 @@ cat /etc/passwd
 nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
 ```
 
+## /etc/hosts
+This file can be a valuable resource for mapping domain names to IP addresses within a target system.
+For example, we could find a new subdomain.
+```bash
+ls /etc/hosts
+```
+
+
 ## id
 Something we can do to gain privileges is to observe the groups our current user belongs to, to see if there's any uncommon one and take advantage of it to exploit a vulnerability.
 ```bash

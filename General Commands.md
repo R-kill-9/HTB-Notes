@@ -1,5 +1,5 @@
 
-- [Port Scanning](#ps)
+- [Port Scanning](#psc)
 - [21 - FTP Port](#ftp)
 - [139/445 - Samba/SMB](#smb)
 - [Directory Enumeration](#dir)
@@ -7,8 +7,9 @@
 - [Sql Injection](#si)
 - [File Transfer](#ft)
 - [Upgrade Shell](#us)
+- [File searching](#fts)
 
-## Port Scanning <a name='ps'></a>
+## Port Scanning <a name='psc'></a>
 
 ### Nmap
 - `-sV` shows the version of the service running on each port.
@@ -65,7 +66,7 @@ gobuster dir -u <machine-ip> -w <wordlist> -o gobuster.out
 gobuster vhost -w <wordlist> -u <machine-ip> -o gobuster.out
 ````
 
-### Login Bruteforce <a name="log"></a>
+## Login Bruteforce <a name="log"></a>
 
 ##### ffuf
 
@@ -149,4 +150,18 @@ CTRL+Z
 stty raw -echo  
 fg  
 export TERM=xterm
+```
+
+## File searching <a name='fs'></a>
+
+### find
+
+Parameters:
+- `-name <pattern>`: Matches files or directories with a specific name pattern.
+- `-type <type>`: Matches files or directories of a specific type (e.g., `f` for regular files, `d` for directories, `l` for symbolic links).
+- `-size <size>`: Matches files based on their size. For example, `+10M` matches files larger than 10 megabytes.
+- `-mtime <time>`: Matches files based on their modification time. For example, `-mtime -7` matches files modified within the last 7 days.
+```bash
+# Use 2>/dev/null if you don't want to see errors output
+find [path] [expression] 2>/dev/null
 ```
