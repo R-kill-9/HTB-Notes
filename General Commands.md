@@ -15,6 +15,7 @@
 - `-sV` shows the version of the service running on each port.
 - `-sC` uses additional scripts to gather more information.
 - `-p-` scans all ports. 
+-  `-Pn-` Skip recognition phase.
 - `-p <port>` scans only the specified port number. 
 -  `-- open` only displays open ports.
 - `--min-rate` Specifies the minimum number of packets Nmap should send per second; increasing this number speeds up the scan. 
