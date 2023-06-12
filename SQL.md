@@ -8,16 +8,41 @@
 SQLmap is an open-source tool used in penetration testing to detect and exploit SQL  injection flaws. SQLmap automates the process of detecting and exploiting SQL  injection. SQL Injection attacks can take control of databases that utilize SQL.
 
 If we needed authentication to access to the web we will need to add the cookies value to the command. For doing that we can use Cookie-Editor, explained in [[Tools]].
-- Parameters:
-	- `-u`: Specifies the target URL to be tested for SQL injection vulnerabilities. In this case, the target URL is `http://10.129.95.174/dashboard.php?search=any+query`
-    
-	- `--cookie`: Sets the cookie value for the HTTP request. Cookies are often used to maintain session information. Here, the cookie being set is `PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1`.
-    
-	- `--os-shell`: This parameter instructs SQLMap to attempt to obtain an operating system shell on the vulnerable server if it successfully exploits a SQL injection vulnerability. An operating system shell allows direct interaction with the underlying operating system.
-```bash
-sqlmap -u 'http://10.129.95.174/dashboard.php?search=any+query' --  
-cookie="PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1" --os-shell
-```
+- **EXAMPLE 1**
+	- Parameters:
+		- `-u`: Specifies the target URL to be tested for SQL injection vulnerabilities. In this case, the target URL is `http://10.129.95.174/dashboard.php?search=any+query`
+	    
+		- `--cookie`: Sets the cookie value for the HTTP request. Cookies are often used to maintain session information. Here, the cookie being set is `PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1`.
+	    
+		- `--os-shell`: This parameter instructs SQLMap to attempt to obtain an operating system shell on the vulnerable server if it successfully exploits a SQL injection vulnerability. An operating system shell allows direct interaction with the underlying operating system.
+	```bash
+	sqlmap -u 'http://10.129.95.174/dashboard.php?search=any+query' --  
+	cookie="PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1" --os-shell
+	```
+- **EXAMPLE 2**
+	- If we discover that a page is vulnerable to SQL injection, _sqlmap_ can be very helpful. To be able to execute these commands, we need to have previously saved a request with _save item_ in Burp Suite, assuming that the file where we saved it is called **pc**. The field in which the insertion will be made in this example is **id**, previously investigated in Burp Suite.
+
+	- *Parameters:*
+		- `-r pc`: This parameter specifies the file that contains the saved HTTP request, in this case called "pc". The file is used as input for sqlmap and contains the request that will be used to perform the SQL injection test.
+		- `-p id`: This parameter indicates the name of the URL parameter or body parameter in the HTTP request that will be used as the SQL injection point. In this case, the parameter is named "id" and sqlmap will attempt to inject SQL into that parameter to search for possible vulnerabilities.
+		- `--dbs`: This parameter instructs sqlmap to enumerate the available databases on the database server. By specifying this parameter, sqlmap will search for information about the databases it has access to by injecting SQL into the mentioned parameter.
+		- `--tables`: This parameter instructs sqlmap to enumerate the available tables in the selected database. By using this parameter, sqlmap will search for information about the tables present in the database through the injection of SQL into the mentioned parameter.
+		- `-D SQLite_masterdb`: This parameter specifies the name of the database on which the operations will be performed. In this case, "SQLite_masterdb" is used as the database name.
+		- `-T accounts`: This parameter specifies the name of the table on which the operations will be performed. In this case, "accounts" is used as the table name.
+		- `--columns`: This parameter instructs sqlmap to enumerate the available columns in the specified table.
+		- `--batch`: This parameter is used to run sqlmap in batch mode, which means it will not prompt for any interactive user input and will perform the operations automatically.
+		- `--threads 5`: This parameter specifies the number of threads that sqlmap will use simultaneously to perform the operations. In this case, 5 threads are used.
+		- `--dump`: This parameter instructs sqlmap to extract the data from the specified table and display it as output.
+
+	- *Commands: *
+		- It shows the backend database is SQLite. 
+		```bash
+		sqlmap -r pc -p id 
+		sqlmap -r pc -p id --dbs 
+		sqlmap -r pc -p id --tables  
+		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --columns 
+		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --batch --threads 5 --dump```
+
 
 ### '#'
 The **#** character is used for commenting. So, if the line responsible for the login is: 
