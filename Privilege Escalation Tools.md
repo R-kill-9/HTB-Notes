@@ -1,3 +1,11 @@
+escalation ideas ->
+https://github.com/RoqueNight/Linux-Privilege-Escalation-Basics
+
+files -> https://gtfobins.github.io
+
+## linpeas.sh
+It is a script designed to assist in privilege escalation enumeration on Linux systems.
+Linpeas is written in Bash scripting language and is designed to be executed directly on the target Linux system. It automates the process of gathering information and performing various checks to identify potential privilege escalation vectors.
 ## /etc/passwd
 This is a file that we can find in all the Linux machines. Once we have gained access to a machine and we want to escalate our privileges we can take a look to this file to see what users are registered in the machine. The fields that we can find for each row are: 
  - Username
