@@ -1,4 +1,11 @@
-
+## Metasploit
+- Run the command `msfconsole` to open Metasploit.
+- Use `search <vulnerability>` to find different exploits.
+- Choose the one you want to use with `use <number>`.
+- Use `show options` to select the payload.
+- Choose the payload with `set payload <number>`.
+- Set the necessary parameters seen with `show options` using `set <parameter> <value>`. Only the ones marked with **yes*** are mandatory.
+- To execute, use `run`.
 ## revshells.com
 It's a very useful online tool that allows you to create a reverse shell in a lot of programming languages specifying the ip and the port.
 
@@ -10,8 +17,8 @@ It's a very useful online tool that allows you to create a reverse shell in a lo
 
 It's very useful for activate or deactivate burpsuite.
 
-## Burp Suite
-**Burp Suite** consists of various modules that work together to perform different security testing tasks. These modules include:
+## Burpsuite
+**Burpsuite** consists of various modules that work together to perform different security testing tasks. These modules include:
 
 1. Proxy: It acts as an intermediary between the web browser and the target application, allowing users to intercept and modify HTTP/S requests and responses. This helps in identifying vulnerabilities and testing application behavior.
     

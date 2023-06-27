@@ -6,6 +6,15 @@ files -> https://gtfobins.github.io
 ## linpeas.sh
 It is a script designed to assist in privilege escalation enumeration on Linux systems.
 Linpeas is written in Bash scripting language and is designed to be executed directly on the target Linux system. It automates the process of gathering information and performing various checks to identify potential privilege escalation vectors.
+```bash
+./linpeas.sh
+```
+
+## pspy
+**pspy** is based on the analysis of the `/proc` directory, which contains information about the running processes in the Linux operating system. It utilizes the virtual file system `/proc` to obtain real-time information about processes, such as the process ID, process name, user executing the process, files opened by the process, and other relevant details.
+```bash
+./pspy
+```
 ## /etc/passwd
 This is a file that we can find in all the Linux machines. Once we have gained access to a machine and we want to escalate our privileges we can take a look to this file to see what users are registered in the machine. The fields that we can find for each row are: 
  - Username
