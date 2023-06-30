@@ -38,6 +38,14 @@ For example, we could find a new subdomain.
 ls /etc/hosts
 ```
 
+## /proc/version
+The proc filesystem (procfs) provides information about the target system processes. You will find proc on many different Linux flavours, making it an essential tool to have in your arsenal.
+
+Looking at `/proc/version` may give you information on the kernel version and additional data such as whether a compiler (e.g. GCC) is installed.
+This can be useful if you want to find a possible CVE.
+
+## /etc/crontab
+Each user on the system have their crontab file and can run specific tasks whether they are logged in or not. As you can expect, our goal will be to find a cron job set by root and have it run our script, ideally a shell.
 
 ## id
 Something we can do to gain privileges is to observe the groups our current user belongs to, to see if there's any uncommon one and take advantage of it to exploit a vulnerability.

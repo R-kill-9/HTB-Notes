@@ -6,16 +6,14 @@
 - Choose the payload with `set payload <number>`.
 - Set the necessary parameters seen with `show options` using `set <parameter> <value>`. Only the ones marked with **yes*** are mandatory.
 - To execute, use `run`.
+## Searchsploit
+**SearchSploit** is used to search and locate known exploits and vulnerabilities in a wide variety of software and systems. It utilizes the Exploit Database, which contains an extensive collection of exploits, shellcodes, and security-related references.
+```bash
+searchsploit <whatever>
+```
 ## revshells.com
 It's a very useful online tool that allows you to create a reverse shell in a lot of programming languages specifying the ip and the port.
 
-## Wappalyzer
-**Wappalyzer** is a web browser extension or add-on that provides information about the technologies used on a website. It helps identify the software frameworks, content management systems (CMS), e-commerce platforms, server software, analytics tools, and other technologies powering a website.
-
-## Foxy Proxy
-**FoxyProxy** is a browser extension that allows users to manage and configure proxy settings in web browsers. With FoxyProxy, users can easily switch between different proxy servers or configure specific rules for proxy usage based on website URLs or patterns.
-
-It's very useful for activate or deactivate burpsuite.
 
 ## Burpsuite
 **Burpsuite** consists of various modules that work together to perform different security testing tasks. These modules include:
@@ -45,13 +43,6 @@ If we are using Parrot or Kali we can find in this directory a lot of reverse sh
 For example, if we want to do a reverse shell in php we can use:
 - /usr/share/webshells/php/php-reverse-shell.php
 
-## Cookie-Editor
-Cookie-Editor lets you efficiently create, edit and delete a cookie for the current tab. Perfect for developing, quickly testing or even manually managing your cookies for your privacy.
-It can be useful if we need to extract the cookies while we are doing an [[SQL]] injection test with sqlmap,
-- The cookies in HTTP messages of requests are usually set the following way:  
-```bash
-PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1
-```
 
 ## exiftool
 **exifTool** is a command-line tool and Perl library used for reading, writing, and manipulating metadata information in various file formats, particularly image and multimedia files. It allows you to extract, modify, and analyze the metadata embedded within these files.
