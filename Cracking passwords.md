@@ -7,7 +7,7 @@ hashid <hash>
 ## hydra
 Hydra supports a wide range of protocols, including HTTP, FTP, SMTP, Telnet, SSH, and many others. It works by sending multiple login attempts to the target system using a wordlist or custom dictionary file that contains potential usernames and passwords. Hydra then systematically tries each combination until it finds a successful login or exhausts all possibilities.
 ```bash
-hydra -l <username> -P <password_file_path <IP_or_domain_name>
+hydra -l <username> -P <password_file_path> <IP_or_domain_name>
 ```
 ## hashcat
 It's a password cracking tool used for recovering passwords from various hash types. Hashcat supports a wide range of hash algorithms, including common ones like MD5, SHA1, SHA256, as well as more advanced ones like bcrypt, scrypt, and Argon2. It can handle both single hashes and hash lists, making it useful for cracking passwords stored in databases, files, or captured network traffic.

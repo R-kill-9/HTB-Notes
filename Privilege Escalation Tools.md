@@ -78,6 +78,11 @@ This command is used to search for files and directories within a specified dire
 ```bash
 find [path] [expression]
 ```
+
+**find** can be useful to discover all the files that can be executed with root privileges.
+```bash
+find / -perm -4000 2>/dev/null
+```
 ## Files privilege
 When gaining privileges, paying attention to the permissions assigned to each file can provide a significant advantage. For instance, if a file has execution permissions and it belongs to the root user, but you can execute it as a regular user, this can be a potential vulnerability.
 
