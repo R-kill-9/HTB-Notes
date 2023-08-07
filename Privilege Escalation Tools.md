@@ -1,7 +1,9 @@
-escalation ideas ->
+## Escalation ideas 
 https://github.com/RoqueNight/Linux-Privilege-Escalation-Basics
 
-files -> https://gtfobins.github.io
+## GTFOBINS
+GTFOBins is a curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.
+link -> https://gtfobins.github.io
 
 ## linpeas.sh
 It is a script designed to assist in privilege escalation enumeration on Linux systems.
