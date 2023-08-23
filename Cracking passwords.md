@@ -10,7 +10,8 @@ Hydra supports a wide range of protocols, including HTTP, FTP, SMTP, Telnet, SSH
 # password file example: 10-million-password-list-top-1000000.txt
 # IP example: 10.10.10.10
 # service example: ssh
-hydra -L <username> -P <password_file_path> <IP_or_domain_name> <service>
+# if you want to use a list of users the flag is -L
+hydra -l <username> -P <password_file_path> <service>://<IP_or_domain_name> 
 ```
 ## hashcat
 It's a password cracking tool used for recovering passwords from various hash types. Hashcat supports a wide range of hash algorithms, including common ones like MD5, SHA1, SHA256, as well as more advanced ones like bcrypt, scrypt, and Argon2. It can handle both single hashes and hash lists, making it useful for cracking passwords stored in databases, files, or captured network traffic.
