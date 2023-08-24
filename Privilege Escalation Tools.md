@@ -5,6 +5,26 @@ https://github.com/RoqueNight/Linux-Privilege-Escalation-Basics
 GTFOBins is a curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.
 link -> https://gtfobins.github.io
 
+## sudo -l
+Command used to know what commands can be executed as root by the actual user.
+
+## find
+This command is used to search for files and directories within a specified directory hierarchy. It searches recursively through the directory structure, starting from the given directory, and matches files and directories based on specified criteria.
+
+- Parameters:
+	 - `-name <pattern>`: Matches files and directories with the specified name pattern.
+	- `-type <type>`: Matches files or directories of the specified type, such as `f` for regular files or `d` for directories.
+	- `-size <size>`: Matches files based on size, such as `+10M` for files larger than 10 megabytes or `-100K` for files smaller than 100 kilobytes.
+	- `-user <username>`: Matches files owned by the specified username.
+
+```bash
+find [path] [expression]
+```
+
+**find** can be useful to discover all the files that can be executed with root privileges.
+```bash
+find / -perm -4000 2>/dev/null
+```
 ## linpeas.sh
 It is a script designed to assist in privilege escalation enumeration on Linux systems.
 Linpeas is written in Bash scripting language and is designed to be executed directly on the target Linux system. It automates the process of gathering information and performing various checks to identify potential privilege escalation vectors.
@@ -17,6 +37,7 @@ Linpeas is written in Bash scripting language and is designed to be executed dir
 ```bash
 ./pspy
 ```
+
 ## /etc/passwd
 This is a file that we can find in all the Linux machines. Once we have gained access to a machine and we want to escalate our privileges we can take a look to this file to see what users are registered in the machine. The fields that we can find for each row are: 
  - Username
@@ -68,23 +89,6 @@ locate bugtracker
 /usr/bin/bugtracker
 ```
 
-## find
-This command is used to search for files and directories within a specified directory hierarchy. It searches recursively through the directory structure, starting from the given directory, and matches files and directories based on specified criteria.
-
-- Parameters:
-	 - `-name <pattern>`: Matches files and directories with the specified name pattern.
-	- `-type <type>`: Matches files or directories of the specified type, such as `f` for regular files or `d` for directories.
-	- `-size <size>`: Matches files based on size, such as `+10M` for files larger than 10 megabytes or `-100K` for files smaller than 100 kilobytes.
-	- `-user <username>`: Matches files owned by the specified username.
-
-```bash
-find [path] [expression]
-```
-
-**find** can be useful to discover all the files that can be executed with root privileges.
-```bash
-find / -perm -4000 2>/dev/null
-```
 ## Files privilege
 When gaining privileges, paying attention to the permissions assigned to each file can provide a significant advantage. For instance, if a file has execution permissions and it belongs to the root user, but you can execute it as a regular user, this can be a potential vulnerability.
 
