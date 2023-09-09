@@ -58,8 +58,9 @@ It is a command-line tool used for performing brute-force scans or directory and
 - To find subdirectories:
 ````bash
 #wordlist example:/usr/share/wordlists/dirb/big.txt
+#wordlist example: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 #machine example: 10.10.192.23 or http://10.10.192.23:80
-gobuster dir -u <machine-ip> -w <wordlist> -o gobuster.out
+gobuster dir -u <machine-ip> -w <wordlist> -o gobuster.out -t 200
 ````
 
 - To find subdomains:
