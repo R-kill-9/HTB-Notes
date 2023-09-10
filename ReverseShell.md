@@ -1,5 +1,5 @@
 
-## EXAMPLE OF A REVERSE SHELL PROCESS
+## REVERSE SHELL UPLOADING  PHP FILE
 
 1. Investigate accessible subdomains using gobuster.
 2. Check if there are any files in the subdomain's bucket (e.g., index.php).
