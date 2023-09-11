@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "26bcfae10304b9ac",
+        "id": "5e51b097bd8e6135",
         "type": "tabs",
         "children": [
           {
-            "id": "dd33e1366550a826",
+            "id": "1915a3506871d042",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ReverseShell.md",
+                "file": "Cracking passwords.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ReverseShell.md",
+                "file": "Cracking passwords.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ReverseShell.md",
+                "file": "Cracking passwords.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ReverseShell.md"
+                "file": "Cracking passwords.md"
               }
             }
           }
@@ -146,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd33e1366550a826",
+  "active": "1915a3506871d042",
   "lastOpenFiles": [
+    "General Commands.md",
+    "Cracking passwords.md",
+    "ReverseShell.md",
     "AWS Machines.md"
   ]
 }
