@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools.md",
+                "file": "AWS Machines.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a69b34ce88d0580",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cross Site Scripting (XSS).md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools.md",
+                "file": "Cross Site Scripting (XSS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools.md",
+                "file": "Cross Site Scripting (XSS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools.md"
+                "file": "Cross Site Scripting (XSS).md"
               }
             }
           },
@@ -169,12 +181,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d9123bf826de844",
+  "active": "7a69b34ce88d0580",
   "lastOpenFiles": [
     "Cracking passwords.md",
-    "General Commands.md",
+    "Browser extensions.md",
+    "AWS Machines.md",
+    "Cross Site Scripting (XSS).md",
     "Tools.md",
-    "ReverseShell.md",
-    "AWS Machines.md"
+    "Untitled",
+    "General Commands.md",
+    "ReverseShell.md"
   ]
 }
