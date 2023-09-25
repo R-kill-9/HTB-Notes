@@ -15,10 +15,36 @@ There are three main types of XSS attacks:
 ### Image script
 With this type of script we are trying to upload an image, but providing a wrong source. We generate this error on purpose to execute the *onerror* javascript function that prints hi in a pop-upp suing alert.
 ```bash
-<img src='x' onerror=alrt("hi") />
+<img src='x' onerror=alert("hi") />
 ```
 
 Also, we can use the onclick javascript's function. If we upload an image with a valid source when we click the image it will spawn the pop-up with the alert message.
 ```bash
 <img src"<valid url>" onclick=alert("hi") />
 ```
+
+### SVG script
+When this code is injected into a web page, the SVG image will be loaded, and as soon as it's loaded, the `onload` event will fire, executing the JavaScript code and displaying the "1" in a pop-up alert box. It uses an SVG (Scalable Vector Graphics) element to trigger the JavaScript alert.
+
+```bash
+<svg onload=alert(1)>
+```
+
+- Example:
+If we are attacking a web where whatever you insert will be assigned to the variable query, this option of XSS could be useful.
+```bash
+function trackSearch(query) {
+    document.write('<img src="/resources/images/tracker.gif?searchTerms='+query+'">');
+}
+
+QUERY="><svg onload=alert(1)>
+```
+
+### DOM XSS using an anchor in jQuery
+```bash
+javascript:alert(document.cookie)
+```
+The code executes on the client side, within the user's browser. It doesn't rely on the server processing user input or delivering malicious content in the server response. Instead, it relies on manipulating the Document Object Model (DOM) of the current web page.
+
+If an attacker can inject this code into a web page by manipulating user-generated content (e.g., through input fields or URLs), the injected code will execute within the user's browser. For example, an attacker might craft a URL like `https://example.com/?input=javascript:alert(document.cookie)` and trick a user into clicking it.
+
