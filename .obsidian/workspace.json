@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL.md",
+                "file": "General Commands.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8768e157c293ef17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Privilege Escalation Tools.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL.md",
+                "file": "Privilege Escalation Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL.md",
+                "file": "Privilege Escalation Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL.md"
+                "file": "Privilege Escalation Tools.md"
               }
             }
           },
@@ -156,17 +169,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a69b34ce88d0580",
+  "active": "8768e157c293ef17",
   "lastOpenFiles": [
+    "SQL.md",
+    "Type of attacks.md",
     "General Commands.md",
+    "Tools.md",
     "Cross Site Scripting (XSS).md",
     "Cracking passwords.md",
-    "Tools.md",
     "AWS Machines.md",
     "Privilege Escalation Tools.md",
     "Privilege Escalation Tools  Windows.md",
     "ReverseShell.md",
-    "SQL.md",
     "Browser extensions.md",
     "Untitled"
   ]

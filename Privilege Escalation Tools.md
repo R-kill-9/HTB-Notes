@@ -28,6 +28,7 @@ find / -perm -4000 2>/dev/null
 ## linpeas.sh
 It is a script designed to assist in privilege escalation enumeration on Linux systems.
 Linpeas is written in Bash scripting language and is designed to be executed directly on the target Linux system. It automates the process of gathering information and performing various checks to identify potential privilege escalation vectors.
+**It's important paying attention to all the fields, specially the capabilities**
 ```bash
 ./linpeas.sh
 ```

@@ -66,3 +66,6 @@ One common and straightforward use case of OpenSSL is generating a self-signed S
 ```bash
 openssl req -x509 -newkey rsa:2048 -keyout mykey.pem -out mycert.pem -days 365
 ```
+
+## sploitus.com
+**Sploitus** is a very useful web where you can find a lot of public exploits and tools.
