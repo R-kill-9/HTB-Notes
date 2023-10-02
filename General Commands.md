@@ -12,7 +12,7 @@
 
 ## Port Scanning <a name='psc'></a>
 
-### Nmap
+### nmap
 - `-sV` shows the version of the service running on each port.
 - `-sC` uses additional scripts to gather more information.
 - `-sS` stealth scan.
@@ -23,6 +23,11 @@
 - `--min-rate` Specifies the minimum number of packets Nmap should send per second; increasing this number speeds up the scan. 
 ```bash
 nmap  -sS -sC -sV -p 21 10.129.42.253
+```
+### nmap scripts
+**nmap** has the option of checking if there are some known vulnerabilities for the services versions that are being used at the machine. We just need to specify the port and the target ip.
+```bash
+nmap -p <port> --script vuln <target_ip>
 ```
 
 
@@ -51,6 +56,12 @@ smbclient -U bob \\\\10.129.42.253\\users
 smbclient -N -L \\\\10.129.117.14\\
 ```
 
+### nmap scripts
+Also, if after our report we observe that the machine has an SMB service we can use some useful nmap scripts to know if the target machine has a vulnerable version of SMB.
+```bash
+nmap -p445 --script smb-vuln-ms17-010 <target_ip>
+```
+After executing the nmap command if the smb service has a known vulnerability the name of the CVE will be printed.
 ## Directory Enumeration <a name='dir'></a>
 
 ### Gobuster

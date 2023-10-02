@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privilege Escalation Tools.md",
+                "file": "Tools.md",
                 "mode": "preview",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privilege Escalation Tools.md",
+                "file": "Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privilege Escalation Tools.md",
+                "file": "Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privilege Escalation Tools.md"
+                "file": "Tools.md"
               }
             }
           },
@@ -171,14 +171,14 @@
   },
   "active": "8768e157c293ef17",
   "lastOpenFiles": [
-    "SQL.md",
-    "Type of attacks.md",
     "General Commands.md",
-    "Tools.md",
-    "Cross Site Scripting (XSS).md",
     "Cracking passwords.md",
-    "AWS Machines.md",
+    "Tools.md",
+    "Type of attacks.md",
+    "Cross Site Scripting (XSS).md",
     "Privilege Escalation Tools.md",
+    "SQL.md",
+    "AWS Machines.md",
     "Privilege Escalation Tools  Windows.md",
     "ReverseShell.md",
     "Browser extensions.md",
