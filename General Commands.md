@@ -148,8 +148,8 @@ When we do a reverse shell, sometimes, we will need to upgrade our shell.
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 # we need to *restart* to apply the changes, so we do:  
 CTRL+Z  
-stty raw -echo  
-fg  
+stty raw -echo; fg  
+reset xterm
 export TERM=xterm
 ```
 
