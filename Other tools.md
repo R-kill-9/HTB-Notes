@@ -1,16 +1,3 @@
-## Metasploit
-- Run the command `msfconsole` to open Metasploit.
-- Use `search <vulnerability>` to find different exploits.
-- Choose the one you want to use with `use <number>`.
-- Use `show options` to select the payload.
-- Choose the payload with `set payload <number>`.
-- Set the necessary parameters seen with `show options` using `set <parameter> <value>`. Only the ones marked with **yes*** are mandatory.
-- To execute, use `run`.
-## Searchsploit
-**SearchSploit** is used to search and locate known exploits and vulnerabilities in a wide variety of software and systems. It utilizes the Exploit Database, which contains an extensive collection of exploits, shellcodes, and security-related references.
-```bash
-searchsploit <whatever>
-```
 ## revshells.com
 It's a very useful online tool that allows you to create a reverse shell in a lot of programming languages specifying the ip and the port.
 

