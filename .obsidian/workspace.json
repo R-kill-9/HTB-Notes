@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Type of attacks.md",
+                "file": "Privilege Escalation Tools.md",
                 "mode": "preview",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Type of attacks.md",
+                "file": "Privilege Escalation Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Type of attacks.md",
+                "file": "Privilege Escalation Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Type of attacks.md"
+                "file": "Privilege Escalation Tools.md"
               }
             }
           },
@@ -183,14 +183,14 @@
   },
   "active": "f8bfe72dc4163f32",
   "lastOpenFiles": [
-    "Privilege Escalation Tools.md",
     "General Commands.md",
-    "Privilege Escalation Tools  Windows.md",
+    "Privilege Escalation Tools.md",
     "Metasploit.md",
+    "Type of attacks.md",
+    "Privilege Escalation Tools  Windows.md",
     "ReverseShell.md",
     "Other tools.md",
     "exploit.sh",
-    "Type of attacks.md",
     "Cracking passwords.md",
     "Cross Site Scripting (XSS).md",
     "SQL.md",

@@ -8,6 +8,11 @@ link -> https://gtfobins.github.io
 ## sudo -l
 Command used to know what commands can be executed as root by the actual user.
 
+## getcap
+**getcap** is used to query the security capabilities of a file in Linux-based systems. These capabilities provide finer-grained control over file access permissions, allowing certain programs to have access only to specific capabilities they need, rather than granting them full access to a file.
+```bash
+getcap -r / 2>/dev/null
+```
 ## find
 This command is used to search for files and directories within a specified directory hierarchy. It searches recursively through the directory structure, starting from the given directory, and matches files and directories based on specified criteria.
 
