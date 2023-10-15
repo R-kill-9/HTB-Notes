@@ -1,7 +1,8 @@
-## hashid
+## hash-identifier
 The main purpose of **hashid** is to identify the hash algorithm used so that you can select the appropriate tool to work with it, such as a cracking tool or integrity verification tool.
 ```bash
-hashid <hash>
+hash-identifier
+<hash>
 ```
 
 ## hydra

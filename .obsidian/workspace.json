@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privilege Escalation Tools.md",
+                "file": "Cracking passwords.md",
                 "mode": "preview",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privilege Escalation Tools.md",
+                "file": "Cracking passwords.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privilege Escalation Tools.md",
+                "file": "Cracking passwords.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privilege Escalation Tools.md"
+                "file": "Cracking passwords.md"
               }
             }
           },
@@ -183,8 +183,8 @@
   },
   "active": "f8bfe72dc4163f32",
   "lastOpenFiles": [
-    "General Commands.md",
     "Privilege Escalation Tools.md",
+    "General Commands.md",
     "Metasploit.md",
     "Type of attacks.md",
     "Privilege Escalation Tools  Windows.md",
