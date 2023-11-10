@@ -81,7 +81,7 @@ Something we can do to gain privileges is to observe the groups our current user
 ```bash
 #command:
 id                                     
-#possible putput:
+#possible oeutput:
 uid=1000(robert) gid=1000(robert) groups=1000(robert),1001(bugtracker)
 ```
 If we observe the output, we can see that Robert is in the bugtracker group, what it's not common.
@@ -95,7 +95,7 @@ locate bugtracker
 /usr/bin/bugtracker
 ```
 
-## Files privilege
+## Path hijacking
 When gaining privileges, paying attention to the permissions assigned to each file can provide a significant advantage. For instance, if a file has execution permissions and it belongs to the root user, but you can execute it as a regular user, this can be a potential vulnerability.
 
 If, for example, this file (bugtruck) is affected by the vulnerability described, and this executable allows us to input commands in some way, we could make it perform the following:
