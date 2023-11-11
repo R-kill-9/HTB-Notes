@@ -58,3 +58,16 @@ Once we have already used the previous command, we can see the password and user
 ```bash
 john --show <hash_file>
 ```
+
+## WPscan
+**WPScan** is a popular open-source tool used for scanning and identifying security vulnerabilities in WordPress websites. It is specifically designed to assess the security of WordPress installations by enumerating plugins, themes, and users, and checking for known vulnerabilities. WPScan can be used to do brute force attacks to machines with a wordpress login.
+- Enumerating users
+```bash
+wpscan --url <url> --enumerate u
+```
+- Brute force attack
+```bash
+# wordlist example: /usr/share/wordlists/rockyou.txt
+# users = users obtained with the users enumreation
+wpscan --url <url> --passwords <wordlist> --usernames <users>
+```
