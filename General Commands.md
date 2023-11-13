@@ -3,12 +3,10 @@
 - [21 - FTP Port](#ftp)
 - [139/445 - Samba/SMB](#smb)
 - [Directory Enumeration](#dir)
-- [Login BruteForce](#log)
-- [Sql Injection](#si)
-- [File Transfer](#ft)
+- [Pyhton server for file transmision](#ft)
 - [Upgrade Shell](#us)
 - [File searching](#fts)
-- [Directory Traversal](#dt)
+
 
 ## Port Scanning <a name='psc'></a>
 
@@ -22,12 +20,12 @@
 -  `--open` only displays open ports.
 - `--min-rate` Specifies the minimum number of packets Nmap should send per second; increasing this number speeds up the scan. 
 ```bash
-nmap  -sS -sC -sV -p 21 10.129.42.253
+nmap  -sS -sC -sV -p21 10.129.42.253
 ```
 ### nmap scripts
 **nmap** has the option of checking if there are some known vulnerabilities for the services versions that are being used at the machine. We just need to specify the port and the target ip.
 ```bash
-nmap -p <port> --script vuln <target_ip>
+nmap -p<port> --script vuln <target_ip>
 ```
 
 
@@ -56,12 +54,6 @@ smbclient -U bob \\\\10.129.42.253\\users
 smbclient -N -L \\\\10.129.117.14\\
 ```
 
-### nmap scripts
-Also, if after our report we observe that the machine has an SMB service we can use some useful nmap scripts to know if the target machine has a vulnerable version of SMB.
-```bash
-nmap -p445 --script smb-vuln-ms17-010 <target_ip>
-```
-After executing the nmap command if the smb service has a known vulnerability the name of the CVE will be printed.
 ## Directory Enumeration <a name='dir'></a>
 
 ### Gobuster
@@ -110,23 +102,8 @@ wfuzz -c --hc 404 -w <wordlist> http://<machine-ip>/FUZZ.php
 ffuf -u http://<machine-ip>/login-page.php -X POST -d '{"user":"FUZZ", "pass":"FUZZ"}' -w wordlist
 ```
 
-## SQLInjection <a name="si"></a>
-For more information consult [[SQL]].
 
-- [SqlMap](https://sqlmap.org/)
-
-```bash
-# capture the login request with burp and save it as login.req
-sqlmap -r login.req --level=5 --risk=3 --batch
-
-# manual expoitation
-> Capture the request with burp
-> The entered paramaters will be url encoded, decode it with <ctrl>+<shift>+<u>
-> Enter the payload " ' or 1 = 1 -- - " (simple sql injection payload)
-> After changing the payload, url encode it with <ctrl>+<u>
-```
-
-## File Transfer <a name="ft"></a>
+## Python server for file transmision<a name="ft"></a>
 
 ```bash 
 # on the attacker machine
