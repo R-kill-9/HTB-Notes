@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SMB & AD Tools.md",
+                "file": "General Commands.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SMB & AD Tools.md",
+                "file": "General Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SMB & AD Tools.md",
+                "file": "General Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SMB & AD Tools.md"
+                "file": "General Commands.md"
               }
             }
           },
@@ -207,6 +207,7 @@
   },
   "active": "deb544ec20d0c813",
   "lastOpenFiles": [
+    "SMB & AD Tools.md",
     "ReverseShell.md",
     "Privilege Escalation Tools  Windows.md",
     "Privilege Escalation Tools.md",
@@ -220,7 +221,6 @@
     "AWS Machines.md",
     "Type of attacks.md",
     "SQL.md",
-    "SMB & AD Tools.md",
     "exploit.sh",
     "Untitled"
   ]

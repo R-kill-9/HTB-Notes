@@ -118,6 +118,7 @@ CTRL+Z
 stty raw -echo; fg  
 reset xterm
 export TERM=xterm
+export SHELL=bash
 ```
 
 # File searching <a name='fs'></a>
