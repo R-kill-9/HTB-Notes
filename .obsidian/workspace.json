@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cracking passwords.md",
+                "file": "Cracking passwords & Decrypting.md",
                 "mode": "preview",
                 "source": false
               }
@@ -61,8 +61,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL.md",
-                "mode": "preview",
+                "file": "Cracking passwords & Decrypting.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL.md",
+                "file": "Cracking passwords & Decrypting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL.md",
+                "file": "Cracking passwords & Decrypting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL.md"
+                "file": "Cracking passwords & Decrypting.md"
               }
             }
           },
@@ -207,21 +207,21 @@
   },
   "active": "deb544ec20d0c813",
   "lastOpenFiles": [
-    "General Commands.md",
-    "SQL.md",
-    "Fuzzing.md",
+    "Other tools.md",
+    "Cracking passwords & Decrypting.md",
+    "Type of attacks.md",
     "SMB & AD Tools.md",
-    "Cracking passwords.md",
+    "ReverseShell.md",
     "Privilege Escalation Tools.md",
     "Metasploit.md",
-    "Type of attacks.md",
+    "General Commands.md",
+    "Fuzzing.md",
+    "Browser extensions.md",
+    "AWS Machines.md",
+    "SQL.md",
     "Privilege Escalation Tools  Windows.md",
-    "ReverseShell.md",
-    "Other tools.md",
     "exploit.sh",
     "Cross Site Scripting (XSS).md",
-    "AWS Machines.md",
-    "Browser extensions.md",
     "Untitled"
   ]
 }

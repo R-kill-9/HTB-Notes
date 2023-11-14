@@ -1,3 +1,7 @@
+## CyberChef
+It acts as a toolkit, allowing users to encode, decode, analyze, and manipulate data in various formats. Its user-friendly interface simplifies complex operations like encryption, decryption, compression, and conversion.
+https://gchq.github.io/CyberChef/
+
 ## hash-identifier
 The main purpose of **hashid** is to identify the hash algorithm used so that you can select the appropriate tool to work with it, such as a cracking tool or integrity verification tool.
 ```bash
@@ -57,6 +61,21 @@ john -wordlist=<wordlist> <hash_file>
 Once we have already used the previous command, we can see the password and username found using:
 ```bash
 john --show <hash_file>
+```
+
+## openssl
+**OpenSSL** can be used through the command line to perform various cryptographic operations, such as generating and managing SSL/TLS certificates, encrypting and decrypting data, creating digital signatures, and more. It supports a wide range of cryptographic algorithms and protocols.
+
+One common and straightforward use case of OpenSSL is generating a self-signed SSL certificate for testing or development purposes. Here's an example of how to generate a self-signed certificate using OpenSSL:
+
+- `req`: This subcommand is used for certificate requests and management.
+- `-x509`: This option tells OpenSSL to create a self-signed certificate instead of a certificate signing request (CSR).
+- `-newkey rsa:2048`: It generates a new RSA private key of 2048 bits.
+- `-keyout mykey.pem`: Specifies the output file for the generated private key (mykey.pem).
+- `-out mycert.pem`: Specifies the output file for the generated self-signed certificate (mycert.pem).
+- `-days 365`: Sets the validity period of the certificate to 365 days.
+```bash
+openssl req -x509 -newkey rsa:2048 -keyout mykey.pem -out mycert.pem -days 365
 ```
 
 ## WPscan
