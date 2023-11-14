@@ -74,3 +74,10 @@ sudo neo4j console
 - Upload the data
 - Use the menu to see the information
 - Is very useful to use the ANALYSIS tool to display visual information
+
+# Kerberoasting
+It is a method used to extract and crack service account passwords that utilize Kerberos authentication within a Windows Active Directory environment. This attack targets accounts with Kerberos Service Principal Names (SPNs) set, allowing attackers to request encrypted service tickets from the domain controller.
+- One method that can be used is using 'impacket-GetUserSPNs'. If we have a user with a username ended in *TGS* that means that is part of a TICKET GRANTING SERVICE. We can use this to ask a ticket to the Domain Controller.
+```bash
+impacket-GetUserSPNs -request -dc-ip target_ip domain_name/user
+```
