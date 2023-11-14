@@ -6,13 +6,13 @@
 - Choose the payload with `set payload <number>`.
 - Set the necessary parameters seen with `show options` using `set <parameter> <value>`. Only the ones marked with **yes*** are mandatory.
 - To execute, use `run`.
-## searchsploit
+# searchsploit
 **SearchSploit** is used to search and locate known exploits and vulnerabilities in a wide variety of software and systems. It utilizes the Exploit Database, which contains an extensive collection of exploits, shellcodes, and security-related references.
 ```bash
 searchsploit <whatever>
 ```
 
-## msfvenom
+# msfvenom
 **msfvenom** is primarily used for generating payloads, which are pieces of code that can be delivered to a target system to exploit vulnerabilities or gain unauthorized access.
 
 ```bash

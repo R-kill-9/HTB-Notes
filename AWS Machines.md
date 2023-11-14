@@ -1,7 +1,7 @@
 - [aws bucket list](#awsbl)
 - [aws reverse shell](#awsrs)
 
-## aws bucket list <a name="awsbl"></a>
+# aws bucket list <a name="awsbl"></a>
 
 The `aws bucket list` command is used to list the contents of the buckets found within a subdomain hosted on AWS. It is useful for finding files such as `index.php`, etc.
 
@@ -14,7 +14,7 @@ The `aws bucket list` command is used to list the contents of the buckets found 
 aws --endpoint=http://s3.thetoppers.htb s3 ls s3://thetoppers.htb
 ````
 
-## aws reverse shell <a name="awsrs"></a>
+# aws reverse shell <a name="awsrs"></a>
 
 The `aws reverse shell` command is used to copy files from your local machine to one of the AWS buckets. After copying the file, you can access it and enter commands.
 

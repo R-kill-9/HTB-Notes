@@ -1,19 +1,19 @@
 ## Escalation ideas 
 https://github.com/RoqueNight/Linux-Privilege-Escalation-Basics
 
-## GTFOBINS
+# GTFOBINS
 GTFOBins is a curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.
 link -> https://gtfobins.github.io
 
-## sudo -l
+# sudo -l
 Command used to know what commands can be executed as root by the actual user.
 
-## getcap
+# getcap
 **getcap** is used to query the security capabilities of a file in Linux-based systems. These capabilities provide finer-grained control over file access permissions, allowing certain programs to have access only to specific capabilities they need, rather than granting them full access to a file.
 ```bash
 getcap -r / 2>/dev/null
 ```
-## find
+# find
 This command is used to search for files and directories within a specified directory hierarchy. It searches recursively through the directory structure, starting from the given directory, and matches files and directories based on specified criteria.
 
 - Parameters:
@@ -30,7 +30,7 @@ find [path] [expression]
 ```bash
 find / -perm -4000 2>/dev/null
 ```
-## linpeas.sh
+# linpeas.sh
 It is a script designed to assist in privilege escalation enumeration on Linux systems.
 Linpeas is written in Bash scripting language and is designed to be executed directly on the target Linux system. It automates the process of gathering information and performing various checks to identify potential privilege escalation vectors.
 **It's important paying attention to all the fields, specially the capabilities**
@@ -38,13 +38,13 @@ Linpeas is written in Bash scripting language and is designed to be executed dir
 ./linpeas.sh
 ```
 
-## pspy
+# pspy
 **pspy** is based on the analysis of the `/proc` directory, which contains information about the running processes in the Linux operating system. It utilizes the virtual file system `/proc` to obtain real-time information about processes, such as the process ID, process name, user executing the process, files opened by the process, and other relevant details.
 ```bash
 ./pspy
 ```
 
-## /etc/passwd
+# /etc/passwd
 This is a file that we can find in all the Linux machines. Once we have gained access to a machine and we want to escalate our privileges we can take a look to this file to see what users are registered in the machine. The fields that we can find for each row are: 
  - Username
  - Password
@@ -60,23 +60,23 @@ cat /etc/passwd
 nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
 ```
 
-## /etc/hosts
+# /etc/hosts
 This file can be a valuable resource for mapping domain names to IP addresses within a target system.
 For example, we could find a new subdomain.
 ```bash
 ls /etc/hosts
 ```
 
-## /proc/version
+# /proc/version
 The proc filesystem (procfs) provides information about the target system processes. You will find proc on many different Linux flavours, making it an essential tool to have in your arsenal.
 
 Looking at `/proc/version` may give you information on the kernel version and additional data such as whether a compiler (e.g. GCC) is installed.
 This can be useful if you want to find a possible CVE.
 
-## /etc/crontab
+# /etc/crontab
 Each user on the system have their crontab file and can run specific tasks whether they are logged in or not. As you can expect, our goal will be to find a cron job set by root and have it run our script, ideally a shell.
 
-## id
+# id
 Something we can do to gain privileges is to observe the groups our current user belongs to, to see if there's any uncommon one and take advantage of it to exploit a vulnerability.
 ```bash
 #command:
@@ -86,7 +86,7 @@ uid=1000(robert) gid=1000(robert) groups=1000(robert),1001(bugtracker)
 ```
 If we observe the output, we can see that Robert is in the bugtracker group, what it's not common.
 
-## locate
+# locate
 It is a command that locates if there is any file with this name. This can be useful, for example, if we want to locate a user or a group.
 ```bash
 #command:
@@ -95,7 +95,7 @@ locate bugtracker
 /usr/bin/bugtracker
 ```
 
-## Path hijacking
+# Path hijacking
 When gaining privileges, paying attention to the permissions assigned to each file can provide a significant advantage. For instance, if a file has execution permissions and it belongs to the root user, but you can execute it as a regular user, this can be a potential vulnerability.
 
 If, for example, this file (bugtruck) is affected by the vulnerability described, and this executable allows us to input commands in some way, we could make it perform the following:

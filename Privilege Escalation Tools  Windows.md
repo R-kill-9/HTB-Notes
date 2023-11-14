@@ -4,7 +4,7 @@ There are several tools that can help us escalate privileges on Windows machines
 - [psexec.py](#pspy)
 
 
-## winPEAS.exe <a name="wpeas"></a>
+# winPEAS.exe <a name="wpeas"></a>
 
 winPEAS.exe is an executable that, once we have a reverse shell, will display files with possible critical information in red.
 
@@ -25,7 +25,7 @@ C:\Users\sql_svc\Downloads> .\winPEASx64.exe
 
 
 
-## psexec.py <a name="pspy"></a>
+# psexec.py <a name="pspy"></a>
 
 - psexec.py is a tool from impacket that allows us to obtain a shell as an administrator.
 

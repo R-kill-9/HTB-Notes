@@ -1,5 +1,5 @@
 **Fuzzing** is an automated software testing method that injects invalid, malformed, or unexpected inputs into a system to reveal software defects and vulnerabilities. A fuzzing tool injects these inputs into the system and then monitors for exceptions such as crashes or information leakage.
-### Gobuster
+# Gobuster
 It is a command-line tool used for performing brute-force scans or directory and subdomain enumeration on a website.
 - To find subdirectories:
 ````bash
@@ -17,7 +17,7 @@ gobuster dir -u <machine-ip> -w <wordlist> -o gobuster.out -t 200
 gobuster vhost -w <wordlist> -u <machine-ip> -o gobuster.out
 ````
 
-### wfuzz
+# wfuzz
 It is a command-line tool used for performing brute-force scans or directory and subdomain enumeration on a website. Also, it can be useful for enumerate files with an specific extension.
 - To find subdirectories:
 ```bash

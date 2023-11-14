@@ -2,11 +2,11 @@
 - [MYSQL](#mysql)
 - [mssqlclient.py](#msspy)
 
-## SQL INJECTION <a name="sqli"></a>
+# SQL INJECTION <a name="sqli"></a>
 *MySQL SQL Injection cheat sheet:* https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
 *Oracle SQL Injection cheat sheet:* https://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet
 *PostgreSQL SQL Injection cheat sheet:* https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-sheet
-### Classic SQL Injection
+## Classic SQL Injection
 This is the most common type of SQL injection, where an attacker injects malicious SQL code into an application's input fields, typically through user inputs like forms or URL parameters.
 
 ```bash
@@ -36,20 +36,20 @@ SELECT * FROM users WHERE user='Kill-9'# AND password=$123
 The commented part is not processed, granting us access.
 
 
-### Union-Based SQL Injection
+## Union-Based SQL Injection
 In a union-based SQL injection, the attacker leverages the UNION SQL operator to combine results from the original query with results from their injected query.
 An attacker might inject SQL code like this:
 ```bash
 ' UNION SELECT null, username, password FROM users --
 ```
 
-### Determine the number of columns
+## Determine the number of columns
 If we have an injectable parameter and we want to know how many columns does the database have, we can execute:
 ```bash
 ' order+by+<number>--
 ```
 When it causes a *500* response that means that there are not "number" columns
-### SQLmap
+## SQLmap
 SQLmap is an open-source tool used in penetration testing to detect and exploit SQL  injection flaws. SQLmap automates the process of detecting and exploiting SQL  injection. SQL Injection attacks can take control of databases that utilize SQL.
 
 If we needed authentication to access to the web we will need to add the cookies value to the command. For doing that we can use Cookie-Editor, explained in [[Other tools]].
@@ -89,7 +89,7 @@ If we needed authentication to access to the web we will need to add the cookies
 		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --batch --threads 5 --dump```
 
 
-## MySQL <a name="mysql"></a>
+# MySQL <a name="mysql"></a>
 
 Commands:
 
@@ -116,7 +116,7 @@ mysql -h 10.129.42.201 -u root
 ````
 
 
-## mssqlclient.py <a name="msspy"></a>
+# mssqlclient.py <a name="msspy"></a>
 mssqlclient.py is a script from the Impacket class collection. When mssqlclient.py is executed, a connection is established with the specified SQL Server and it allows interaction through a command-line interface.
 
 - `windows-auth`: This flag is specified to use Windows Authentication.
