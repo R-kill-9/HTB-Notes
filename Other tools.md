@@ -1,7 +1,9 @@
 # revshells.com
 It's a very useful online tool that allows you to create a reverse shell in a lot of programming languages specifying the ip and the port.
 
-
+# hacktricks
+It's a useful page where you can find a lot of hacking information.
+link: https://book.hacktricks.xyz
 # Burpsuite
 **Burpsuite** consists of various modules that work together to perform different security testing tasks. These modules include:
 

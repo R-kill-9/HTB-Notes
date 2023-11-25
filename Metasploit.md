@@ -12,6 +12,10 @@
 searchsploit <whatever>
 ```
 
+Once we find the exploit that we need we can know the path where it's stored with the command:
+```bash
+searchsploit -p<exploit_number>
+```
 # msfvenom
 **msfvenom** is primarily used for generating payloads, which are pieces of code that can be delivered to a target system to exploit vulnerabilities or gain unauthorized access.
 
