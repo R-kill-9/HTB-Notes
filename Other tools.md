@@ -28,6 +28,10 @@ link: https://book.hacktricks.xyz
 	- user: 34322
 - After using this, if we have gained admin's account, we have a lot of opportunities to exploit the machine. For example, if as admin we can upload files we can try to do a reverse shell.
 
+# joomscan
+*joomscan* is a vulnerability scanning tool specifically designed to identify and assess the security of websites using the Joomla content management system. Joomla is a popular content management system (CMS) used for creating and managing dynamic websites.
+
+joomScan is primarily used to search and detect potential vulnerabilities in Joomla-based websites, including security flaws, insecure configurations, or weaknesses in system implementation.
 # exiftool
 **exifTool** is a command-line tool and Perl library used for reading, writing, and manipulating metadata information in various file formats, particularly image and multimedia files. It allows you to extract, modify, and analyze the metadata embedded within these files.
 
