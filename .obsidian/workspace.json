@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Other tools.md",
+                "file": "Useful webs.md",
                 "mode": "preview",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cracking passwords & Decrypting.md",
+                "file": "Web scanning.md",
                 "mode": "preview",
                 "source": false
               }
@@ -61,14 +61,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SMB & AD Tools.md",
+                "file": "Useful webs.md",
                 "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1f4e0427a4e6c6d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Useful webs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ddc73e011bb8970",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Useful webs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8970fc4db4870381",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web scanning.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SMB & AD Tools.md",
+                "file": "Web scanning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SMB & AD Tools.md",
+                "file": "Web scanning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SMB & AD Tools.md"
+                "file": "Web scanning.md"
               }
             }
           },
@@ -207,22 +243,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "deb544ec20d0c813",
+  "active": "f8bfe72dc4163f32",
   "lastOpenFiles": [
-    "SQL.md",
-    "Other tools.md",
-    "General Commands.md",
-    "Fuzzing.md",
-    "Cross Site Scripting (XSS).md",
-    "Privilege Escalation Tools.md",
-    "Cracking passwords & Decrypting.md",
-    "Type of attacks.md",
-    "Metasploit.md",
+    "Nuclei.md",
+    "Web scanning.md",
+    "Useful webs.md",
     "AWS Machines.md",
-    "SMB & AD Tools.md",
-    "ReverseShell.md",
-    "Privilege Escalation Tools  Windows.md",
     "Browser extensions.md",
+    "Cracking passwords & Decrypting.md",
+    "Cross Site Scripting (XSS).md",
+    "File hidden information.md",
+    "General Commands.md",
+    "Type of attacks.md",
+    "SQL.md",
+    "SMB & AD Tools.md",
+    "Reverse Shell Example.md",
+    "Privilege Escalation Tools.md",
+    "Metasploit.md",
+    "Fuzzing.md",
+    "Proxy.md",
+    "Privilege Escalation Tools  Windows.md",
     "exploit.sh",
     "Untitled"
   ]

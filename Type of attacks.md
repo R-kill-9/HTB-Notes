@@ -23,7 +23,7 @@ Path hijacking occurs when an attacker manipulates the $PATH variable to force t
  
 
 
-## Directory Traversal <a name='dt'></a>
+# Path Traversal <a name='dt'></a>
 
 The attack typically takes advantage of insufficient input validation or sanitization mechanisms. By manipulating the input, an attacker can traverse directories and access sensitive files that should not be directly accessible. This could include system files, configuration files, or even user data.
 

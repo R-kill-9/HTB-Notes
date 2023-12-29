@@ -52,7 +52,7 @@ When it causes a *500* response that means that there are not "number" columns
 ## SQLmap
 SQLmap is an open-source tool used in penetration testing to detect and exploit SQL  injection flaws. SQLmap automates the process of detecting and exploiting SQL  injection. SQL Injection attacks can take control of databases that utilize SQL.
 
-If we needed authentication to access to the web we will need to add the cookies value to the command. For doing that we can use Cookie-Editor, explained in [[Other tools]].
+If we needed authentication to access to the web we will need to add the cookies value to the command. For doing that we can use Cookie-Editor, explained in [[Useful webs]].
 - **EXAMPLE 1**
 	- Parameters:
 		- `-u`: Specifies the target URL to be tested for SQL injection vulnerabilities. In this case, the target URL is `http://10.129.95.174/dashboard.php?search=any+query`
