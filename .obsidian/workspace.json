@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Other tools.md",
+                "file": "SMB & AD Tools.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Other tools.md",
+                "file": "SMB & AD Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Other tools.md",
+                "file": "SMB & AD Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Other tools.md"
+                "file": "SMB & AD Tools.md"
               }
             }
           },
@@ -184,7 +184,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -207,20 +209,20 @@
   },
   "active": "deb544ec20d0c813",
   "lastOpenFiles": [
+    "SQL.md",
+    "Other tools.md",
     "General Commands.md",
     "Fuzzing.md",
     "Cross Site Scripting (XSS).md",
     "Privilege Escalation Tools.md",
     "Cracking passwords & Decrypting.md",
     "Type of attacks.md",
-    "Other tools.md",
     "Metasploit.md",
     "AWS Machines.md",
     "SMB & AD Tools.md",
     "ReverseShell.md",
     "Privilege Escalation Tools  Windows.md",
     "Browser extensions.md",
-    "SQL.md",
     "exploit.sh",
     "Untitled"
   ]

@@ -30,16 +30,16 @@ It is designed to enumerate and interact with shared files and another resources
 smbmap -H ip -u username -p password
 ```
 
-# Crackmapexec
+# netexec
 It is a post-exploitation and penetration testing tool that automates the assessment of large Active Directory networks. It is designed to be used to simplify and streamline the post-exploitation phase, allowing for efficient execution of various tasks on compromised systems within a network.
 - `smb`: Specifies the protocol (SMB) to use.
 - `ip_range`: Specifies the target IP range, for example 192.168.1.0/24.
 - `-u`: Specifies the username for authentication.
 - `-p`: Specifies the password for authentication.
 ```bash
-crackmapexec smb ip_range -u username -p password
+nxc smb ip_range -u username -p password
 # You can try to enumerate users using:
-crackmapexec smb ip --users
+nxc smb ip --users
 ```
 
 # BloodHound
