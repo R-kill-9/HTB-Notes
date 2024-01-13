@@ -139,7 +139,7 @@ SELECT * FROM {table_name};
 
 To connect:
 ````bash
-mysql -h 10.129.42.201 -u root
+mysql -h 10.129.42.201 -u root -p <password>
 ````
 
 
