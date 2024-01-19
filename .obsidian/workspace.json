@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL.md",
+                "file": "AWS Machines.md",
                 "mode": "preview",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL.md",
+                "file": "AWS Machines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL.md",
+                "file": "AWS Machines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL.md"
+                "file": "AWS Machines.md"
               }
             }
           },
@@ -245,11 +245,11 @@
   },
   "active": "f8bfe72dc4163f32",
   "lastOpenFiles": [
+    "SQL.md",
     "General Commands.md",
     "Reverse Shell Example.md",
     "Privilege Escalation Tools.md",
     "Fuzzing.md",
-    "SQL.md",
     "Web scanning.md",
     "Nuclei.md",
     "Useful webs.md",

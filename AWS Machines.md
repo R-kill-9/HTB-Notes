@@ -1,6 +1,7 @@
 - [aws bucket list](#awsbl)
 - [aws reverse shell](#awsrs)
 
+# EC2
 # aws bucket list <a name="awsbl"></a>
 
 The `aws bucket list` command is used to list the contents of the buckets found within a subdomain hosted on AWS. It is useful for finding files such as `index.php`, etc.
