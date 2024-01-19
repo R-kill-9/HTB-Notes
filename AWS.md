@@ -1,7 +1,7 @@
 - [Profile Configuration](#pc)
 - [EC2](#ec2)
 - [S3](#s3)
-- [iam](#iam)
+- [IAM](#iam)
 - [aws bucket list](#awsbl)
 - [aws reverse shell](#awsrs)
 
