@@ -37,8 +37,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS Machines.md",
-                "mode": "preview",
+                "file": "AWS.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS Machines.md",
+                "file": "AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS Machines.md",
+                "file": "AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS Machines.md"
+                "file": "AWS.md"
               }
             }
           },
@@ -246,6 +246,8 @@
   "active": "f8bfe72dc4163f32",
   "lastOpenFiles": [
     "SQL.md",
+    "AWS Machines.md",
+    "AWS.md",
     "General Commands.md",
     "Reverse Shell Example.md",
     "Privilege Escalation Tools.md",
@@ -253,7 +255,6 @@
     "Web scanning.md",
     "Nuclei.md",
     "Useful webs.md",
-    "AWS Machines.md",
     "Browser extensions.md",
     "Cracking passwords & Decrypting.md",
     "Cross Site Scripting (XSS).md",
