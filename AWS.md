@@ -2,7 +2,7 @@
 - [EC2](#ec2)
 - [S3](#s3)
 - [IAM](#iam)
-- [aws bucket list](#awsbl)
+- [prowler](#p)
 - [aws reverse shell](#awsrs)
 
 # Profile configuration <a name="pc"></a>
@@ -119,17 +119,16 @@ This script will enumerate all the services that can be used for this user. This
 ```bash
 python3 enumerate-iam.py --access-key <access_key> --secret-key <secret_key>
 ```
-# aws bucket list <a name="awsbl"></a>
+# prowler <a name="p"></a>
 
-The `aws bucket list` command is used to list the contents of the buckets found within a subdomain hosted on AWS. It is useful for finding files such as `index.php`, etc.
+**Prowler** is an Open Source security tool to perform AWS, GCP and Azure security best practices assessments, audits, incident response, continuous monitoring, hardening and forensics readiness.
 
-- `endpoint`: URL where S3 is located (replace with `s3` or another subdomain if found).
-- `s3`: Interacts with the S3 service (replace with the discovered subdomain from gobuster subdomain search).
-- `ls`: Lists the directory.
-- `s3://{bucket name}`: Name of the bucket to interact with.
+It contains hundreds of controls covering CIS, NIST 800, NIST CSF, CISA, RBI, FedRAMP, PCI-DSS, GDPR, HIPAA, FFIEC, SOC2, GXP, AWS Well-Architected Framework Security Pillar, AWS Foundational Technical Review (FTR), ENS (Spanish National Security Scheme) and your custom security frameworks.
+
+- Use a custom AWS profile with `-p`/`--profile` and/or AWS regions which you want to audit with `-f`/`--filter-region`:
 
 ```bash
-aws --endpoint=http://s3.thetoppers.htb s3 ls s3://thetoppers.htb
+prowler aws --profile custom-profile -f us-east-1 eu-south-2
 ```
 
 # aws reverse shell <a name="awsrs"></a>
