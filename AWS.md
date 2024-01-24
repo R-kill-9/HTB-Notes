@@ -17,7 +17,7 @@ aws sts get-caller-identity --profile <profile_name>
 ```
 # EC2 <a name="ec2"></a>
 
-## General commands
+## Commands
 - Create key pair:
 ```bash
 aws ec2 create-key-pair --key-name <key_pair_name> --query 'KeyMaterial' --output text > <key_pair_name>
@@ -41,7 +41,7 @@ aws ec2 delete-key-pair --key-name <key_pair_name>
 
 # S3 <a name="s3"></a>
 
-## General commands
+## Commands
 - Create a bucket:
 ```bash
 aws s3 mb s3://<bucket_name>
@@ -55,6 +55,10 @@ aws s3 ls
 - List an specific bucket:
 ```bash
 aws s3 ls s3://<bucket_name>
+```
+- List an specific bucket without session credentials:
+```bash
+aws s3 ls s3://<bucket_name> --no-sign-request
 ```
 - Copy a local file to the bucket:
 ```bash
@@ -84,7 +88,7 @@ aws s3 rb s3://<bucket_name> --recursive
 
 # IAM <a name="iam"></a>
 
-## General commands
+## Commands
 - Create an IAM group:
 ```bash
 aws iam create-group --group-name <group_name>
@@ -113,12 +117,48 @@ aws iam create-access-key --user-name <username>
 ```bash
 aws iam list-users
 ```
+- List IAM policies for a user:
+```bash
+aws iam list-user-poluccues --user-name <username>
+```
+- Get information about a specific policy:
+```bash
+aws iam get-policy --policy-arn <policy_arn>
+```
+- Get more information about a specific policy:
+	You can see the value tor the `DefaultVeriosnId` field using the previous command
+```bash
+aws iam get-policy --policy-arn <policy_arn> --version-id <DefaultVeriosnId>
+```
+- List all IAM roles:
+```bash
+aws iam list-roles
+```
+- Get information about a specific role:
+```bash
+aws iam list-attached-role-policies --role-name <role_name>
+```
+- Get information about a specific role:
+```bash
+aws iam list-attached-role-policies --role-name <role_name>
+```
 
 ## Permissions enumeration - enumerate-iam.py
 This script will enumerate all the services that can be used for this user. This script can be easily detected as it does a lot of querys in few time.
 ```bash
 python3 enumerate-iam.py --access-key <access_key> --secret-key <secret_key>
 ```
+
+# Privilege escalation
+## Using IAM and Lambda
+A possible privIlege escalation could be done following this steps
+- List all users (IAM)
+- List IAM policies for a user (IAM)
+- Get information about a specific policy (IAM)
+- Get more information about a specific policy (IAM)
+- List all IAM roles (IAM)
+- Get information about a specific role (IAM)
+- Get information about a specific role (IAM)
 # prowler <a name="p"></a>
 
 **Prowler** is an Open Source security tool to perform AWS, GCP and Azure security best practices assessments, audits, incident response, continuous monitoring, hardening and forensics readiness.
