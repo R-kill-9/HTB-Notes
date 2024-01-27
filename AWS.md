@@ -67,7 +67,7 @@ aws s3 cp <file_name> s3://<bucket_name>
 - Copy a bucket file to the actual localhost directory:
 
 ```bash
-aws s3 cp s 3://<bucket_name>/<file_name> ./
+aws s3 cp  3://<bucket_name>/<file_name> ./
 ```
 - Delete file from a bucket
 ```bash
