@@ -138,10 +138,7 @@ aws iam list-roles
 ```bash
 aws iam list-attached-role-policies --role-name <role_name>
 ```
-- Get information about a specific role:
-```bash
-aws iam list-attached-role-policies --role-name <role_name>
-```
+
 
 ## Permissions enumeration - enumerate-iam.py
 This script will enumerate all the services that can be used for this user. This script can be easily detected as it does a lot of querys in few time.
@@ -150,7 +147,9 @@ python3 enumerate-iam.py --access-key <access_key> --secret-key <secret_key>
 ```
 
 # Privilege escalation
-## Using IAM and Lambda
+## Using IAM 
+Example: https://github.com/R-kill-9/AWSGoat/blob/master/attack-manuals/module-2/04-IAM%20Privilege%20Escalation.md
+
 A possible privIlege escalation could be done following this steps
 - List all users (IAM)
 - List IAM policies for a user (IAM)
@@ -158,7 +157,7 @@ A possible privIlege escalation could be done following this steps
 - Get more information about a specific policy (IAM)
 - List all IAM roles (IAM)
 - Get information about a specific role (IAM)
-- Get information about a specific role (IAM)
+
 # prowler <a name="p"></a>
 
 **Prowler** is an Open Source security tool to perform AWS, GCP and Azure security best practices assessments, audits, incident response, continuous monitoring, hardening and forensics readiness.
