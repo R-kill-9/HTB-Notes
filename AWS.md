@@ -2,6 +2,7 @@
 - [EC2](#ec2)
 - [S3](#s3)
 - [IAM](#iam)
+- [Lambda](#lambda)
 - [prowler](#p)
 - [aws reverse shell](#awsrs)
 
@@ -145,13 +146,29 @@ aws iam set-default-policy-version --policy-arn <policy_arn> --version-id <versi
 	```
 - List all IAM roles:
 ```bash
-aws iam list-roles
+aws iam list-roles --profile <profile_name>
 ```
-- Get information about a specific role:
+- Get information about a specific policies attached to a role:
 ```bash
-aws iam list-attached-role-policies --role-name <role_name>
+aws iam list-attached-role-policies --role-name <role_name> --profile <profile_name>
 ```
+- List all role policies:
+```bash
+aws iam list-role-policies --role-name <role_name> --profile <profile_name>
+```
+- Assume an specific role:
+```bash
+aws --profile <profile_name> sts assume-role --role-arn <role_arn> --role-session-name <whatever_you_want_here>
+```
+- When assuming a role is important to verify the *~/.aws/credentials* file and add a value with the **aws_session_token**.
+```bash
+sudo cat ~/.aws/credentials
+[kill-9]
+aws_access_key_id = x
+aws_secret_access_key = x
+aws_session_token= x
 
+```
 
 ## Permissions enumeration - enumerate-iam.py
 This script will enumerate all the services that can be used for this user. This script can be easily detected as it does a lot of querys in few time.
@@ -159,6 +176,16 @@ This script will enumerate all the services that can be used for this user. This
 python3 enumerate-iam.py --access-key <access_key> --secret-key <secret_key>
 ```
 
+# Lambda <a name="lambda"></a>
+## Commands
+- List lambda functions:
+```bash
+aws lambda list-functions --region <region> --profile <assumed_role> 
+```
+- Obtain Lambda's code
+```bash
+aws --profile <assumed_role> --region us-east-1 lambda get-function --function-name [lambda_name]
+```
 # Privilege escalation
 ## Using IAM 
 Example: https://github.com/R-kill-9/AWSGoat/blob/master/attack-manuals/module-2/04-IAM%20Privilege%20Escalation.md
