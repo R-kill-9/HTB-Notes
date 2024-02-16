@@ -118,6 +118,10 @@ aws iam create-access-key --user-name <username>
 ```bash
 aws iam get-account-authorization-details --profile <profile_name>
 ```
+- Get username:
+```bash
+aws iam get user --profile <profile>
+```
 - List all users:
 ```bash
 aws iam list-users
