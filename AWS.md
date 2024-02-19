@@ -143,6 +143,10 @@ aws iam list-policy-versions --policy-arn <policy_arn> --profile <profile>
 ```bash
 aws iam get-policy --policy-arn <policy_arn> --version-id <DefaultVeriosnId> profile <profile>
 ```
+- Get a specific user policy:
+```bash
+aws iam get-user-policy --user-name <username> --policy-name <policy_name> --profile <profile>
+```
 - Set default policy version:
 	 If you find that there exists an IAM policy with a version that allows you to perform more actions you can set that policy as default to escalate privileges.
 ```bash
