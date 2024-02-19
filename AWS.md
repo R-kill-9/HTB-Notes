@@ -120,7 +120,7 @@ aws iam get-account-authorization-details --profile <profile_name>
 ```
 - Get username:
 ```bash
-aws iam get user --profile <profile>
+aws iam get-user --profile <profile>
 ```
 - List all users:
 ```bash
@@ -128,29 +128,29 @@ aws iam list-users
 ```
 - List IAM policies for a user:
 ```bash
-aws iam list-attached-user-policies --user-name <username>
+aws iam list-attached-user-policies --user-name <username> --profile <profile>
 ```
 - Get information about a specific policy:
 ```bash
-aws iam get-policy --policy-arn <policy_arn>
+aws iam get-policy --policy-arn <policy_arn> --profile <profile>
 ```
 - List policies versions:
 ```bash
-aws iam list-policy-versions --policy-arn <policy_arn> --profile <profile_name>
+aws iam list-policy-versions --policy-arn <policy_arn> --profile <profile>
 ```
 - Get more information about a specific policy:
 	You can see the value tor the `DefaultVeriosnId` field using the previous command
 ```bash
-aws iam get-policy --policy-arn <policy_arn> --version-id <DefaultVeriosnId>
+aws iam get-policy --policy-arn <policy_arn> --version-id <DefaultVeriosnId> profile <profile>
 ```
 - Set default policy version:
 	 If you find that there exists an IAM policy with a version that allows you to perform more actions you can set that policy as default to escalate privileges.
-	```bash
-aws iam set-default-policy-version --policy-arn <policy_arn> --version-id <version> --profile <profile_name> 
-	```
+```bash
+aws iam set-default-policy-version --policy-arn <policy_arn> --version-id <version> --profile <profile> 
+```
 - List all IAM roles:
 ```bash
-aws iam list-roles --profile <profile_name>
+aws iam list-roles --profile <profile>
 ```
 - Get information about a specific policies attached to a role:
 ```bash
