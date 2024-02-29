@@ -37,8 +37,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cracking passwords & Decrypting.md",
-                "mode": "preview",
+                "file": "SMB & AD Tools.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -133,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#LDAP",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -150,7 +150,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -170,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cracking passwords & Decrypting.md",
+                "file": "SMB & AD Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cracking passwords & Decrypting.md",
+                "file": "SMB & AD Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cracking passwords & Decrypting.md"
+                "file": "SMB & AD Tools.md"
               }
             }
           },
@@ -245,18 +246,18 @@
   },
   "active": "f8bfe72dc4163f32",
   "lastOpenFiles": [
-    "Privilege Escalation Tools.md",
+    "General Commands.md",
     "AWS.md",
+    "Cracking passwords & Decrypting.md",
+    "Privilege Escalation Tools.md",
     "SQL.md",
     "AWS Machines.md",
-    "General Commands.md",
     "Reverse Shell Example.md",
     "Fuzzing.md",
     "Web scanning.md",
     "Nuclei.md",
     "Useful webs.md",
     "Browser extensions.md",
-    "Cracking passwords & Decrypting.md",
     "Cross Site Scripting (XSS).md",
     "File hidden information.md",
     "Type of attacks.md",

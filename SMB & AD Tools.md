@@ -42,6 +42,13 @@ nxc smb ip_range -u username -p password
 nxc smb ip --users
 ```
 
+# LDAP
+## Enumeration
+```bash
+nmap -n -sV --script "ldap* and not brute" <IP> #Using anonymous credentials
+```
+
+
 # BloodHound
 It is an Active Directory (AD) reconnaissance tool that can reveal hidden relationships and identify attack paths within an AD environment.
 ## First time settings
