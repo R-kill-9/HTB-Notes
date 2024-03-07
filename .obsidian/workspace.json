@@ -4,107 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5e51b097bd8e6135",
+        "id": "03b6d945128b096e",
         "type": "tabs",
         "children": [
           {
-            "id": "7a69b34ce88d0580",
+            "id": "7bae82de22e5e121",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "General Commands.md",
+                "file": "AWS.md",
                 "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8768e157c293ef17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Useful webs.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f8bfe72dc4163f32",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SMB & AD Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e109ce8b55ed3a4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "General Commands.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "deb544ec20d0c813",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Useful webs.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1f4e0427a4e6c6d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Useful webs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4ddc73e011bb8970",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Useful webs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8970fc4db4870381",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web scanning.md",
-                "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#LDAP",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -150,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -171,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SMB & AD Tools.md",
+                "file": "AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SMB & AD Tools.md",
+                "file": "AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SMB & AD Tools.md"
+                "file": "AWS.md"
               }
             }
           },
@@ -244,27 +158,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f8bfe72dc4163f32",
+  "active": "7bae82de22e5e121",
   "lastOpenFiles": [
-    "General Commands.md",
-    "AWS.md",
-    "Cracking passwords & Decrypting.md",
-    "Privilege Escalation Tools.md",
-    "SQL.md",
-    "AWS Machines.md",
-    "Reverse Shell Example.md",
-    "Fuzzing.md",
     "Web scanning.md",
-    "Nuclei.md",
-    "Useful webs.md",
-    "Browser extensions.md",
+    "AWS.md",
     "Cross Site Scripting (XSS).md",
+    "Fuzzing.md",
     "File hidden information.md",
     "Type of attacks.md",
-    "SMB & AD Tools.md",
-    "Metasploit.md",
-    "Proxy.md",
+    "Privilege Escalation Tools.md",
     "Privilege Escalation Tools  Windows.md",
+    "Proxy.md",
+    "Reverse Shell Example.md",
+    "SMB & AD Tools.md",
+    "SQL.md",
+    "Useful webs.md",
+    "General Commands.md",
+    "Cracking passwords & Decrypting.md",
+    "AWS Machines.md",
+    "Nuclei.md",
+    "Browser extensions.md",
+    "Metasploit.md",
     "exploit.sh",
     "Untitled"
   ]

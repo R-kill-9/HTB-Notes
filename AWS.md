@@ -166,7 +166,7 @@ aws iam list-role-policies --role-name <role_name> --profile <profile_name>
 ```
 - Assume an specific role:
 ```bash
-aws --profile <profile_name> sts assume-role --role-arn <role_arn> --role-session-name <whatever_you_want_here>
+aws sts assume-role --role-arn <role_arn> --role-session-name <whatever_you_want_here> --profile <profile_name>
 ```
 - Assign a tag:
 ```bash
