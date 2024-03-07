@@ -10,7 +10,7 @@
 This is the most common type of SQL injection, where an attacker injects malicious SQL code into an application's input fields, typically through user inputs like forms or URL parameters.
 
 ```bash
-' OR '1'='1
+' OR '1'='1'
 ```
 If the application does not properly sanitize input, the SQL query might look like this:
 ```bash
