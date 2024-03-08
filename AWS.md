@@ -108,7 +108,7 @@ aws iam get-group --group-name <group_name>
 ```
 - Assign permissions to a user using policies:
 ```bash
-aws iam attach-user-policy --user-name <username> --policy-arn arn:aws:iam::aws:policy/Amazons3FullAccess
+aws iam attach-user-policy --user-name <username> --policy-arn <arn>
 ```
 - Create access key for a user:
 ```bash
@@ -197,6 +197,10 @@ aws lambda list-functions --region <region> --profile <assumed_role>
 - Obtain Lambda's code
 ```bash
 aws --profile <assumed_role> --region us-east-1 lambda get-function --function-name [lambda_name]
+```
+- Create Lambda function:
+```bash
+aws lambda create-function --function-name <function_name> --runtime python3.9 --role <role_arn> --handler lambda_function.lambda_handler --zip-file <zip_file> --profile <profile>
 ```
 # Privilege escalation
 ## Using IAM 
