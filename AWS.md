@@ -172,6 +172,11 @@ aws sts assume-role --role-arn <role_arn> --role-session-name <whatever_you_want
 ```bash
 aws iam tag-user --user-name <username> --tags '{"Key":"<tag_key>","Value":"true"}'
 ```
+- List instance profiles:
+```bash
+aws iam list-instance-profiles --profile <profile_name>
+```
+
 - When assuming a role is important to verify the *~/.aws/credentials* file and add a value with the **aws_session_token**.
 ```bash
 sudo cat ~/.aws/credentials

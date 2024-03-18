@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privilege Escalation Tools.md",
+                "file": "AWS.md",
                 "mode": "preview",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 303.5
   },
   "right": {
     "id": "a556cefe2b7e606e",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privilege Escalation Tools.md",
+                "file": "AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privilege Escalation Tools.md",
+                "file": "AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privilege Escalation Tools.md"
+                "file": "AWS.md"
               }
             }
           },
@@ -160,6 +160,7 @@
   },
   "active": "7bae82de22e5e121",
   "lastOpenFiles": [
+    "Privilege Escalation Tools.md",
     "Type of attacks.md",
     "Web scanning.md",
     "Cross Site Scripting (XSS).md",
@@ -168,7 +169,6 @@
     "SQL.md",
     "Fuzzing.md",
     "File hidden information.md",
-    "Privilege Escalation Tools.md",
     "Privilege Escalation Tools  Windows.md",
     "Proxy.md",
     "Reverse Shell Example.md",
