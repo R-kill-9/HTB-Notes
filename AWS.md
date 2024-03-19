@@ -21,23 +21,31 @@ aws sts get-caller-identity --profile <profile_name>
 ## Commands
 - Create key pair:
 ```bash
-aws ec2 create-key-pair --key-name <key_pair_name> --query 'KeyMaterial' --output text > <key_pair_name>
+aws ec2 create-key-pair --key-name <key_pair_name> --query 'KeyMaterial' --output text > <key_pair_name> --profile <profile_name>
 ```
 - Create and run instance: 
 ```bash
-aws ec2 run-instances --image-id <image-id> --count 1 --instance-type t2.micro --key-name <key_name>
+aws ec2 run-instances --image-id <image-id> --count 1 --instance-type t2.micro --key-name <key_name> --profile <profile_name>
 ```
 - List created instances:
 ```bash
-aws ec2 describe-instances
+aws ec2 describe-instances --profile <profile_name>
+```
+- List subnets:
+```bash
+aws ec2 describe-subnets --profile <profile_name>
+```
+- List security groups:
+```bash
+aws ec2 describe-security-groups --profile <profile_name>
 ```
 - Terminate instance:
 ```bash
-aws ec2 terminate-instances --instance-ids <instance_id>
+aws ec2 terminate-instances --instance-ids <instance_id> --profile <profile_name>
 ```
 - Delete key pair:
 ```bash
-aws ec2 delete-key-pair --key-name <key_pair_name>
+aws ec2 delete-key-pair --key-name <key_pair_name> --profile <profile_name>
 ```
 
 # S3 <a name="s3"></a>
@@ -175,6 +183,16 @@ aws iam tag-user --user-name <username> --tags '{"Key":"<tag_key>","Value":"true
 - List instance profiles:
 ```bash
 aws iam list-instance-profiles --profile <profile_name>
+```
+
+- Remove role from instance profiles:
+```bash
+aws iam remove-role-from-instance-profile --instance-profile-name  --role-name <role_name> --region <region> --profile  <profile_name>
+```
+
+- Add role from instance profiles:
+```bash
+aws iam add-role-to-instance-profile  --instance-profile-name  --role-name <role_name> --region <region> --profile  <profile_name>
 ```
 
 - When assuming a role is important to verify the *~/.aws/credentials* file and add a value with the **aws_session_token**.
