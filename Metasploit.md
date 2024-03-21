@@ -1,4 +1,4 @@
-## Basic usage
+# Basic usage
 - Run the command `msfconsole` to open Metasploit.
 - Use `search <vulnerability>` to find different exploits.
 - Choose the one you want to use with `use <number>`.

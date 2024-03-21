@@ -3,9 +3,9 @@
 - [mssqlclient.py](#msspy)
 
 # SQL INJECTION <a name="sqli"></a>
-*MySQL SQL Injection cheat sheet:* https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
-*Oracle SQL Injection cheat sheet:* https://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet
-*PostgreSQL SQL Injection cheat sheet:* https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-sheet
+MySQL SQL Injection cheat sheet: https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
+Oracle SQL Injection cheat sheet: https://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet
+PostgreSQL SQL Injection cheat sheet: https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-sheet
 ## Classic SQL Injection
 This is the most common type of SQL injection, where an attacker injects malicious SQL code into an application's input fields, typically through user inputs like forms or URL parameters.
 

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clickjacking.md",
+                "file": "Web scanning.md",
                 "mode": "preview",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clickjacking.md",
+                "file": "Web scanning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Clickjacking.md",
+                "file": "Web scanning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clickjacking.md"
+                "file": "Web scanning.md"
               }
             }
           },
@@ -173,26 +173,26 @@
   },
   "active": "384f84634152fe47",
   "lastOpenFiles": [
-    "AWS.md",
-    "SMB & AD Tools.md",
-    "Privilege Escalation Tools.md",
-    "Clickjacking.md",
-    "Cracking passwords & Decrypting.md",
-    "Fuzzing.md",
-    "Type of attacks.md",
-    "Web scanning.md",
-    "Cross Site Scripting (XSS).md",
     "Useful webs.md",
+    "Type of attacks.md",
     "SQL.md",
-    "File hidden information.md",
-    "Privilege Escalation Tools  Windows.md",
-    "Proxy.md",
+    "SMB & AD Tools.md",
     "Reverse Shell Example.md",
+    "Proxy.md",
+    "Privilege Escalation Tools  Windows.md",
+    "Privilege Escalation Tools.md",
+    "Metasploit.md",
     "General Commands.md",
+    "Fuzzing.md",
+    "File hidden information.md",
+    "Cross Site Scripting (XSS).md",
+    "Cracking passwords & Decrypting.md",
+    "Clickjacking.md",
+    "AWS.md",
+    "Browser extensions.md",
+    "Web scanning.md",
     "AWS Machines.md",
     "Nuclei.md",
-    "Browser extensions.md",
-    "Metasploit.md",
     "exploit.sh",
     "Untitled"
   ]

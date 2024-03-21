@@ -9,7 +9,6 @@
 
 
 # Port Scanning <a name='psc'></a>
-
 ## nmap
 - `-sV` shows the version of the service running on each port.
 - `-sC` uses additional scripts to gather more information.
