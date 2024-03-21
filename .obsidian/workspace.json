@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS.md",
+                "file": "Cracking passwords & Decrypting.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "384f84634152fe47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clickjacking.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS.md",
+                "file": "Clickjacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS.md",
+                "file": "Clickjacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS.md"
+                "file": "Clickjacking.md"
               }
             }
           },
@@ -158,23 +171,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7bae82de22e5e121",
+  "active": "384f84634152fe47",
   "lastOpenFiles": [
+    "Cracking passwords & Decrypting.md",
+    "Clickjacking.md",
+    "AWS.md",
+    "Fuzzing.md",
     "Privilege Escalation Tools.md",
     "Type of attacks.md",
     "Web scanning.md",
     "Cross Site Scripting (XSS).md",
-    "AWS.md",
     "Useful webs.md",
     "SQL.md",
-    "Fuzzing.md",
     "File hidden information.md",
     "Privilege Escalation Tools  Windows.md",
     "Proxy.md",
     "Reverse Shell Example.md",
     "SMB & AD Tools.md",
     "General Commands.md",
-    "Cracking passwords & Decrypting.md",
     "AWS Machines.md",
     "Nuclei.md",
     "Browser extensions.md",
