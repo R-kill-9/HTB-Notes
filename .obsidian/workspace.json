@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7bae82de22e5e121",
+            "id": "1f31d829860ef2e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cracking passwords & Decrypting.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "384f84634152fe47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reverse Shell Example.md",
+                "file": "Fuzzing.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reverse Shell Example.md",
+                "file": "Fuzzing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reverse Shell Example.md",
+                "file": "Fuzzing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reverse Shell Example.md"
+                "file": "Fuzzing.md"
               }
             }
           },
@@ -171,26 +158,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "384f84634152fe47",
+  "active": "1f31d829860ef2e2",
   "lastOpenFiles": [
-    "General Commands.md",
-    "Privilege Escalation Tools.md",
-    "Metasploit.md",
-    "Cracking passwords & Decrypting.md",
     "Web scanning.md",
     "Useful webs.md",
-    "Type of attacks.md",
-    "SQL.md",
-    "SMB & AD Tools.md",
-    "Reverse Shell Example.md",
-    "Proxy.md",
-    "Privilege Escalation Tools  Windows.md",
-    "Fuzzing.md",
+    "Browser extensions.md",
+    "Cracking passwords & Decrypting.md",
     "File hidden information.md",
     "Cross Site Scripting (XSS).md",
+    "Fuzzing.md",
+    "Metasploit.md",
+    "Privilege Escalation Tools  Windows.md",
+    "Proxy.md",
+    "Reverse Shell Example.md",
+    "SMB & AD Tools.md",
+    "Type of attacks.md",
     "Clickjacking.md",
+    "General Commands.md",
+    "Privilege Escalation Tools.md",
+    "SQL.md",
     "AWS.md",
-    "Browser extensions.md",
     "AWS Machines.md",
     "Nuclei.md",
     "exploit.sh",
