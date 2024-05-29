@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fuzzing.md",
+                "file": "Cross Site Scripting (XSS).md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fuzzing.md",
+                "file": "Cross Site Scripting (XSS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fuzzing.md",
+                "file": "Cross Site Scripting (XSS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fuzzing.md"
+                "file": "Cross Site Scripting (XSS).md"
               }
             }
           },
@@ -160,13 +160,15 @@
   },
   "active": "1f31d829860ef2e2",
   "lastOpenFiles": [
+    "Fuzzing.md",
+    "General Commands.md",
+    "Privilege Escalation Tools.md",
     "Web scanning.md",
     "Useful webs.md",
     "Browser extensions.md",
     "Cracking passwords & Decrypting.md",
     "File hidden information.md",
     "Cross Site Scripting (XSS).md",
-    "Fuzzing.md",
     "Metasploit.md",
     "Privilege Escalation Tools  Windows.md",
     "Proxy.md",
@@ -174,8 +176,6 @@
     "SMB & AD Tools.md",
     "Type of attacks.md",
     "Clickjacking.md",
-    "General Commands.md",
-    "Privilege Escalation Tools.md",
     "SQL.md",
     "AWS.md",
     "AWS Machines.md",

