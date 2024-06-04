@@ -120,7 +120,7 @@ If we needed authentication to access to the web we will need to add the cookies
 		```
 		- Find columns in a specific table:
 		```bash
-		sqlmap -r pc -p id -D SQLite_masterdb -T <table_name> --columns 
+		sqlmap -r pc -p id -D <database_name> -T <table_name> --columns 
 		```
 		- Dump columns content
 		```bash
