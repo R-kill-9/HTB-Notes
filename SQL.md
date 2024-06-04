@@ -54,18 +54,47 @@ SQLmap is an open-source tool used in penetration testing to detect and exploit 
 
 If we needed authentication to access to the web we will need to add the cookies value to the command. For doing that we can use Cookie-Editor, explained in [[Useful webs]].
 - **EXAMPLE 1**
-	- Parameters:
-		- `-u`: Specifies the target URL to be tested for SQL injection vulnerabilities. In this case, the target URL is `http://10.129.95.174/dashboard.php?search=any+query`
+	We can use *sqlmap* specifying the target url:
+	- *Parameters*:
+		- `-u`: Specifies the target URL to be tested for SQL injection vulnerabilities. In this case, the target URL is http://192.168.1.102/administrator
 	    
-		- `--cookie`: Sets the cookie value for the HTTP request. Cookies are often used to maintain session information. Here, the cookie being set is `PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1`.
+		- `--batch`: This parameter is used to run sqlmap in batch mode, which means it will not prompt for any interactive user input and will perform the operations automatically.
 	    
-		- `--os-shell`: This parameter instructs SQLMap to attempt to obtain an operating system shell on the vulnerable server if it successfully exploits a SQL injection vulnerability. An operating system shell allows direct interaction with the underlying operating system.
+		- `--dbs`: This parameter instructs sqlmap to enumerate the available databases on the database server. By specifying this parameter, sqlmap will search for information about the databases it has access to by injecting SQL into the mentioned parameter.
+
+		- `--tables`: This parameter instructs sqlmap to enumerate the available tables in the selected database. By using this parameter, sqlmap will search for information about the tables present in the database through the injection of SQL into the mentioned parameter.
+
+		- `--level (1-5, default 1):`: This flag defines the scope of vectors and boundaries used for injection. Higher levels indicate a wider range of tests with a lower success rate (more obscure techniques).
+			- Levels:
+			    - 1 (default): Basic tests, minimal impact.
+			    - 2: Extends tests to more techniques, might cause some disruption.
+			    - 3: More advanced techniques, higher chance of impacting the target.
+			    - 4-5: Highly specific and risky techniques, use with caution.
+
+		- `--risk (1-3, default 1)`: This flag controls the types of exploit vectors used based on their potential risk. Higher risk means *sqlmap* attempts techniques that could potentially damage the database.
+			- Levels:
+			    - 1 (default): Low-risk techniques, unlikely to cause harm.
+			    - 2: Includes techniques with a moderate risk of data loss or denial-of-service.
+			    - 3: Attempts all techniques, including highly disruptive or data-altering ones (use responsibly).
+		
 	```bash
-	sqlmap -u 'http://10.129.95.174/dashboard.php?search=any+query' --  
-	cookie="PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1" --os-shell
+	sqlmap -u http://192.168.1.102/administrator --forms --dbs --batch
 	```
+	After using this command the available databases will be printed, then you can enumerate  the tables stored in each database:
+	```bash
+	sqlmap -u http://192.168.1.102/administrator --forms -D <database_name> --tables --batch
+	```
+	Once you have introduced this command, the available columns in the database will be printed. Now to find the content of the columns you need to use the following command:
+	```bash
+	sqlmap -u http://192.168.1.102/administrator --forms -D <database_name> -T <Columns_name> --columns --batch
+	```
+	Finally, you can print the columns information using:
+	```bash
+	sqlmap -u http://192.168.1.102/administrator --forms -D <database_name> -T <Columns_name> -C <parameter1>,<parameter2><parameter3> --dump --batch
+	```
+
 - **EXAMPLE 2**
-	- If we discover that a page is vulnerable to SQL injection, _sqlmap_ can be very helpful. To be able to execute these commands, we need to have previously saved a request with _save item_ in Burp Suite, assuming that the file where we saved it is called **pc**. The field in which the insertion will be made in this example is **id**, previously investigated in Burp Suite.
+	- For a most exhaustive analysis, we can save the vulnerable request with _save item_ in Burp Suite. The field in which the insertion will be made in this example is **id**, previously investigated in Burp Suite.
 
 	- *Parameters:*
 		- `-r pc`: This parameter specifies the file that contains the saved HTTP request, in this case called "pc". The file is used as input for sqlmap and contains the request that will be used to perform the SQL injection test.
@@ -89,32 +118,17 @@ If we needed authentication to access to the web we will need to add the cookies
 		sqlmap -r pc -p id -D SQLite_masterdb -T accounts --batch --threads 5 --dump
 		```
 - **Exemple 3**
-	- As in the first example we can use *sqlmap* with an specified target to extract the database information withput using cookies:
-	- *Parameters*:
-		- `-u`: Specifies the target URL to be tested for SQL injection vulnerabilities. In this case, the target URL is `http://192.168.1.102/administrator`
+	- Parameters:
+		- `-u`: Specifies the target URL to be tested for SQL injection vulnerabilities. In this case, the target URL is `http://10.129.95.174/dashboard.php?search=any+query`
 	    
-		- `--batch`: This parameter is used to run sqlmap in batch mode, which means it will not prompt for any interactive user input and will perform the operations automatically.
+		- `--cookie`: Sets the cookie value for the HTTP request. Cookies are often used to maintain session information. Here, the cookie being set is `PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1`.
 	    
-		- `--dbs`: This parameter instructs sqlmap to enumerate the available databases on the database server. By specifying this parameter, sqlmap will search for information about the databases it has access to by injecting SQL into the mentioned parameter.
-
-		- `--tables`: This parameter instructs sqlmap to enumerate the available tables in the selected database. By using this parameter, sqlmap will search for information about the tables present in the database through the injection of SQL into the mentioned parameter.
+		- `--os-shell`: This parameter instructs SQLMap to attempt to obtain an operating system shell on the vulnerable server if it successfully exploits a SQL injection vulnerability. An operating system shell allows direct interaction with the underlying operating system.
 	```bash
-	sqlmap -u http://192.168.1.102/administrator --forms --dbs --batch
-	```
-	After using this command the available databases will be printed, then you can enumerate  the tales stored in each database:
-	```bash
-	sqlmap -u http://192.168.1.102/administrator --forms -D <database_name> --tables --batch
-	```
-	Once you have introduced this command the available columns in the database will be printed. Now to find the content of the columns you need to use the following command:
-	```bash
-	sqlmap -u http://192.168.1.102/administrator --forms -D <database_name> -T <Columns_name> --columns --batch
-	```
-	Finally, you can print the columns information using:
-	```bash
-	sqlmap -u http://192.168.1.102/administrator --forms -D <database_name> -T <Columns_name> -C <parameter1>,<parameter2><parameter3> --dump --batch
+	sqlmap -u 'http://10.129.95.174/dashboard.php?search=any+query' --  
+	cookie="PHPSESSID=7u6p9qbhb44c5c1rsefp4ro8u1" --os-shell
 	```
 
- 
 
 # MySQL <a name="mysql"></a>
 

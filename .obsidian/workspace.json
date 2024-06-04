@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "03b6d945128b096e",
+        "id": "47474393c3e30a7c",
         "type": "tabs",
         "children": [
           {
-            "id": "1f31d829860ef2e2",
+            "id": "070b61cbcd8a113c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cross Site Scripting (XSS).md",
+                "file": "SQL.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cross Site Scripting (XSS).md",
+                "file": "SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cross Site Scripting (XSS).md",
+                "file": "SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cross Site Scripting (XSS).md"
+                "file": "SQL.md"
               }
             }
           },
@@ -158,25 +158,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f31d829860ef2e2",
+  "active": "070b61cbcd8a113c",
   "lastOpenFiles": [
+    "SQL.md",
+    "Cracking passwords & Decrypting.md",
     "Fuzzing.md",
     "General Commands.md",
+    "Metasploit.md",
+    "Cross Site Scripting (XSS).md",
     "Privilege Escalation Tools.md",
     "Web scanning.md",
     "Useful webs.md",
     "Browser extensions.md",
-    "Cracking passwords & Decrypting.md",
     "File hidden information.md",
-    "Cross Site Scripting (XSS).md",
-    "Metasploit.md",
     "Privilege Escalation Tools  Windows.md",
     "Proxy.md",
     "Reverse Shell Example.md",
     "SMB & AD Tools.md",
     "Type of attacks.md",
     "Clickjacking.md",
-    "SQL.md",
     "AWS.md",
     "AWS Machines.md",
     "Nuclei.md",
