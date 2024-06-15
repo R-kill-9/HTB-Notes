@@ -27,7 +27,7 @@ SELECT * FROM users WHERE user='Kill-9' AND password=$123
 ````
  If we input:
  ````bash
- user=Kill-9'#'
+ user=Kill-9'#
 ````
 The statement will be: 
 ````bash
