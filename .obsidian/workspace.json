@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL.md",
+                "file": "Cross Site Scripting (XSS).md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL.md",
+                "file": "Cross Site Scripting (XSS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL.md",
+                "file": "Cross Site Scripting (XSS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL.md"
+                "file": "Cross Site Scripting (XSS).md"
               }
             }
           },
@@ -160,12 +160,12 @@
   },
   "active": "070b61cbcd8a113c",
   "lastOpenFiles": [
-    "Cross Site Scripting (XSS).md",
     "Cracking passwords & Decrypting.md",
+    "SQL.md",
+    "Cross Site Scripting (XSS).md",
     "Clickjacking.md",
     "Browser extensions.md",
     "AWS.md",
-    "SQL.md",
     "Fuzzing.md",
     "General Commands.md",
     "Metasploit.md",
