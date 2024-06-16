@@ -18,8 +18,67 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3836a503efc38d7d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
+          },
+          {
+            "id": "aaf455db28ca9552",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Path traversal.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f6b327c887f7a030",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Useful webs.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5eb1df9fbe88e278",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SSRF.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cbc3368ec13acf54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SSTI.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -85,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cross Site Scripting (XSS).md",
+                "file": "SSTI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cross Site Scripting (XSS).md",
+                "file": "SSTI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cross Site Scripting (XSS).md"
+                "file": "SSTI.md"
               }
             }
           },
@@ -158,8 +217,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "070b61cbcd8a113c",
+  "active": "cbc3368ec13acf54",
   "lastOpenFiles": [
+    "SSRF.md",
+    "SSTI.md",
+    "Useful webs.md",
+    "Path traversal.md",
+    "Type of attacks.md",
+    "Web scanning.md",
+    "Privilege Escalation Tools Linux.md",
+    "IDOR.md",
     "Cracking passwords & Decrypting.md",
     "SQL.md",
     "Cross Site Scripting (XSS).md",
@@ -169,15 +236,11 @@
     "Fuzzing.md",
     "General Commands.md",
     "Metasploit.md",
-    "Privilege Escalation Tools.md",
-    "Web scanning.md",
-    "Useful webs.md",
     "File hidden information.md",
     "Privilege Escalation Tools  Windows.md",
     "Proxy.md",
     "Reverse Shell Example.md",
     "SMB & AD Tools.md",
-    "Type of attacks.md",
     "AWS Machines.md",
     "Nuclei.md",
     "exploit.sh",
