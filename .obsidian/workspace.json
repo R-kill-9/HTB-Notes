@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SSTI.md",
+                "file": "SSRF.md",
                 "mode": "preview",
                 "source": false
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SSTI.md",
+                "file": "SSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SSTI.md",
+                "file": "SSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SSTI.md"
+                "file": "SSRF.md"
               }
             }
           },
@@ -219,8 +219,8 @@
   },
   "active": "cbc3368ec13acf54",
   "lastOpenFiles": [
-    "SSRF.md",
     "SSTI.md",
+    "SSRF.md",
     "Useful webs.md",
     "Path traversal.md",
     "Type of attacks.md",

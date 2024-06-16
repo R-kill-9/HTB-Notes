@@ -9,7 +9,7 @@ Suppose there is a web application that allows users to provide a URL of an imag
 ```bash
 git clone https://github.com/swisskyrepo/SSRFmap
 cd SSRFmap
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 ### Configuration
 The `request.txt` file should contain the full HTTP request that the web application makes when provided with a URL. This file might look like this:
@@ -20,8 +20,12 @@ User-Agent: Mozilla/5.0
 ```
 ## Port scanning
 To scan ports on an internal IP address, you can use the following command:
+- Parameters: 
+	- `-r`: name of the file where the request has been saved.
+	- `-p`: name of the potentially vulnerable parameter on the request.
+	- `-m`: module that we want to execute, in this case portscan.
 ```bash
-python3 ssrfmap.py -r request.txt --scan --url "http://127.0.0.1:22,80,443"
+python3 ssrfmap.py -r <request> -p <vulnerable_parameter> -m portscan
 ```
 ## Service enumeration
 To enumerate services, you can use:
