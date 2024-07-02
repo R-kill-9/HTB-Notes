@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SSRF.md",
+                "file": "Cracking passwords & Decrypting.md",
                 "mode": "preview",
                 "source": false
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SSRF.md",
+                "file": "Cracking passwords & Decrypting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SSRF.md",
+                "file": "Cracking passwords & Decrypting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SSRF.md"
+                "file": "Cracking passwords & Decrypting.md"
               }
             }
           },
@@ -219,8 +219,11 @@
   },
   "active": "cbc3368ec13acf54",
   "lastOpenFiles": [
-    "SSTI.md",
+    "Cross Site Scripting (XSS).md",
+    "File hidden information.md",
+    "SQL.md",
     "SSRF.md",
+    "SSTI.md",
     "Useful webs.md",
     "Path traversal.md",
     "Type of attacks.md",
@@ -228,15 +231,12 @@
     "Privilege Escalation Tools Linux.md",
     "IDOR.md",
     "Cracking passwords & Decrypting.md",
-    "SQL.md",
-    "Cross Site Scripting (XSS).md",
     "Clickjacking.md",
     "Browser extensions.md",
     "AWS.md",
     "Fuzzing.md",
     "General Commands.md",
     "Metasploit.md",
-    "File hidden information.md",
     "Privilege Escalation Tools  Windows.md",
     "Proxy.md",
     "Reverse Shell Example.md",
