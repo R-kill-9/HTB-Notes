@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cracking passwords & Decrypting.md",
+                "file": "Fuzzing.md",
                 "mode": "preview",
                 "source": false
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cracking passwords & Decrypting.md",
+                "file": "Fuzzing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cracking passwords & Decrypting.md",
+                "file": "Fuzzing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cracking passwords & Decrypting.md"
+                "file": "Fuzzing.md"
               }
             }
           },
@@ -219,6 +219,7 @@
   },
   "active": "cbc3368ec13acf54",
   "lastOpenFiles": [
+    "Cracking passwords & Decrypting.md",
     "Cross Site Scripting (XSS).md",
     "File hidden information.md",
     "SQL.md",
@@ -230,7 +231,6 @@
     "Web scanning.md",
     "Privilege Escalation Tools Linux.md",
     "IDOR.md",
-    "Cracking passwords & Decrypting.md",
     "Clickjacking.md",
     "Browser extensions.md",
     "AWS.md",
