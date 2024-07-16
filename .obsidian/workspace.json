@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fuzzing.md",
+                "file": "General Commands.md",
                 "mode": "preview",
                 "source": false
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fuzzing.md",
+                "file": "General Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fuzzing.md",
+                "file": "General Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fuzzing.md"
+                "file": "General Commands.md"
               }
             }
           },
@@ -220,6 +220,10 @@
   "active": "cbc3368ec13acf54",
   "lastOpenFiles": [
     "Cracking passwords & Decrypting.md",
+    "SMB & AD Tools.md",
+    "General Commands.md",
+    "Privilege Escalation Tools Linux.md",
+    "Fuzzing.md",
     "Cross Site Scripting (XSS).md",
     "File hidden information.md",
     "SQL.md",
@@ -229,18 +233,14 @@
     "Path traversal.md",
     "Type of attacks.md",
     "Web scanning.md",
-    "Privilege Escalation Tools Linux.md",
     "IDOR.md",
     "Clickjacking.md",
     "Browser extensions.md",
     "AWS.md",
-    "Fuzzing.md",
-    "General Commands.md",
     "Metasploit.md",
     "Privilege Escalation Tools  Windows.md",
     "Proxy.md",
     "Reverse Shell Example.md",
-    "SMB & AD Tools.md",
     "AWS Machines.md",
     "Nuclei.md",
     "exploit.sh",
