@@ -83,7 +83,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APIs.md",
+                "file": "API testing.md",
                 "mode": "preview",
                 "source": false
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APIs.md",
+                "file": "API testing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APIs.md",
+                "file": "API testing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APIs.md"
+                "file": "API testing.md"
               }
             }
           },
@@ -231,8 +231,10 @@
   },
   "active": "0434b9d32d85a248",
   "lastOpenFiles": [
+    "AWS.md",
+    "Burpsuite.md",
+    "API testing.md",
     "General Commands.md",
-    "APIs.md",
     "APIs",
     "Reverse Shell Example.md",
     "SMB & AD Tools.md",
@@ -251,10 +253,8 @@
     "IDOR.md",
     "Clickjacking.md",
     "Browser extensions.md",
-    "AWS.md",
     "Metasploit.md",
     "Privilege Escalation Tools  Windows.md",
-    "Proxy.md",
     "AWS Machines.md",
     "Nuclei.md",
     "exploit.sh"
