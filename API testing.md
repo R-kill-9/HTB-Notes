@@ -93,21 +93,14 @@ For instance, you could change the query string like this:
 GET /userSearch?name=kill-9%26foo=xyz&back=/home
 ```
 ## Overriding existing parameters
-To determine if an application is vulnerable to server-side parameter tampering, one effective test involves attempting to override an existing parameter. This method entails injecting a secondary parameter with identical naming.
+To determine if an application is vulnerable to server-side parameter pollution, one effective test involves attempting to override an existing parameter. This method entails injecting a secondary parameter with identical naming.
 
 For instance, you could adjust the query string in this manner:
 ```
 GET /userSearch?name=peter%26name=carlos&back=/home
 ```
 
-
-
-When the internal API encounters two occurrences of the name parameter, its response depends on how it interprets and manages multiple parameters with the same identifier. The behavior can vary depending on the application's technology stack:
-
-- PHP often prioritizes the last occurrence of a parameter, so in this scenario, it would execute a user search for "carlos".
-- ASP.NET may concatenate both occurrences, leading to a search query like "peter,carlos", potentially triggering an error such as "Invalid username".
-- Node.js / Express typically considers only the first instance, resulting in a search query for "peter" and maintaining the original outcome.
+When the internal API encounters two occurrences of the name parameter, its response depends on how it interprets and manages multiple parameters with the same identifier. The behavior can vary depending on the application's technology stack.
 
 Successful override of the original parameter can potentially lead to exploitation. For instance, injecting name=administrator might grant unauthorized access under the guise of an administrator user.
 
-This methodology reveals how understanding and manipulating parameter handling by the application can expose vulnerabilities that malicious actors might exploit during security assessments.
