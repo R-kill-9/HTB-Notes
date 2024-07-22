@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "47474393c3e30a7c",
+        "id": "cdcc36f9867c36bf",
         "type": "tabs",
         "children": [
           {
-            "id": "0434b9d32d85a248",
+            "id": "65d687ab0bad2190",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "API testing.md",
+                "file": "General Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "505e2a691a80a67d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Path traversal.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0546fcb441b4cd49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSRF.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "API testing.md",
+                "file": "CSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "API testing.md",
+                "file": "CSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "API testing.md"
+                "file": "CSRF.md"
               }
             }
           },
@@ -158,34 +183,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0434b9d32d85a248",
+  "active": "0546fcb441b4cd49",
   "lastOpenFiles": [
-    "AWS.md",
+    "Cross Site Scripting (XSS).md",
+    "Steps Hacking Web.md",
+    "CSRF.md",
     "Burpsuite.md",
-    "API testing.md",
+    "Clickjacking.md",
+    "Browser extensions.md",
+    "AWS.md",
+    "Path traversal.md",
+    "Untitled",
+    "IDOR.md",
+    "Fuzzing.md",
+    "File hidden information.md",
+    "Web scanning.md",
     "General Commands.md",
+    "SSTI.md",
+    "SQL.md",
+    "Useful webs.md",
+    "SSRF.md",
+    "API testing.md",
     "APIs",
     "Reverse Shell Example.md",
     "SMB & AD Tools.md",
-    "SQL.md",
-    "SSRF.md",
-    "SSTI.md",
     "Cracking passwords & Decrypting.md",
     "Privilege Escalation Tools Linux.md",
-    "Fuzzing.md",
-    "Cross Site Scripting (XSS).md",
-    "File hidden information.md",
-    "Useful webs.md",
-    "Path traversal.md",
     "Type of attacks.md",
-    "Web scanning.md",
-    "IDOR.md",
-    "Clickjacking.md",
-    "Browser extensions.md",
     "Metasploit.md",
     "Privilege Escalation Tools  Windows.md",
     "AWS Machines.md",
-    "Nuclei.md",
     "exploit.sh"
   ]
 }
