@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "General Commands.md",
+                "file": "Useful Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,19 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Path traversal.md",
+                "file": "Useful Commands.md",
                 "mode": "preview",
                 "source": false
               }
             }
           },
           {
-            "id": "0546fcb441b4cd49",
+            "id": "37a6bc1f78bdb530",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSRF.md",
+                "file": "Useful Commands.md",
                 "mode": "preview",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSRF.md",
+                "file": "Useful Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSRF.md",
+                "file": "Useful Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSRF.md"
+                "file": "Useful Commands.md"
               }
             }
           },
@@ -183,22 +183,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0546fcb441b4cd49",
+  "active": "37a6bc1f78bdb530",
   "lastOpenFiles": [
+    "Port scanning.md",
+    "Useful Commands.md",
+    "Untitled",
+    "Path traversal.md",
+    "CSRF.md",
     "Cross Site Scripting (XSS).md",
     "Steps Hacking Web.md",
-    "CSRF.md",
     "Burpsuite.md",
     "Clickjacking.md",
     "Browser extensions.md",
     "AWS.md",
-    "Path traversal.md",
-    "Untitled",
     "IDOR.md",
     "Fuzzing.md",
     "File hidden information.md",
     "Web scanning.md",
-    "General Commands.md",
     "SSTI.md",
     "SQL.md",
     "Useful webs.md",
@@ -212,7 +213,6 @@
     "Type of attacks.md",
     "Metasploit.md",
     "Privilege Escalation Tools  Windows.md",
-    "AWS Machines.md",
     "exploit.sh"
   ]
 }
