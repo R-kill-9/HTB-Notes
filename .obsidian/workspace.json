@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9c22ba05a90d51c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Anonymity.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Useful Commands.md",
+                "file": "Anonymity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Useful Commands.md",
+                "file": "Anonymity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Useful Commands.md"
+                "file": "Anonymity.md"
               }
             }
           },
@@ -183,10 +195,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "37a6bc1f78bdb530",
+  "active": "9c22ba05a90d51c4",
   "lastOpenFiles": [
-    "Port scanning.md",
+    "Cracking passwords & Decrypting.md",
+    "Anonymity.md",
     "Useful Commands.md",
+    "Port scanning.md",
     "Untitled",
     "Path traversal.md",
     "CSRF.md",
@@ -208,11 +222,9 @@
     "APIs",
     "Reverse Shell Example.md",
     "SMB & AD Tools.md",
-    "Cracking passwords & Decrypting.md",
     "Privilege Escalation Tools Linux.md",
     "Type of attacks.md",
     "Metasploit.md",
-    "Privilege Escalation Tools  Windows.md",
     "exploit.sh"
   ]
 }
