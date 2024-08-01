@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Useful Commands.md",
+                "file": "SMB.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb66b83d414d1137",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory Attacks.md",
                 "mode": "preview",
                 "source": false
               }
@@ -49,14 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cross Site Scripting (XSS).md",
+                "file": "SMB.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cross Site Scripting (XSS).md",
+                "file": "Active Directory Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cross Site Scripting (XSS).md",
+                "file": "Active Directory Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cross Site Scripting (XSS).md"
+                "file": "Active Directory Attacks.md"
               }
             }
           },
@@ -195,17 +207,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c22ba05a90d51c4",
+  "active": "cb66b83d414d1137",
   "lastOpenFiles": [
-    "Web scanning.md",
+    "Active Directory Tools.md",
+    "Active Directory Attacks.md",
     "Anonymity.md",
-    "Cracking passwords & Decrypting.md",
+    "SMB.md",
     "Useful Commands.md",
+    "Cross Site Scripting (XSS).md",
+    "Web scanning.md",
+    "Cracking passwords & Decrypting.md",
     "Port scanning.md",
     "Untitled",
     "Path traversal.md",
     "CSRF.md",
-    "Cross Site Scripting (XSS).md",
     "Steps Hacking Web.md",
     "Burpsuite.md",
     "Clickjacking.md",
@@ -221,10 +236,7 @@
     "API testing.md",
     "APIs",
     "Reverse Shell Example.md",
-    "SMB & AD Tools.md",
     "Privilege Escalation Tools Linux.md",
-    "Type of attacks.md",
-    "Metasploit.md",
     "exploit.sh"
   ]
 }

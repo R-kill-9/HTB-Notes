@@ -1,8 +1,6 @@
-**Active Directory** (AD) is a directory service developed by Microsoft for managing and organizing information about network resources, such as computers, users, and devices, within a Windows network environment. It serves as a centralized database that enables administrators to efficiently and securely manage and authenticate users, computers, and other network elements.
 
-# Samba/SMB Port <a name='smb'></a>
 
-## SmbClient 
+# SmbClient 
 It is a network protocol that allows users to communicate with remote computers and servers to use their resources or share, open, and edit files.
 
 - `-U` access as user.
@@ -14,14 +12,14 @@ smbclient -U bob //10.129.42.253/users
 smbclient -N -L //10.129.117.14/
 ```
 
-## nmap scripts
+# nmap scripts
 Also, if after our report we observe that the machine has an SMB service we can use some useful nmap scripts to know if the target machine has a vulnerable version of SMB.
 ```bash
 nmap -p445 --script smb-vuln-ms17-010 <target_ip>
 ```
 After executing the nmap command if the smb service has a known vulnerability the name of the CVE will be printed.
 
-## Smbmap
+# Smbmap
 It is designed to enumerate and interact with shared files and another resources, providing information about their accessibility, permissions, and potential vulnerabilities.
 - `-H`: Specifies the target IP address (replace "192.168.1.100" with the actual IP).
 - `-u`: Specifies the username for authentication.
