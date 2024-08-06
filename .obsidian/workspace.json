@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory Attacks.md",
+                "file": "SMB.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory Attacks.md",
+                "file": "SMB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory Attacks.md",
+                "file": "SMB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory Attacks.md"
+                "file": "SMB.md"
               }
             }
           },
@@ -210,9 +210,12 @@
   "active": "cb66b83d414d1137",
   "lastOpenFiles": [
     "Active Directory Tools.md",
+    "SMB.md",
+    "Privilege Escalation Tools  Windows.md",
+    "Privilege Escalation Tools Linux.md",
+    "Reverse Shell Example.md",
     "Active Directory Attacks.md",
     "Anonymity.md",
-    "SMB.md",
     "Useful Commands.md",
     "Cross Site Scripting (XSS).md",
     "Web scanning.md",
@@ -233,10 +236,7 @@
     "SQL.md",
     "Useful webs.md",
     "SSRF.md",
-    "API testing.md",
     "APIs",
-    "Reverse Shell Example.md",
-    "Privilege Escalation Tools Linux.md",
     "exploit.sh"
   ]
 }
