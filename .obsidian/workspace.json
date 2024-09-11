@@ -49,8 +49,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scanning and Information Gathering/Port scanning.md",
+                "file": "Hacking Web/Web scanning.md",
                 "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "298d55d6557a789c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacking Web/Cookies.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d11af5b046ac943f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacking Web/Cross Site Scripting (XSS).md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -80,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -146,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scanning and Information Gathering/Port scanning.md",
+                "file": "Hacking Web/Cross Site Scripting (XSS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Scanning and Information Gathering/Port scanning.md",
+                "file": "Hacking Web/Cross Site Scripting (XSS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Scanning and Information Gathering/Port scanning.md"
+                "file": "Hacking Web/Cross Site Scripting (XSS).md"
               }
             }
           },
@@ -219,26 +243,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3bb5292e73c6fe4f",
+  "active": "d11af5b046ac943f",
   "lastOpenFiles": [
+    "Hacking Web/Cookies.md",
+    "Hacking Web/Web scanning.md",
+    "Privilege Escalation/Capabilities.md",
+    "Privilege Escalation/Privilege Escalation Tools  Windows.md",
+    "Privilege Escalation/Privilege Escalation Tools Linux.md",
+    "Privilege Escalation/Reverse Shell Example.md",
+    "Scanning and Information Gathering/File hidden information.md",
+    "Tools and Techniques/Useful Commands.md",
+    "Hacking Web/API testing.md",
+    "Scanning and Information Gathering/Port scanning.md",
     "Cloud",
     "Tools and Techniques",
     "Active Directory",
     "Scanning and Information Gathering",
-    "Scanning and Information Gathering/File hidden information.md",
-    "Privilege Escalation/Reverse Shell Example.md",
     "Privilege escalation",
-    "Tools and Techniques/Useful Commands.md",
-    "Hacking Web/Web scanning.md",
     "Active Directory/SMB.md",
     "Hacking Web/SQL.md",
     "Hacking Web/Path traversal.md",
-    "Hacking Web/API testing.md",
-    "Privilege Escalation/Capabilities.md",
     "Hacking Web",
     "Privilege Escalation",
-    "Privilege Escalation/Privilege Escalation Tools Linux.md",
-    "Privilege Escalation/Privilege Escalation Tools  Windows.md",
     "Hacking Web/Steps Hacking Web.md",
     "Hacking Web/Cross Site Scripting (XSS).md",
     "Hacking Web/CSRF.md",
@@ -248,7 +274,6 @@
     "Active Directory/Active Directory Tools.md",
     "Active Directory/Active Directory Attacks.md",
     "Tools and Techniques/Anonymity.md",
-    "Scanning and Information Gathering/Port scanning.md",
     "Hacking Web/Burpsuite.md",
     "Hacking Web/Clickjacking.md",
     "Tools and Techniques/Browser extensions.md",

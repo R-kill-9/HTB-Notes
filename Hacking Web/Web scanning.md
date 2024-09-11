@@ -54,12 +54,3 @@ nuclei -u <url> -severity high,critical -o output.txt
 
 joomScan is primarily used to search and detect potential vulnerabilities in Joomla-based websites, including security flaws, insecure configurations, or weaknesses in system implementation.
 
-# Cookies
-- It can be very useful checking the cookies of a web-site. For example if we are on a web and we have this parameters on the cookie's storage table:
-	- role: guest
-	- user: 24322
-- We will know that we are identified by our role and  id, so we can try to change these fields to gain access to other users information.
-	- role: admin
-	- user: 34322
-
-
