@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "API testing.md",
+                "file": "Privilege Escalation/Privilege Escalation Tools Linux.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "62468460a4832f72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reverse Shell Example.md",
                 "mode": "preview",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "API testing.md",
+                "file": "Reverse Shell Example.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "API testing.md",
+                "file": "Reverse Shell Example.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "API testing.md"
+                "file": "Reverse Shell Example.md"
               }
             }
           },
@@ -207,35 +219,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cb66b83d414d1137",
+  "active": "62468460a4832f72",
   "lastOpenFiles": [
-    "Cross Site Scripting (XSS).md",
-    "File hidden information.md",
-    "CSRF.md",
     "Useful Commands.md",
-    "SSTI.md",
-    "Fuzzing.md",
-    "Steps Hacking Web.md",
-    "Cracking passwords & Decrypting.md",
+    "Hacking Web/Web scanning.md",
     "SMB.md",
+    "Hacking Web/SQL.md",
+    "Hacking Web/Path traversal.md",
+    "Hacking Web/API testing.md",
+    "Privilege Escalation/Capabilities.md",
+    "Hacking Web",
+    "Privilege Escalation",
+    "Privilege Escalation/Privilege Escalation Tools Linux.md",
+    "Privilege Escalation/Privilege Escalation Tools  Windows.md",
+    "Hacking Web/Steps Hacking Web.md",
+    "Hacking Web/Cross Site Scripting (XSS).md",
+    "File hidden information.md",
+    "Hacking Web/CSRF.md",
+    "Hacking Web/SSTI.md",
+    "Hacking Web/Fuzzing.md",
+    "Cracking passwords & Decrypting.md",
     "Active Directory Tools.md",
-    "Privilege Escalation Tools  Windows.md",
-    "Privilege Escalation Tools Linux.md",
     "Reverse Shell Example.md",
     "Active Directory Attacks.md",
     "Anonymity.md",
-    "Web scanning.md",
     "Port scanning.md",
-    "Untitled",
-    "Path traversal.md",
     "Burpsuite.md",
     "Clickjacking.md",
     "Browser extensions.md",
     "AWS.md",
-    "IDOR.md",
-    "SQL.md",
-    "Useful webs.md",
-    "SSRF.md",
     "APIs",
     "exploit.sh"
   ]
