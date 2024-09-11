@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Useful Commands.md",
+                "file": "Tools and Techniques/Useful Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SMB.md",
+                "file": "Active Directory/SMB.md",
                 "mode": "preview",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse Shell Example.md",
+                "file": "Scanning and Information Gathering/Port scanning.md",
                 "mode": "preview",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Useful Commands.md",
+                "file": "Tools and Techniques/Useful Commands.md",
                 "mode": "preview",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SMB.md",
+                "file": "Active Directory/SMB.md",
                 "mode": "preview",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reverse Shell Example.md",
+                "file": "Scanning and Information Gathering/Port scanning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reverse Shell Example.md",
+                "file": "Scanning and Information Gathering/Port scanning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reverse Shell Example.md"
+                "file": "Scanning and Information Gathering/Port scanning.md"
               }
             }
           },
@@ -219,11 +219,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "62468460a4832f72",
+  "active": "3bb5292e73c6fe4f",
   "lastOpenFiles": [
-    "Useful Commands.md",
+    "Cloud",
+    "Tools and Techniques",
+    "Active Directory",
+    "Scanning and Information Gathering",
+    "Scanning and Information Gathering/File hidden information.md",
+    "Privilege Escalation/Reverse Shell Example.md",
+    "Privilege escalation",
+    "Tools and Techniques/Useful Commands.md",
     "Hacking Web/Web scanning.md",
-    "SMB.md",
+    "Active Directory/SMB.md",
     "Hacking Web/SQL.md",
     "Hacking Web/Path traversal.md",
     "Hacking Web/API testing.md",
@@ -234,20 +241,18 @@
     "Privilege Escalation/Privilege Escalation Tools  Windows.md",
     "Hacking Web/Steps Hacking Web.md",
     "Hacking Web/Cross Site Scripting (XSS).md",
-    "File hidden information.md",
     "Hacking Web/CSRF.md",
     "Hacking Web/SSTI.md",
     "Hacking Web/Fuzzing.md",
-    "Cracking passwords & Decrypting.md",
-    "Active Directory Tools.md",
-    "Reverse Shell Example.md",
-    "Active Directory Attacks.md",
-    "Anonymity.md",
-    "Port scanning.md",
-    "Burpsuite.md",
-    "Clickjacking.md",
-    "Browser extensions.md",
-    "AWS.md",
+    "Tools and Techniques/Cracking passwords & Decrypting.md",
+    "Active Directory/Active Directory Tools.md",
+    "Active Directory/Active Directory Attacks.md",
+    "Tools and Techniques/Anonymity.md",
+    "Scanning and Information Gathering/Port scanning.md",
+    "Hacking Web/Burpsuite.md",
+    "Hacking Web/Clickjacking.md",
+    "Tools and Techniques/Browser extensions.md",
+    "Cloud/AWS.md",
     "APIs",
     "exploit.sh"
   ]
