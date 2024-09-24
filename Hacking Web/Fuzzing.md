@@ -19,7 +19,14 @@ gobuster vhost -w <wordlist> -u <machine-ip> -o gobuster.out
 
 # wfuzz
 It is a command-line tool used for performing brute-force scans or directory and subdomain enumeration on a website. Also, it can be useful for enumerate files with an specific extension.
-- To find subdomains:
+### Useful parameters
+`--hc x: This filter excludes responses that have x words.`
+
+`--hl x: This filter excludes responses that have x lines, which seem to be false positives.`
+
+`--hh x: This filter excludes responses that have x characters.`
+
+## Subdomains
 ```bash
 #wordlist example:/usr/share/wordlists/dirb/big.txt
 #machine example: 10.10.192.23
@@ -29,7 +36,7 @@ wfuzz -c  -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-
 ```
 
 
-- To find subdirectories:
+## Subdirectories:
 ```bash
 #wordlist example:/usr/share/wordlists/dirb/big.txt
 #machine example: 10.10.192.23
@@ -38,7 +45,7 @@ wfuzz -c  -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-
 wfuzz -c --hc 404 -w <wordlist> http://<machine-ip>/FUZZ
 ```
 
-- To find common files:
+## Common files:
 ```bash
 #wordlist example:/usr/share/wordlists/dirb/big.txt
 #machine example: 10.10.192.23

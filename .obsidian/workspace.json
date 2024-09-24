@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "cdcc36f9867c36bf",
+        "id": "e7a818998cb57b16",
         "type": "tabs",
         "children": [
           {
-            "id": "505e2a691a80a67d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory/SMB.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cb66b83d414d1137",
+            "id": "801e605da6dac9f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Hacking Web/Checklist for Web App Pentest.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,23 +158,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cb66b83d414d1137",
+  "active": "801e605da6dac9f5",
   "lastOpenFiles": [
+    "Tools and Techniques/Useful Commands.md",
+    "Privilege Escalation/Privilege Escalation Tools Linux.md",
+    "Privilege Escalation/Reverse Shell Example.md",
+    "Hacking Web/Checklist for Web App Pentest.md",
+    "Hacking Web/Fuzzing.md",
+    "Active Directory/SMB.md",
+    "Scanning and Information Gathering/File hidden information.md",
+    "Tools and Techniques/Metasploit.md",
+    "Hacking Web/Cross Site Scripting (XSS).md",
+    "Tools and Techniques/Cracking passwords & Decrypting.md",
     "Hacking Web/SQL.md",
     "Hacking Web/Web scanning.md",
     "Hacking Web/Clickjacking.md",
-    "Hacking Web/Checklist for Web App Pentest.md",
-    "Privilege Escalation/Privilege Escalation Tools Linux.md",
     "Hacking Web/Cookies.md",
-    "Tools and Techniques/Useful Commands.md",
-    "Tools and Techniques/Cracking passwords & Decrypting.md",
     "Hacking Web/API testing.md",
-    "Hacking Web/Cross Site Scripting (XSS).md",
-    "Active Directory/SMB.md",
     "Privilege Escalation/Capabilities.md",
     "Privilege Escalation/Privilege Escalation Tools  Windows.md",
-    "Privilege Escalation/Reverse Shell Example.md",
-    "Scanning and Information Gathering/File hidden information.md",
     "Scanning and Information Gathering/Port scanning.md",
     "Cloud",
     "Tools and Techniques",
@@ -199,13 +188,11 @@
     "Privilege Escalation",
     "Hacking Web/CSRF.md",
     "Hacking Web/SSTI.md",
-    "Hacking Web/Fuzzing.md",
     "Active Directory/Active Directory Tools.md",
     "Active Directory/Active Directory Attacks.md",
     "Tools and Techniques/Anonymity.md",
     "Hacking Web/Burpsuite.md",
     "Tools and Techniques/Browser extensions.md",
-    "Cloud/AWS.md",
     "APIs",
     "exploit.sh"
   ]
