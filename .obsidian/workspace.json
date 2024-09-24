@@ -13,8 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacking Web/Checklist for Web App Pentest.md",
-                "mode": "source",
+                "file": "Pentest Web/Cookies.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d487289ede36affe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pentest Web/Pentest Web Guide/Checklist for Web App Pentest.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacking Web/Checklist for Web App Pentest.md",
+                "file": "Pentest Web/Cookies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hacking Web/Checklist for Web App Pentest.md",
+                "file": "Pentest Web/Cookies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hacking Web/Checklist for Web App Pentest.md"
+                "file": "Pentest Web/Cookies.md"
               }
             }
           },
@@ -160,40 +172,41 @@
   },
   "active": "801e605da6dac9f5",
   "lastOpenFiles": [
+    "Pentest Web/HTTP Headers.md",
+    "Pentest Web/Pentest Web Guide/Checklist for Web App Pentest.md",
+    "Pentest Web/Pentest Web Guide/How To Check/Authentication.md",
+    "Pentest Web/Pentest Web Guide/How To Check/Authorization.md",
+    "Pentest Web/Pentest Web Guide/How To Check/Configuration Management.md",
+    "Pentest Web/Pentest Web Guide/How To Check/Data Validation.md",
+    "Pentest Web/Pentest Web Guide/How To Check/Secure Transmission.md",
+    "Pentest Web/Pentest Web Guide/How To Check/Session Management.md",
+    "Pentest Web/Pentest Web Guide/How To check with ZAP/Session Management.md",
+    "Pentest Web/Pentest Web Guide/How To check with ZAP/Secure Transmission.md",
+    "Pentest Web/Pentest Web Guide/How To check with ZAP/Data Validation.md",
+    "Pentest Web/Pentest Web Guide/How To check with ZAP/Configuration Management.md",
+    "Pentest Web/Pentest Web Guide/How To check with ZAP/Authorization.md",
+    "Pentest Web/Pentest Web Guide/How To check with ZAP/Authentication.md",
+    "Pentest Web/Pentest Web Guide/How To check with ZAP",
+    "Pentest Web/Cookies.md",
+    "Pentest Web/Pentest Web Guide/How To Check",
+    "Pentest Web/Pentest Web Guide",
     "Tools and Techniques/Useful Commands.md",
     "Privilege Escalation/Privilege Escalation Tools Linux.md",
     "Privilege Escalation/Reverse Shell Example.md",
-    "Hacking Web/Checklist for Web App Pentest.md",
-    "Hacking Web/Fuzzing.md",
+    "Pentest Web/Fuzzing.md",
     "Active Directory/SMB.md",
     "Scanning and Information Gathering/File hidden information.md",
     "Tools and Techniques/Metasploit.md",
-    "Hacking Web/Cross Site Scripting (XSS).md",
+    "Pentest Web/Cross Site Scripting (XSS).md",
     "Tools and Techniques/Cracking passwords & Decrypting.md",
-    "Hacking Web/SQL.md",
-    "Hacking Web/Web scanning.md",
-    "Hacking Web/Clickjacking.md",
-    "Hacking Web/Cookies.md",
-    "Hacking Web/API testing.md",
-    "Privilege Escalation/Capabilities.md",
-    "Privilege Escalation/Privilege Escalation Tools  Windows.md",
-    "Scanning and Information Gathering/Port scanning.md",
+    "Pentest Web/SQL.md",
+    "Pentest Web/Web scanning.md",
     "Cloud",
     "Tools and Techniques",
     "Active Directory",
     "Scanning and Information Gathering",
     "Privilege escalation",
-    "Hacking Web/Path traversal.md",
-    "Hacking Web",
-    "Privilege Escalation",
-    "Hacking Web/CSRF.md",
-    "Hacking Web/SSTI.md",
-    "Active Directory/Active Directory Tools.md",
-    "Active Directory/Active Directory Attacks.md",
-    "Tools and Techniques/Anonymity.md",
-    "Hacking Web/Burpsuite.md",
-    "Tools and Techniques/Browser extensions.md",
-    "APIs",
-    "exploit.sh"
+    "Pentest Web",
+    "Privilege Escalation"
   ]
 }
