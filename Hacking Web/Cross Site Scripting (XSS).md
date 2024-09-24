@@ -1,4 +1,4 @@
-Cross-Site Scripting (XSS) is a type of security vulnerability commonly found in web applications. It occurs when an attacker injects malicious code, usually in the form of scripts, into a web page or application, which is then executed by unsuspecting users who visit that page. The injected code can steal sensitive data, manipulate web content, or perform actions on behalf of the user without their consent.
+	Cross-Site Scripting (XSS) is a type of security vulnerability commonly found in web applications. It occurs when an attacker injects malicious code, usually in the form of scripts, into a web page or application, which is then executed by unsuspecting users who visit that page. The injected code can steal sensitive data, manipulate web content, or perform actions on behalf of the user without their consent.
 
 There are three main types of XSS attacks:
 
