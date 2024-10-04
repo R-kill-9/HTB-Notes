@@ -28,3 +28,15 @@ It is designed to enumerate and interact with shared files and another resources
 smbmap -H ip -u username -p password
 ```
 
+## Netexec (Crackmapexec)
+CME can enumerate users and their privileges on Windows systems using the SMB protocol.
+### Basic Usage
+```bash
+crackmapexec smb <ip> -u 'username' -p 'password'
+```
+
+### --rid-brute
+This option enables the RID (Relative Identifier) brute-force enumeration feature. It tells CrackMapExec to try various RIDs to enumerate user accounts and retrieve their security identifiers (SIDs). This is useful for discovering valid usernames on the target system, especially if the `guest` account successfully authenticates.
+```bash
+crackmapexec smb 10.10.11.35 -u 'guest' -p '' --rid-brute
+```
