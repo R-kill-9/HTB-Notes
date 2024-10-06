@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Active Directory Attacks.md",
+                "file": "Active Directory/LDAP.md",
                 "mode": "preview",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Active Directory Attacks.md",
+                "file": "Active Directory/LDAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Active Directory Attacks.md",
+                "file": "Active Directory/LDAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Active Directory Attacks.md"
+                "file": "Active Directory/LDAP.md"
               }
             }
           },
@@ -185,6 +185,7 @@
   },
   "active": "d87110646fb21660",
   "lastOpenFiles": [
+    "Active Directory/Evil-WinRM.md",
     "Active Directory/Active Directory Tools.md",
     "Active Directory/Active Directory Attacks.md",
     "Active Directory/SMB.md",
@@ -213,7 +214,6 @@
     "Pentest Web/Pentest Web Guide/How To check with ZAP",
     "Pentest Web/Pentest Web Guide/How To Check",
     "Pentest Web/Pentest Web Guide",
-    "Privilege Escalation/Reverse Shell Example.md",
     "Cloud",
     "Tools and Techniques",
     "Active Directory",
