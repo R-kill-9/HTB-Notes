@@ -32,3 +32,25 @@ C:\Users\sql_svc\Downloads> .\winPEASx64.exe
 ````bash
 python3 psexec.py administrator@{TARGET_IP}
 ````
+
+# whoami
+When you run `whoami /priv`, you will receive a list of the privileges assigned to your user account, along with their status (enabled or disabled). The output typically includes:
+
+- **Privilege Name**: A brief description of each privilege.
+- **State**: Indicates whether the privilege is enabled (Enabled) or disabled (Disabled).
+### Example of Usage
+```bash
+whoami /priv
+```
+The output might look something like this:
+```bash
+PRIVILEGES INFORMATION
+-----------------------
+Privilege Name                    State
+===========================================
+SeShutdownPrivilege                Enabled
+SeBackupPrivilege                  Enabled
+SeRestorePrivilege                 Disabled
+SeChangeNotifyPrivilege            Enabled
+SeTakeOwnershipPrivilege           Enabled
+```

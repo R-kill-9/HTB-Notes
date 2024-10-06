@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/LDAP.md",
+                "file": "Privilege Escalation/Privilege Escalation Tools  Windows.md",
                 "mode": "preview",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/LDAP.md",
+                "file": "Privilege Escalation/Privilege Escalation Tools  Windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/LDAP.md",
+                "file": "Privilege Escalation/Privilege Escalation Tools  Windows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/LDAP.md"
+                "file": "Privilege Escalation/Privilege Escalation Tools  Windows.md"
               }
             }
           },
@@ -185,11 +185,11 @@
   },
   "active": "d87110646fb21660",
   "lastOpenFiles": [
+    "Active Directory/LDAP.md",
     "Active Directory/Evil-WinRM.md",
     "Active Directory/Active Directory Tools.md",
     "Active Directory/Active Directory Attacks.md",
     "Active Directory/SMB.md",
-    "Active Directory/LDAP.md",
     "Tools and Techniques/Cracking passwords & Decrypting.md",
     "Pentest Web/Fuzzing.md",
     "Pentest Web/Cookies.md",
