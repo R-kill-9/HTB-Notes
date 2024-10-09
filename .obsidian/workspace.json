@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privilege Escalation/Privilege Escalation Tools  Windows.md",
+                "file": "Hacking Wifi/EvilTrust.md",
                 "mode": "preview",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privilege Escalation/Privilege Escalation Tools  Windows.md",
+                "file": "Hacking Wifi/EvilTrust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privilege Escalation/Privilege Escalation Tools  Windows.md",
+                "file": "Hacking Wifi/EvilTrust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privilege Escalation/Privilege Escalation Tools  Windows.md"
+                "file": "Hacking Wifi/EvilTrust.md"
               }
             }
           },
@@ -185,12 +185,16 @@
   },
   "active": "d87110646fb21660",
   "lastOpenFiles": [
+    "Tools and Techniques/Cracking passwords & Decrypting.md",
+    "Hacking Wifi/EvilTrust.md",
+    "Hacking Wifi",
+    "Tools and Techniques/Useful Commands.md",
+    "Privilege Escalation/Privilege Escalation Tools  Windows.md",
     "Active Directory/LDAP.md",
     "Active Directory/Evil-WinRM.md",
     "Active Directory/Active Directory Tools.md",
     "Active Directory/Active Directory Attacks.md",
     "Active Directory/SMB.md",
-    "Tools and Techniques/Cracking passwords & Decrypting.md",
     "Pentest Web/Fuzzing.md",
     "Pentest Web/Cookies.md",
     "Pentest Web/Pentest Web Guide/How To Check/Secure Transmission.md",
@@ -199,9 +203,7 @@
     "Pentest Web/Pentest Web Guide/How To Check/Configuration Management.md",
     "Pentest Web/Pentest Web Guide/How To Check/Data Validation.md",
     "Privilege Escalation/Privilege Escalation Tools Linux.md",
-    "Privilege Escalation/Privilege Escalation Tools  Windows.md",
     "Tools and Techniques/Useful webs.md",
-    "Tools and Techniques/Useful Commands.md",
     "Pentest Web/HTTP Headers.md",
     "Pentest Web/Pentest Web Guide/Checklist for Web App Pentest.md",
     "Pentest Web/Pentest Web Guide/How To Check/Session Management.md",
@@ -210,7 +212,6 @@
     "Pentest Web/Pentest Web Guide/How To check with ZAP/Data Validation.md",
     "Pentest Web/Pentest Web Guide/How To check with ZAP/Configuration Management.md",
     "Pentest Web/Pentest Web Guide/How To check with ZAP/Authorization.md",
-    "Pentest Web/Pentest Web Guide/How To check with ZAP/Authentication.md",
     "Pentest Web/Pentest Web Guide/How To check with ZAP",
     "Pentest Web/Pentest Web Guide/How To Check",
     "Pentest Web/Pentest Web Guide",
@@ -219,7 +220,6 @@
     "Active Directory",
     "Scanning and Information Gathering",
     "Privilege escalation",
-    "Pentest Web",
-    "Privilege Escalation"
+    "Pentest Web"
   ]
 }
