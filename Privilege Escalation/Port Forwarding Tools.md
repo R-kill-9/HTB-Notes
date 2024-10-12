@@ -32,7 +32,7 @@ Local machine
 ```
 Target machine
 ```bash
-./chisel client <local_ip>:<local_listener_port> R<remote_port_to_open> :<target_ip>:<target_machine_port_to_open>
+./chisel client <local_ip>:<local_listener_port> R<remote_port_to_open>:<target_ip>:<target_machine_port_to_open>
 ```
 
 - **Dynamic Port Forwarding**
