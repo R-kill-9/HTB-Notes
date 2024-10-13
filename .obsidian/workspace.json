@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privilege Escalation/Port Forwarding Tools.md",
+                "file": "Pentest Web/Fuzzing.md",
                 "mode": "preview",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privilege Escalation/Port Forwarding Tools.md",
+                "file": "Pentest Web/Fuzzing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privilege Escalation/Port Forwarding Tools.md",
+                "file": "Pentest Web/Fuzzing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privilege Escalation/Port Forwarding Tools.md"
+                "file": "Pentest Web/Fuzzing.md"
               }
             }
           },
@@ -185,16 +185,18 @@
   },
   "active": "d87110646fb21660",
   "lastOpenFiles": [
+    "Scanning and Information Gathering/File hidden information.md",
+    "Tools and Techniques/Useful Commands.md",
+    "Tools and Techniques/Useful webs.md",
+    "Tools and Techniques/Cracking passwords & Decrypting.md",
+    "Hacking Wifi/EvilTrust.md",
     "Privilege Escalation/Port Forwarding Theory.md",
     "Privilege Escalation/Port Forwarding Tools.md",
     "Privilege Escalation/Privilege Escalation Tools Linux.md",
     "Privilege Escalation/Capabilities.md",
     "Active Directory/Active Directory Tools.md",
     "Active Directory/Active Directory Attacks.md",
-    "Tools and Techniques/Useful Commands.md",
     "Privilege Escalation/Reverse Shell Example.md",
-    "Hacking Wifi/EvilTrust.md",
-    "Tools and Techniques/Cracking passwords & Decrypting.md",
     "Hacking Wifi",
     "Privilege Escalation/Privilege Escalation Tools  Windows.md",
     "Active Directory/LDAP.md",
@@ -207,11 +209,9 @@
     "Pentest Web/Pentest Web Guide/How To Check/Authorization.md",
     "Pentest Web/Pentest Web Guide/How To Check/Configuration Management.md",
     "Pentest Web/Pentest Web Guide/How To Check/Data Validation.md",
-    "Tools and Techniques/Useful webs.md",
     "Pentest Web/HTTP Headers.md",
     "Pentest Web/Pentest Web Guide/Checklist for Web App Pentest.md",
     "Pentest Web/Pentest Web Guide/How To Check/Session Management.md",
-    "Pentest Web/Pentest Web Guide/How To check with ZAP/Session Management.md",
     "Pentest Web/Pentest Web Guide/How To check with ZAP",
     "Pentest Web/Pentest Web Guide/How To Check",
     "Pentest Web/Pentest Web Guide",
