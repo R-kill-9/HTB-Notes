@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pentest Web/Fuzzing.md",
+                "file": "Privilege Escalation/Port Forwarding Tools.md",
                 "mode": "preview",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pentest Web/Fuzzing.md",
+                "file": "Privilege Escalation/Port Forwarding Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pentest Web/Fuzzing.md",
+                "file": "Privilege Escalation/Port Forwarding Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pentest Web/Fuzzing.md"
+                "file": "Privilege Escalation/Port Forwarding Tools.md"
               }
             }
           },
@@ -185,6 +185,7 @@
   },
   "active": "d87110646fb21660",
   "lastOpenFiles": [
+    "Pentest Web/Fuzzing.md",
     "Scanning and Information Gathering/File hidden information.md",
     "Tools and Techniques/Useful Commands.md",
     "Tools and Techniques/Useful webs.md",
@@ -202,7 +203,6 @@
     "Active Directory/LDAP.md",
     "Active Directory/Evil-WinRM.md",
     "Active Directory/SMB.md",
-    "Pentest Web/Fuzzing.md",
     "Pentest Web/Cookies.md",
     "Pentest Web/Pentest Web Guide/How To Check/Secure Transmission.md",
     "Pentest Web/Pentest Web Guide/How To Check/Authentication.md",
