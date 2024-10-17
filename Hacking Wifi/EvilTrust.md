@@ -37,12 +37,12 @@ Finally, you need to select the template that you want to use and wait for the v
 # IOS and Microsoft
 To get EvilTrust working for iOS and Microsoft devices, it was necessary adding two files directly to the login directories of each template (such as for Google, Facebook, etc.) resolved the issue. 
 
-# hotspot-detect.html
+## hotspot-detect.html
 ```bash
 <meta http-equiv="refresh" content="1;url=http://192.168.1.1/">
 ```
 
-# connecttest.txt
+## connecttest.txt
 ```bash
 Microsoft connect text
 ```
