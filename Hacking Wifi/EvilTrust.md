@@ -1,4 +1,4 @@
-This is a tool created by [s4vitar](https://github.com/s4vitar) with the aim of deploying an automated Rogue AP. Using it, you can capture the credentials of the victims that connect to your fake Wifi. In my case, I could not capture **IOS** requests.
+This is a tool created by [s4vitar](https://github.com/s4vitar) with the aim of deploying an automated Rogue AP. Using it, you can capture the credentials of the victims that connect to your fake Wifi. 
 
 Tool link: https://github.com/s4vitar/evilTrust
 
@@ -33,3 +33,16 @@ Before using it you just need to ensure that you have installed the following to
 Next, you need to select the interface to use, the name for your new access point and the channel to use (the most recommended ones are 1, 6, 11).
 
 Finally, you need to select the template that you want to use and wait for the victims to introduce their credentials.
+
+# IOS and Microsoft
+To get EvilTrust working for iOS and Microsoft devices, it was necessary adding two files directly to the login directories of each template (such as for Google, Facebook, etc.) resolved the issue. 
+
+# hotspot-detect.html
+```bash
+<meta http-equiv="refresh" content="1;url=http://192.168.1.1/">
+```
+
+# connecttest.txt
+```bash
+Microsoft connect text
+```
