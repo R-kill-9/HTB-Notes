@@ -4,7 +4,7 @@ https://www.sans.org/blog/tor-nonymous-using-tor-for-pen-testing/
 
 
 # 15 steps to remain anonymous
-https://hackeracademy.org/how-to-stay-anonymous-and-untraceable-on-the-internet/#h-step-4-nbsp-change-your-mac-address
+https://hackeracademy.org/how-to-stay-anonymous-and-untraceable-on-the-internet
 ## Table of contents
 
 -  **Step 1**  [Make some fake mobile numbers and emails to Stay Anonymous](https://hackeracademy.org/how-to-stay-anonymous-and-untraceable-on-the-internet/#h-nbsp-step-1-make-some-fake-mobile-numbers-and-emails-to-stay-anonymous)
