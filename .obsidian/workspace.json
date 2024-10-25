@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory & Windows/Active Directory Tools.md",
+                "file": "Tools and Techniques/List of Used Tools.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active Directory Tools"
+              "title": "List of Used Tools"
             }
           },
           {
@@ -193,11 +193,13 @@
   },
   "active": "801e605da6dac9f5",
   "lastOpenFiles": [
+    "Anonymity/Browsers.md",
+    "Tools and Techniques/List of Used Tools.md",
+    "Anonymity/VPN.md",
+    "Active Directory & Windows/Active Directory Tools.md",
     "Active Directory & Windows/Evil-WinRM.md",
     "Active Directory & Windows/LDAP.md",
     "Active Directory & Windows/SMB.md",
-    "Anonymity/Browsers.md",
-    "Anonymity/VPN.md",
     "Pentest Web/API testing.md",
     "Pentest Web/Burpsuite.md",
     "Pentest Web/Clickjacking.md",
@@ -217,8 +219,6 @@
     "Privilege Escalation/Privilege Escalation Tools Linux.md",
     "Privilege Escalation/Privilege Escalation Tools  Windows.md",
     "Privilege Escalation/Port Forwarding Tools.md",
-    "Privilege Escalation/Port Forwarding Theory.md",
-    "Privilege Escalation/Capabilities.md",
     "Anonymity",
     "Pasted image 20241025142440.png",
     "Hacking Wifi",
