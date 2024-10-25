@@ -1,6 +1,75 @@
-# Using TOR for pentesting
-https://www.sans.org/blog/tor-nonymous-using-tor-for-pen-testing/
+# OpenVPN
 
+A recommended VPN tool is **OpenVPN**, that can be installed with this command:
+```
+sudo apt-get install openvpn
+```
+
+For using it we will need root permissions.
+```
+sudo openvpn <client.ovpn>
+```
+
+# Nipe 
+Nipe is a tool that enables users to route their internet traffic through the Tor network, effectively masking their IP address and enhancing anonymity.
+
+```bash
+# Download* 
+git clone https://github.com/htrgouvea/nipe && cd nipe  
+      
+# Install libs and dependencies
+sudo cpan install Try::Tiny Config::Simple JSON  
+  
+# Nipe must be run as root
+sudo perl nipe.pl install
+```
+**Commands**:
+
+- install -> Install dependencies  
+- start -> Start routing  
+- stop -> Stop routing  
+- restart ->Restart the Nipe circuit  
+- status -> See status  
+```bash
+sudo perl nipe.pl <command>  
+```
+
+To test, before starting Nipe, do a test and after starting, repeat the test and see that your ip will change.
+
+```bash
+# Show IP
+curl ifconfig.me/ip 
+
+# Show all information  
+curl ifconfig.me/all
+```
+
+#  Proxychains
+
+You can install and configure proxy chains by using the following commands.
+```
+git clone https://github.com/rofl0r/proxychains-ng
+cd proxychains-ng
+sudo make install
+sudo make install-config (installs proxychains.conf)
+```
+
+It's recommended using proxychains-ng because it is configured to use TOR.
+
+Use multiple proxies to create a proxy chain and use proxychains.conf to manage the settings.
+
+You can use the following command:
+
+```
+leafpad /etc/proxychains.conf
+```
+
+
+### Running proxy chains with Mozilla
+
+```
+proxychains Mozilla
+``` 
 
 
 # 15 steps to remain anonymous
@@ -27,51 +96,6 @@ https://hackeracademy.org/how-to-stay-anonymous-and-untraceable-on-the-internet
 - **Step 14**  [Disable Health Reporting](https://hackeracademy.org/how-to-stay-anonymous-and-untraceable-on-the-internet/#h-step-14-disable-health-reporting)
 - **Step 15**  [Disable flash](https://hackeracademy.org/how-to-stay-anonymous-and-untraceable-on-the-internet/#h-step-15-disable-flash)
 
-## Use a Vpn or a proxy to Stay Anonymous
 
-Set up a reliable VPN or proxy server to enhance your online anonymity. By avoiding direct connections to websites, you significantly increase your privacy.
-
-However, boosting anonymity often means compromising on speed and internet performance. A direct connection is faster but more easily traceable. Introducing multiple intermediary systems between you and your destination server enhances your anonymity.
-
-The greater the number of proxies used, the higher the security and anonymity. This also means increased latency, which will slow down your connection.
-
-### OpenVPN
-
-A recommended VPN tool is **OpenVPN**, that can be installed with this command:
-```
-sudo apt-get install openvpn
-```
-
-For using it we will need root permissions.
-```
-sudo openvpn <client.ovpn>
-```
-
-
-## Use Proxychains
-
-You can install and configure proxy chains by using the following commands.
-```
-git clone https://github.com/rofl0r/proxychains-ng
-cd proxychains-ng
-sudo make install
-sudo make install-config (installs proxychains.conf)
-```
-
-
-It's recommended using proxychains-ng because it is configured to use TOR.
-
-Use multiple proxies to create a proxy chain and use proxychains.conf to manage the settings.
-
-You can use the following command:
-
-```
-leafpad /etc/proxychains.conf
-```
-
-
-### Running proxy chains with Mozilla
-
-```
-proxychains Mozilla
-``` 
+# Using TOR for pentesting
+https://www.sans.org/blog/tor-nonymous-using-tor-for-pen-testing/
