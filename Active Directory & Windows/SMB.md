@@ -12,6 +12,22 @@ smbclient -U bob //10.129.42.253/users
 smbclient -N -L //10.129.117.14/
 ```
 
+To **list the contents of a specific directory** inside a shared resource on the server:
+
+1. Connect to the shared resource using `smbclient`.
+2. Once inside, use the `ls` command to view the contents of the current directory.
+
+```bash
+smbclient //10.129.42.253/users -U bob
+smb: \> ls
+```
+
+To download all content from a shared resource using `smbclient`, you can use the `mget *` command, which downloads all files in the current directory.
+
+```bash
+smb: \> mget *
+```
+
 # nmap scripts
 Also, if after our report we observe that the machine has an SMB service we can use some useful nmap scripts to know if the target machine has a vulnerable version of SMB.
 ```bash
@@ -35,6 +51,45 @@ CME can enumerate users and their privileges on Windows systems using the SMB pr
 crackmapexec smb <ip> -u 'username' -p 'password'
 ```
 
+Once you have successfully authenticated to the SMB service on the target machine using **CrackMapExec** (CME), there are several actions you can take to further assess the security of the system or gather more information. Here’s a list of potential next steps:
+
+- Enumerate Shares
+
+```bash
+crackmapexec smb <ip> -u 'username' -p 'password' --shares
+```
+
+- Access shared files
+
+```bash
+crackmapexec smb <ip> -u 'username' -p 'password' --get 'share_name/file_path'
+```
+
+- Access shared files
+
+```bash
+crackmapexec smb <ip> -u 'username' -p 'password' --get 'share_name/file_path'
+```
+
+- Execute Commands Remotely
+
+```bash
+crackmapexec smb <ip> -u 'username' -p 'password' --exec -c 'command'
+```
+
+
+- Check User and Group Information
+
+```bash
+crackmapexec smb <ip> -u 'username' -p 'password'--users
+```
+
+
+- Password Dumping
+
+```bash
+crackmapexec smb <ip> -u 'username' -p 'password'--ntds
+```
 ### --rid-brute
 This option enables the RID (Relative Identifier) brute-force enumeration feature. It tells CrackMapExec to try various RIDs to enumerate user accounts and retrieve their security identifiers (SIDs). This is useful for discovering valid usernames on the target system, especially if the `guest` account successfully authenticates.
 ```bash

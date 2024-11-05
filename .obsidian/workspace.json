@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scanning and Information Gathering/File hidden information.md",
+                "file": "Active Directory & Windows/SMB.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File hidden information"
+              "title": "SMB"
             }
           }
         ]
@@ -179,9 +179,14 @@
   },
   "active": "d7d60a5782c9df89",
   "lastOpenFiles": [
+    "Tools and Techniques/Database interaction.md",
+    "Tools and Techniques/Browser extensions.md",
+    "Tools and Techniques/Cracking passwords & Decrypting.md",
+    "Tools and Techniques/File transmission.md",
+    "Tools and Techniques/Upgrade shell.md",
+    "Active Directory & Windows/SMB.md",
     "Scanning and Information Gathering/File hidden information.md",
     "Pentest Web/Pentest Web Guide/Checklist for Web App Pentest.md",
-    "Tools and Techniques/Upgrade shell.md",
     "Tools and Techniques/Metasploit.md",
     "Tools and Techniques/List of Used Tools.md",
     "Anonymity/Browsers.md",
@@ -189,7 +194,6 @@
     "Active Directory & Windows/Active Directory Tools.md",
     "Active Directory & Windows/Evil-WinRM.md",
     "Active Directory & Windows/LDAP.md",
-    "Active Directory & Windows/SMB.md",
     "Pentest Web/API testing.md",
     "Pentest Web/Burpsuite.md",
     "Pentest Web/Clickjacking.md",
@@ -201,10 +205,6 @@
     "Pentest Web/HTTP Headers.md",
     "Pentest Web/Path traversal.md",
     "Pentest Web/SQL Injection Theory.md",
-    "Pentest Web/SQL Injection Tools.md",
-    "Pentest Web/SSRF.md",
-    "Pentest Web/SSTI.md",
-    "Pentest Web/Web scanning.md",
     "Anonymity",
     "Pasted image 20241025142440.png",
     "Hacking Wifi",
