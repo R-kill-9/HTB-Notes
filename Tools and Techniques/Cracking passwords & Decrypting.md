@@ -48,17 +48,11 @@ It's a password cracking tool used for recovering passwords from various hash ty
 # wordlist example: /usr/share/wordlists/rockyou.txt
 hashcat -a 0 -m 0 <hash_file> <wordlist>
 ```
+
 # John the Ripper
 **John the Ripper** is a free password cracking software tool. It is among the  most frequently used password testing and breaking programs as it combines a number of  password crackers into one package, autodetects password hash types, and includes a  
 customizable cracker. It can be run against various encrypted password formats  including several crypt password hash types most commonly found on various Unix  versions (based on DES, MD5, or Blowfish), Kerberos AFS, and Windows NT/2000/XP/2003 LM  
 hash.
-
-## Converting to hash
-We will need converting to hash our files to being able to use John the Ripper.
-- ZIP 
-```bash
-zip2john <zip_file> > <hash_file_generated>
-```
 
 
 ## Cracking password
@@ -70,6 +64,60 @@ john -wordlist=<wordlist> <hash_file>
 Once we have already used the previous command, we can see the password and username found using:
 ```bash
 john --show <hash_file>
+```
+
+## Cracking a zip file
+1. **Convert the ZIP file to a hash format**:
+
+First, you need to use the `zip2john` tool to convert the ZIP file into a hash that John the Ripper can work with.
+
+```bash
+zip2john <zip_file> > <hash_file_generated>
+```
+
+2. **Crack the hash file**:
+
+Once you have the hash file, you can use **John the Ripper** with a wordlist or password list to try to discover the password.
+
+```bash
+john -wordlist=<wordlist> hash_file_generated
+```
+
+3. **View the result**:
+
+Once John has finished trying passwords, you can view the found password with this command:
+
+```bash
+john -wordlist=<wordlist> hash_file_generated
+```
+
+
+
+## Cracking a SSH Key
+If you want to **crack the password of an SSH key** (e.g., if the private key is protected by a password), you can use `ssh2john` to convert the SSH key to a format John the Ripper can handle. Here are the steps:
+
+1. **Convert the SSH key to a hash**:
+
+Use `ssh2john` to convert a private SSH key into a hash format. The output file will contain the hash of the SSH key, which can be processed by John the Ripper.
+
+```bash
+ssh2john <private_key_file> > <hash_file_generated>
+```
+
+2. **Crack the hash file**:
+
+Use John the Ripper with a password list to attempt to discover the password for the private key.
+
+```bash
+john --wordlist=<wordlist> <hash_file_generated>
+```
+
+3. **View the result**:
+
+Once John has finished trying passwords, you can view the found password with this command:
+
+```bash
+john -wordlist=<wordlist> hash_file_generated
 ```
 
 # openssl
@@ -87,15 +135,3 @@ One common and straightforward use case of OpenSSL is generating a self-signed S
 openssl req -x509 -newkey rsa:2048 -keyout mykey.pem -out mycert.pem -days 365
 ```
 
-# WPscan
-**WPScan** is a popular open-source tool used for scanning and identifying security vulnerabilities in WordPress websites. It is specifically designed to assess the security of WordPress installations by enumerating plugins, themes, and users, and checking for known vulnerabilities. WPScan can be used to do brute force attacks to machines with a wordpress login.
-- Enumerating users
-```bash
-wpscan --url <url> --enumerate u
-```
-- Brute force attack
-```bash
-# wordlist example: /usr/share/wordlists/rockyou.txt
-# users = users obtained with the users enumreation
-wpscan --url <url> --passwords <wordlist> --usernames <users>
-```

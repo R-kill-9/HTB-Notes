@@ -28,6 +28,17 @@ To download all content from a shared resource using `smbclient`, you can use th
 smb: \> mget *
 ```
 
+To download all files and directories you need to execute these commands:
+
+```bash
+# Enable recursive download
+smb: \> recurse ON
+# Turn off interactive prompts for each file
+smb: \> prompt OFF
+# Download all files and folders
+smb: \> mget *
+```
+
 # nmap scripts
 Also, if after our report we observe that the machine has an SMB service we can use some useful nmap scripts to know if the target machine has a vulnerable version of SMB.
 ```bash
@@ -90,6 +101,7 @@ crackmapexec smb <ip> -u 'username' -p 'password'--users
 ```bash
 crackmapexec smb <ip> -u 'username' -p 'password'--ntds
 ```
+
 ### --rid-brute
 This option enables the RID (Relative Identifier) brute-force enumeration feature. It tells CrackMapExec to try various RIDs to enumerate user accounts and retrieve their security identifiers (SIDs). This is useful for discovering valid usernames on the target system, especially if the `guest` account successfully authenticates.
 ```bash
