@@ -1,5 +1,4 @@
 
-
 # SmbClient 
 It is a network protocol that allows users to communicate with remote computers and servers to use their resources or share, open, and edit files.
 
@@ -39,12 +38,42 @@ smb: \> prompt OFF
 smb: \> mget *
 ```
 
-# nmap scripts
-Also, if after our report we observe that the machine has an SMB service we can use some useful nmap scripts to know if the target machine has a vulnerable version of SMB.
+# Eternal Blue
+**Eternal Blue** is a critical vulnerability in the SMBv1 protocol  on Windows systems, specifically identified as **MS17-010** or **CVE-2017-0144**. This exploit allows attackers to execute remote code on unpatched systems, granting full access to compromised machines without needing authentication.
+#### **Affected Systems**
+
+- **Windows Server** versions:
+    - **Windows Server 2003**
+    - **Windows Server 2008 / 2008 R2**
+    - **Windows Server 2012 / 2012 R2**
+    - **Windows Server 2016** (unpatched)
+    - **Windows Server 2019** (if SMBv1 is manually enabled and unpatched)
+- **Windows OS Versions**:
+    
+    - **Windows XP**
+    - **Windows Vista**
+    - **Windows 7**
+    - **Windows 8 / 8.1**
+    - **Windows 10** (unpatched)
+    
+_Note_: Systems with SMBv1 disabled or patched against MS17-010 are generally protected from EternalBlue.
+
+This nmap script allows you to know if the target machine is vulnerable to `Eternal Blue`.
+
 ```bash
 nmap -p445 --script smb-vuln-ms17-010 <target_ip>
 ```
-After executing the nmap command if the smb service has a known vulnerability the name of the CVE will be printed.
+
+After executing the nmap command if the SMB service is vulnerable the associated CVE will be printed.
+
+After validating the existance of the vulnerability, it can be exploited using `Metasploit`.
+
+```bash
+msfconsole
+search eternalblue
+use 0
+
+```
 
 # Smbmap
 It is designed to enumerate and interact with shared files and another resources, providing information about their accessibility, permissions, and potential vulnerabilities.
