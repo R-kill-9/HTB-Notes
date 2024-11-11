@@ -36,7 +36,7 @@ source ~/.zshrc
 ## Usage
 - First, we need to collect the data
 ```bash
-bloodhound-python -dns-tcp -ns target_ip -d domain_name -u user -p password
+bloodhound-python -c All -u user -p password -d domain_name  -ns target_ip --zip 
 ```
 - Remember to create your node4j console:
 ```bash
@@ -46,6 +46,13 @@ sudo neo4j console
 - Use the menu to see the information
 - Is very useful to use the ANALYSIS tool to display visual information
 
+## Information Analysis
+
+The value "1" in the **Outbound Object Control** attribute indicates that a user or group has control over Active Directory objects that can generate requests or interactions with other systems, domains, or resources outside of their own authority. This control may grant them the ability to delegate privileges, modify permissions, or perform actions that affect other machines within the network, even if the attacker does not have direct access to them. This makes it a critical vector for privilege escalation and lateral movement within the infrastructure.
+
+##### Outbound Object Control
+
+![](bloodhound-outbound-object.png)
 # NTLMRelayx.py
 
 **ntlmrelayx.py** is a powerful tool from the Impacket toolkit used for relaying captured NTLM authentication attempts to other network services. It is particularly effective in Windows Active Directory (AD) environments, allowing attackers to gain unauthorized access to network resources by relaying credentials.

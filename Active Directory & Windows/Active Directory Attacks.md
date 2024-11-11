@@ -40,7 +40,7 @@ sudo nano /etc/responder/Responder.conf
 - The attacker sets up a malicious SMB server to intercept authentication attempts.
 - The attacker needs to position themselves in the network to intercept SMB traffic (Man-in-the-Middle), this can be done with *Responder*.
 ```java
-python3 Responder.py -I <interface> -rdw
+python3 Responder.py -I <interface> -dw
 ```
 3. **Cracking hashes**:
 - After some time different user hashes would be captured by the Responder. All this hashes can be cracked using tools as *John* or *Hashcat* before executing the relay. 

