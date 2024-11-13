@@ -84,7 +84,7 @@ smbmap -H ip -u username -p password
 ```
 
 ## Netexec (Crackmapexec)
-CME can enumerate users and their privileges on Windows systems using the SMB protocol.
+CME can enumerate users and their privileges on Windows systems using different type of protocols.
 ### Basic Usage
 ```bash
 netexec smb <ip> -u 'username' -p 'password'

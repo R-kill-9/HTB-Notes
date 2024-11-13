@@ -42,6 +42,7 @@ bloodhound-python -c All -u user -p password -d domain_name  -ns target_ip --zip
 ```bash
 sudo neo4j console
 ```
+- Initialize `BloodHound`
 - Upload the data
 - Use the menu to see the information
 - Is very useful to use the ANALYSIS tool to display visual information
@@ -52,7 +53,7 @@ The value "1" in the **Outbound Object Control** attribute indicates that a user
 
 ##### Outbound Object Control
 
-![](bloodhound-outbound-object.png)
+![](../Images/bloodhound-outbound-object.png)
 # NTLMRelayx.py
 
 **ntlmrelayx.py** is a powerful tool from the Impacket toolkit used for relaying captured NTLM authentication attempts to other network services. It is particularly effective in Windows Active Directory (AD) environments, allowing attackers to gain unauthorized access to network resources by relaying credentials.

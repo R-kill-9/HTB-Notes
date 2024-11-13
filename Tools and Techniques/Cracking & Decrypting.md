@@ -92,7 +92,6 @@ john -wordlist=<wordlist> hash_file_generated
 ```
 
 
-
 ## Cracking a SSH Key
 If you want to **crack the password of an SSH key** (e.g., if the private key is protected by a password), you can use `ssh2john` to convert the SSH key to a format John the Ripper can handle. Here are the steps:
 
@@ -119,6 +118,58 @@ Once John has finished trying passwords, you can view the found password with th
 ```bash
 john -wordlist=<wordlist> hash_file_generated
 ```
+
+## Cracking .kdbx Files (KeePass)
+If you want to **crack the password** of a `.kdbx` file (KeePass), John the Ripper can be used with the help of an additional tool like `keepass2john` to convert the KeePass file into a hash.
+
+1. **Convert the .kdbx file to a hash**:
+
+Use `keepass2john` to convert the `.kdbx` file into a format that John the Ripper can handle. This command will extract the hash from the KeePass file:
+
+```bash
+keepass2john <file.kdbx> > <hash_file_generated>
+```
+
+2. **Crack the hash file**:
+
+Now, use **John the Ripper** with a wordlist to attempt to crack the password for the KeePass file.
+
+```bash
+john --wordlist=<wordjohn --wordlist=<wordlist> <hash_file_generated>
+list> <hash_file_generated>
+```
+
+3. **View the result**:
+
+Once John has finished trying passwords, you can view the found password with this command:
+
+```bash
+john -wordlist=<wordlist> hash_file_generated
+```
+
+## Cracking a .pwsafe3 File (Password Safe)
+
+If you want to **crack the password** of a `.pwsafe3` file (Password Safe), you can use **John the Ripper** to attempt to crack the password. Here’s how you do it:
+
+1. **Convert the .pwsafe3 file to a hash:**
+
+First, you need to convert the `.pwsafe3` file into a format that John the Ripper can process. You can use the `pwsafe2john` tool, which extracts the hash from the Password Safe file.
+
+```bash
+pwsafe2john <file.pwsafe3> > <hash_file_generated>
+```
+
+This command will output the hash into a file (e.g., `hash_file_generated`), which John the Ripper can then use.
+
+ 2. **Crack the hash file**:
+
+Next, use **John the Ripper** with a wordlist to try cracking the password. You can use any standard wordlist (e.g., `rockyou.txt`).
+
+```bash
+john --wordlist=<wordlist> <hash_file_generated>
+```
+
+
 
 # openssl
 **OpenSSL** can be used through the command line to perform various cryptographic operations, such as generating and managing SSL/TLS certificates, encrypting and decrypting data, creating digital signatures, and more. It supports a wide range of cryptographic algorithms and protocols.
