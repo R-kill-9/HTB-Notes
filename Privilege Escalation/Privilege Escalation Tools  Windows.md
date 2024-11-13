@@ -26,8 +26,7 @@ C:\Users\sql_svc\Downloads> .\winPEASx64.exe
 
 
 # psexec.py <a name="pspy"></a>
-
-- psexec.py is a tool from impacket that allows us to obtain a shell as an administrator.
+**psexec.py** is a tool that allows you to remotely execute processes on other systems over a network.
 
 ````bash
 python3 psexec.py administrator@{TARGET_IP}

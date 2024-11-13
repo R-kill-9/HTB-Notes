@@ -20,6 +20,7 @@
 - **Gobuster**: Directory and file brute-forcing tool.
 - **Wfuzz**: Web application brute-forcing tool.
 - **FFUF**: Fast web fuzzer written in Go.
+- **Kerberos**: A network authentication protocol that uses tickets to securely authenticate users and services in a networked environment.
 
 ### Vulnerability Scanning and Exploitation Tools
 
