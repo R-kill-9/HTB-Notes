@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory & Windows/BloodHound.md",
+                "file": "Pentest Web/Wordpress.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BloodHound"
+              "title": "Wordpress"
             }
           }
         ],
@@ -208,6 +208,9 @@
   },
   "active": "81be1156918967f8",
   "lastOpenFiles": [
+    "Pentest Web/Web scanning.md",
+    "Pentest Web/Wordpress.md",
+    "Active Directory & Windows/BloodHound.md",
     "Active Directory & Windows/Kerberoasting.md",
     "Tools and Techniques/List of Used Tools.md",
     "Tools and Techniques/Metasploit.md",
@@ -222,7 +225,6 @@
     "Active Directory & Windows/SMB.md",
     "Privilege Escalation/Reverse Shell Example.md",
     "Privilege Escalation/Privilege Escalation Tools  Windows.md",
-    "Pentest Web/Web scanning.md",
     "Pentest Web/SSTI.md",
     "Pentest Web/SSRF.md",
     "Pentest Web/SQL Injection Tools.md",
@@ -233,8 +235,6 @@
     "Pentest Web/Fuzzing.md",
     "Pentest Web/CSRF.md",
     "Pentest Web/Cross Site Scripting (XSS).md",
-    "Pentest Web/Cookies.md",
-    "Pentest Web/Clickjacking.md",
     "Images/bloodhound-outbound-object.png",
     "Images",
     "Anonymity",
