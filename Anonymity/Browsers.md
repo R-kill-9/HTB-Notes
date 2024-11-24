@@ -49,30 +49,3 @@ curl ifconfig.me/ip
 curl ifconfig.me/all
 ```
 
-#  Proxychains
-
-You can install and configure proxy chains by using the following commands.
-```
-git clone https://github.com/rofl0r/proxychains-ng
-cd proxychains-ng
-sudo make install
-sudo make install-config (installs proxychains.conf)
-```
-
-It's recommended using proxychains-ng because it is configured to use TOR.
-
-Use multiple proxies to create a proxy chain and use proxychains.conf to manage the settings.
-
-You can use the following command:
-
-```
-leafpad /etc/proxychains.conf
-```
-
-
-### Running proxy chains with Mozilla
-
-```
-proxychains Mozilla
-``` 
-

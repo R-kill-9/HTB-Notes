@@ -7,7 +7,7 @@ hash.
 
 ```bash
 # wordlist example: /usr/share/wordlists/rockyou.txt
-john -wordlist=<wordlist> <hash_file>
+john --wordlist=<wordlist> <hash_file>
 ```
 Once we have already used the previous command, we can see the password and username found using:
 ```bash
@@ -28,7 +28,7 @@ zip2john <zip_file> > <hash_file_generated>
 Once you have the hash file, you can use **John the Ripper** with a wordlist or password list to try to discover the password.
 
 ```bash
-john -wordlist=<wordlist> hash_file_generated
+john --wordlist=<wordlist> hash_file_generated
 ```
 
 3. **View the result**:
@@ -36,7 +36,7 @@ john -wordlist=<wordlist> hash_file_generated
 Once John has finished trying passwords, you can view the found password with this command:
 
 ```bash
-john -wordlist=<wordlist> hash_file_generated
+john --show <hash_file_generated>
 ```
 
 
@@ -64,7 +64,7 @@ john --wordlist=<wordlist> <hash_file_generated>
 Once John has finished trying passwords, you can view the found password with this command:
 
 ```bash
-john -wordlist=<wordlist> hash_file_generated
+john --show <hash_file_generated>
 ```
 
 ## Cracking .kdbx Files (KeePass)
@@ -91,7 +91,7 @@ john --wordlist=<wordlist> <hash_file_generated>
 Once John has finished trying passwords, you can view the found password with this command:
 
 ```bash
-john -wordlist=<wordlist> hash_file_generated
+john --show <hash_file_generated>
 ```
 
 ## Cracking a .pwsafe3 File (Password Safe)
