@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OSINT/OSINT.md",
+                "file": "Pentest Web/Fuzzing.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OSINT"
+              "title": "Fuzzing"
             }
           }
         ],
@@ -222,8 +222,11 @@
   },
   "active": "38a84b4d5b770d1c",
   "lastOpenFiles": [
-    "Anonymity/Proxychains.md",
+    "Cracking & Decrypting/Hydra.md",
+    "Pentest Web/Fuzzing.md",
+    "Pentest Web/Cross Site Scripting (XSS).md",
     "OSINT/OSINT.md",
+    "Anonymity/Proxychains.md",
     "OSINT",
     "Anonymity/Browsers.md",
     "Anonymity/VPN.md",
@@ -231,12 +234,9 @@
     "Tools and Techniques/Database interaction.md",
     "Cracking & Decrypting/John The Ripper.md",
     "Tools and Techniques/Serveo.md",
-    "Pentest Web/Cross Site Scripting (XSS).md",
     "Pentest Web/Cookies.md",
     "Pentest Web/API testing.md",
     "Pentest Web/SQL Injection Tools.md",
-    "Cracking & Decrypting/Hydra.md",
-    "Pentest Web/Fuzzing.md",
     "Pentest Web/Wordpress.md",
     "Pentest Web/Web scanning.md",
     "Active Directory & Windows/BloodHound.md",
