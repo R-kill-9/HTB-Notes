@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Information Gathering/Passive Information Gathering/WAF Detection.md",
+                "file": "Information Gathering/Passive Information Gathering/Subdomain enumeration.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WAF Detection"
+              "title": "Subdomain enumeration"
             }
           }
         ],
@@ -222,11 +222,12 @@
   },
   "active": "38a84b4d5b770d1c",
   "lastOpenFiles": [
-    "Images/Wafw00f.png",
     "Information Gathering/Passive Information Gathering/DNS recognizement.md",
-    "Information Gathering/Passive Information Gathering/WAF Detection.md",
-    "Images/DNSdumpster.png",
     "Information Gathering/Passive Information Gathering/Website Footprinting.md",
+    "Information Gathering/Passive Information Gathering/Subdomain enumeration.md",
+    "Information Gathering/Passive Information Gathering/WAF Detection.md",
+    "Images/Wafw00f.png",
+    "Images/DNSdumpster.png",
     "Information Gathering/Passive Information Gathering",
     "Tools and Techniques/Browser extensions.md",
     "Tools and Techniques/Useful webs.md",
