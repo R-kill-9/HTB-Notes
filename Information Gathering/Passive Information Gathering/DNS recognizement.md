@@ -22,7 +22,7 @@ dnsrecon -d example.com
    - ns2.example.com
 [+] SOA record: ns1.example.com
 ```
-### Explanation of the Output Fields:
+#### Explanation of the Output Fields:
 
 - **A Record (Address Record):**
     
