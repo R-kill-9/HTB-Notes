@@ -1,0 +1,2 @@
+## haveibeenpwned
+[Have I Been Pwned (HIBP)](https://haveibeenpwned.com/) is a web service that helps users check if their email, phone number, or passwords have been exposed in data breaches. It compares input against a vast database of breached records.

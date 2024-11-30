@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Information Gathering/Passive Information Gathering/Google Dorks.md",
+                "file": "Information Gathering/Active Information Gathering/Nmap.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Google Dorks"
+              "title": "Nmap"
             }
           }
         ],
@@ -222,11 +222,18 @@
   },
   "active": "38a84b4d5b770d1c",
   "lastOpenFiles": [
+    "Information Gathering/File hidden information.md",
+    "Information Gathering/Active Information Gathering/Nmap.md",
+    "Information Gathering/Port scanning.md",
     "Information Gathering/Passive Information Gathering/DNS recognizement.md",
-    "Information Gathering/Passive Information Gathering/Google Dorks.md",
+    "Information Gathering/Active Information Gathering/DNS Zone Transfers.md",
+    "Information Gathering/Active Information Gathering",
     "Information Gathering/Passive Information Gathering/Subdomain enumeration.md",
     "Information Gathering/Passive Information Gathering/WAF Detection.md",
     "Information Gathering/Passive Information Gathering/Website Footprinting.md",
+    "Information Gathering/Passive Information Gathering/Google Dorks.md",
+    "Information Gathering/Passive Information Gathering/Leak password databases.md",
+    "Information Gathering/Passive Information Gathering/Email Harvesting.md",
     "Images/Wafw00f.png",
     "Images/DNSdumpster.png",
     "Information Gathering/Passive Information Gathering",
@@ -246,12 +253,6 @@
     "OSINT",
     "Anonymity/Browsers.md",
     "Anonymity/VPN.md",
-    "Tools and Techniques/Database interaction.md",
-    "Tools and Techniques/Serveo.md",
-    "Pentest Web/Cookies.md",
-    "Pentest Web/API testing.md",
-    "Pentest Web/SQL Injection Tools.md",
-    "Pentest Web/Wordpress.md",
     "Cracking & Decrypting",
     "Images/bloodhound-outbound-object.png",
     "Images",
@@ -260,7 +261,6 @@
     "Hacking Wifi",
     "Pentest Web/Pentest Web Guide/How To check with ZAP",
     "Pentest Web/Pentest Web Guide/How To Check",
-    "Pentest Web/Pentest Web Guide",
-    "Cloud"
+    "Pentest Web/Pentest Web Guide"
   ]
 }
