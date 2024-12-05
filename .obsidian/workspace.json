@@ -4,39 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "702d2934428f0b7f",
+        "id": "c7cf7e92c5bfcabf",
         "type": "tabs",
         "children": [
           {
-            "id": "d7d60a5782c9df89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory & Windows/SMB.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SMB"
-            }
-          },
-          {
-            "id": "0fc5ed4807758a15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cracking & Decrypting/OpenSSL.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "OpenSSL"
-            }
-          },
-          {
-            "id": "81be1156918967f8",
+            "id": "54f4692dd40c6365",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,23 +20,8 @@
               "icon": "lucide-file",
               "title": "Fuzzing"
             }
-          },
-          {
-            "id": "38a84b4d5b770d1c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Pentest Web/SQL Injection/Detecting SQL Injection in Source Code.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Detecting SQL Injection in Source Code"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,41 +177,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "38a84b4d5b770d1c",
+  "active": "54f4692dd40c6365",
   "lastOpenFiles": [
-    "Pentest Web/SQL Injection/SQL Injection Theory.md",
-    "Pentest Web/SQL Injection/Detecting SQL Injection in Source Code.md",
-    "Pentest Web/SQL Injection",
-    "Protocols/FTP (File Transfer Protocol).md",
-    "Active Directory & Windows/Kerberoasting.md",
-    "Metasploit/Metasploit Pivoting.md",
-    "Protocols",
+    "Active Directory Tools/Netexec.md",
+    "Protocols/RPC.md",
+    "Protocols/SMB.md",
+    "Protocols/LDAP.md",
     "Metasploit/Metasploit Basic Usage.md",
-    "Metasploit/Nmap.md",
+    "Metasploit/Metasploit Pivoting.md",
+    "Cracking & Decrypting/OpenSSL.md",
+    "Pentest Web/Fuzzing.md",
     "Metasploit/Related Tools.md",
+    "Metasploit/Nmap.md",
+    "Information Gathering/Active Information Gathering/Nmap.md",
+    "Protocols/FTP.md",
+    "Active Directory Tools/Kerberoasting.md",
+    "Active Directory Tools/NTLM Relay.md",
+    "Active Directory Tools/Evil-WinRM.md",
+    "Cracking & Decrypting/Hydra.md",
+    "Pentest Web/SQL Injection/Detecting SQL Injection in Source Code.md",
+    "Pentest Web/SQL Injection/SQL Injection Theory.md",
+    "Pentest Web/SQL Injection",
+    "Protocols",
     "Information Gathering/File hidden information.md",
     "Pentest Web/SQL Injection/Database interaction.md",
-    "Information Gathering/Active Information Gathering/Nmap.md",
     "Metasploit",
-    "Pentest Web/Fuzzing.md",
     "Information Gathering/Active Information Gathering/Firewall Detection & IDS Evasion (Nmap).md",
-    "Protocols/SMB.md",
     "Information Gathering/Active Information Gathering/Ping Sweeping.md",
     "Information Gathering/Active Information Gathering/DNS Zone Transfers.md",
     "Information Gathering/Passive Information Gathering/Website Footprinting.md",
     "Information Gathering/Passive Information Gathering/WAF Detection.md",
     "Information Gathering/Passive Information Gathering/Subdomain enumeration.md",
-    "Information Gathering/Passive Information Gathering/Leak password databases.md",
-    "Information Gathering/Passive Information Gathering/Google Dorks.md",
-    "Information Gathering/Passive Information Gathering/Email Harvesting.md",
-    "Information Gathering/Passive Information Gathering/DNS recognizement.md",
-    "Information Gathering/Port scanning.md",
     "Information Gathering/Active Information Gathering",
     "Images/Wafw00f.png",
     "Images/DNSdumpster.png",
     "Information Gathering/Passive Information Gathering",
-    "Tools and Techniques/Browser extensions.md",
-    "Tools and Techniques/Useful webs.md",
     "OSINT",
     "Cracking & Decrypting",
     "Images/bloodhound-outbound-object.png",

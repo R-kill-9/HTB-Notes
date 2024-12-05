@@ -1,1 +1,0 @@
-**FTP** (File Transfer Protocol) is a standard network protocol used to transfer files between a client and a server over a network. It operates on a client-server model and utilizes two channels for communication:

@@ -10,7 +10,7 @@ ldapsearch -x -H ldap://<server_ip> -b "dc=example,dc=com"
 ```bash
 ldapsearch -x -H ldap://<server_ip> -b "dc=example,dc=com" "(objectClass=person)" mail
 ```
-## LDAPenum
+## ldapenum
 To enumerate all users in an LDAP directory:
 
 ```bash
