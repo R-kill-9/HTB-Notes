@@ -1,4 +1,4 @@
-**LDAP** is a protocol for accessing and managing directory information used to search and modify information in a directory.It allows for the management of information about users, groups, permissions, and other objects within a network. Commonly used in enterprise applications, especially with Microsoft Active Directory.
+**LDAP** (Lightweight Directory Access Protocol) is a protocol used for accessing and managing directory information. It allows searching, retrieving, and modifying information in a directory, such as user accounts, groups, permissions, and other objects within a network. LDAP is commonly used in enterprise environments, particularly with Microsoft Active Directory, to centralize identity and access management.
 
 ## ldapsearch
 - **Anonymous Search**: Attempt to retrieve information without credentials:
