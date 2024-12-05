@@ -21,7 +21,21 @@ search type:auxiliary name:ftp
 In **Metasploit**, you can use **global variables** to avoid manually setting the same value (like `RHOSTS`) every time you switch between modules.
 
 ```bash
-setg RHOSTS <target_ip>
+setg RHOST <target_ip>
+```
+
+## Sessions
+In **Metasploit**, a session represents an active connection between the attacker and the target system. After exploiting a vulnerability, Metasploit creates a session, allowing the attacker to interact with the compromised system. Sessions can be used for various tasks like running commands, uploading or downloading files, pivoting, or escalating privileges.
+
+```bash
+# List all active sessions:
+sessions
+# Interact with a specific session
+sessions -i <session_id>
+# Background the current session
+background
+# Exit a session
+sessions -k <session_id>
 ```
 
 ## Workspace

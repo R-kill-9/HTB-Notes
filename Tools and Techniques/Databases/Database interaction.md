@@ -4,7 +4,7 @@ If you already have the database on your Kali machine, you can easily view and a
 
 First, make sure you know the format of the database. To do so, use the `file` command:
 ```bash
-file archivo.bd
+file file.bd
 ```
 This command will tell you what type of file it is (for example, SQLite, MySQL dump, PostgreSQL, etc.).
 
@@ -47,7 +47,7 @@ mysql -u root -p db_name < archivo.bd
 ```
 - Once imported, you can connect to the database:
 ```sql
-mysql -u root -p db_name
+mysql -u root -p db_name -h <host_name>
 ```
 ### Commands <a name="mysql"></a>
 

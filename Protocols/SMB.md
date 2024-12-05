@@ -69,7 +69,7 @@ nmap --script <script_name> <target_ip>
 - **Check Anonymous Access**: Test for shares or access points that are open to the "anonymous" user.
 - **Explore Active Sessions**: Use `smb_enum_sessions` to identify logged-in users, which can help in social engineering or session hijacking.
 - **Credentials Brute Force Attack**: Use `smb_login` to perform brute force attack with username and password dictionaries.
-- 
+
 ```bash
 use <module_name>
 set RHOSTS <target IP>
