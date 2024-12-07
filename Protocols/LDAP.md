@@ -28,9 +28,12 @@ pip install ldapdomaindump
 ```
 
 ### Basic Usage
-- **`-u "<DOMAIN>\<USERNAME>"`**: The user used for authentication. Be sure to include the domain, e.g., `cicada\john.doe`.
-- **`-p "<PASSWORD>"`**: The user's password for authentication.
-- **`<SERVER_IP>`**: The IP address of the LDAP server or domain controller.
+| Option                      | Description                                                                                               |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|
+| `-u "<DOMAIN>\<USERNAME>"`   | The user used for authentication. Be sure to include the domain, e.g., `cicada\john.doe`.                |
+| `-p "<PASSWORD>"`            | The user's password for authentication.                                                                  |
+| `<SERVER_IP>`                | The IP address of the LDAP server or domain controller.                                                  |
+
 ```bash
 ldapdomaindump -u "<DOMAIN>\<USERNAME>" -p "<PASSWORD>" <SERVER_IP>
 ```

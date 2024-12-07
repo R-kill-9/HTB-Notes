@@ -13,9 +13,11 @@ password: Anonymous
 ## Brute Force Attack with Hydra
 **Hydra** is a powerful password-cracking tool used for conducting **brute-force attacks** on various services, including FTP.
 
-- `-l <username>`: Specifies the **username** to use in the attack. You can use a single username or use a list with `-L <username_list>`.
-- `-P <password_file>`: Specifies the **password list** (dictionary) to use for the attack. You can provide a custom list or use default wordlists like `rockyou.txt`.
-- `ftp://<target_ip>`: Specifies the target FTP server's IP address.
+| Option                            | Description                                                                                                      |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------|
+| `-l <username>`                   | Specifies the **username** to use in the attack. You can use a single username or use a list with `-L <username_list>`. |
+| `-P <password_file>`              | Specifies the **password list** (dictionary) to use for the attack. You can provide a custom list or use default wordlists like `rockyou.txt`. |
+| `ftp://<target_ip>`               | Specifies the target FTP server's IP address.                                                                   |
 
 ```bash
 hydra -l <username> -P <password_file> ftp://<target_ip>

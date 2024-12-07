@@ -5,9 +5,12 @@ The **Remote Procedure Call (RPC)** protocol enables software to execute code on
 
 #### Connecting to a Target
 
-- `-U <username>`: Specifies the username to authenticate with.
-- `<target_ip>`: The IP address of the target machine.
-- `-N`: To attempt an anonymous login.
+| Option          | Description                                                                                             |
+|-----------------|---------------------------------------------------------------------------------------------------------|
+| `-U <username>` | Specifies the username to authenticate with.                                                            |
+| `<target_ip>`   | The IP address of the target machine.                                                                   |
+| `-N`            | Attempts an anonymous login to the target machine.                                                      |
+
 ```bash
 rpcclient -U <username> <target_ip>
 ```

@@ -46,12 +46,14 @@ Target machine
 
 #### **Key Flags**
 
-- **`-a`**: Show all connections and listening ports.
-- **`-n`**: Show numerical addresses and port numbers (no DNS resolution).
-- **`-t`**: Display TCP connections.
-- **`-u`**: Display UDP connections.
-- **`-l`**: Show only listening ports.
-- **`-p`**: Show the PID/program name associated with each connection.
+| Option | Description |
+|--------|-------------|
+| **`-a`** | Show all connections and listening ports. |
+| **`-n`** | Show numerical addresses and port numbers (no DNS resolution). |
+| **`-t`** | Display TCP connections. |
+| **`-u`** | Display UDP connections. |
+| **`-l`** | Show only listening ports. |
+| **`-p`** | Show the PID/program name associated with each connection. |
 
 
 ### **Basic Commands**

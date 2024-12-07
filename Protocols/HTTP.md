@@ -39,6 +39,7 @@ The `sitemap.xml` file provides a list of all the important pages on a website, 
 - **Enumerate HTTP Authentication Methods**: Use `http_enum` to identify different types of HTTP authentication mechanisms, such as digest authentication or basic auth.
 - **Fingerprint Web Technologies**: Use `http_fingerprint` to identify the web application framework, web server, and other technologies being used, helping in vulnerability mapping.
 
+
 ```bash
 use <module_name>
 set RHOSTS <target IP>

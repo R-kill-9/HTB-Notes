@@ -5,11 +5,14 @@
 [theHarvester](https://github.com/laramies/theHarvester) is a simple to use, yet powerful tool designed to be used during the reconnaissance stage of a red team assessment or penetration test. It performs open source intelligence (OSINT) gathering to help determine  a domain's external threat landscape. The tool gathers names, emails, IPs, subdomains, and URLs by using  
 multiple public resources.
 
+| Option | Description |
+|--------|-------------|
+| **`-d <domain>`** | Specifies the target domain to search (e.g., `example.com`). |
+| **`-b <source>`** | Defines the source to query (e.g., Google, Bing, LinkedIn, etc.). Use `-b all` to query all available sources. |
+| **`-l <limit>`** | Sets the maximum number of results to retrieve (optional). |
+| **`-f <filename>`** | Exports results to a file (e.g., PDF or HTML). |
+
 ```bash
 theHarvester -d <domain> -b <source>
 ```
 
-- **`-d <domain>`**: Specifies the target domain to search (e.g., `example.com`).
-- **`-b <source>`**: Defines the source to query (e.g., Google, Bing, LinkedIn, etc.). Use `-b all` to query all available sources.
-- **`-l <limit>`**: Sets the maximum number of results to retrieve (optional).
-- **`-f <filename>`**: Exports results to a file (e.g., PDF or HTML).
