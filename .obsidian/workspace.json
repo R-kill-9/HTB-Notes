@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pentest Web/ShellShock.md",
+                "file": "Active Directory/BloodHound.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ShellShock"
+              "title": "BloodHound"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "active": "c659c78b9961e04d",
   "lastOpenFiles": [
+    "Pentest Web/ShellShock.md",
     "Pentest Web/WebDAV.md",
     "Protocols/WinRM.md",
     "Protocols/SSH.md",
@@ -204,7 +205,6 @@
     "Information Gathering/Active Information Gathering/Ping Sweeping.md",
     "Information Gathering/Active Information Gathering/Nmap.md",
     "Information Gathering/Active Information Gathering/Firewall Detection & IDS Evasion (Nmap).md",
-    "Information Gathering/Active Information Gathering/DNS Zone Transfers.md",
     "Tools and Techniques/Databases",
     "Pentest Web/SQL Injection",
     "Protocols",

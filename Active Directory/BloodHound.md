@@ -61,7 +61,7 @@ To identify **high-privilege accounts**, you should focus on certain **groups** 
     
     - **Right-click on any user** and inspect their group memberships. If the user is a member of one of these high-privilege groups, they are of interest.
     - Check for **Direct Membership** to **Domain Admins** or **Enterprise Admins**.
-    - 
+    
 
 ---
 
@@ -106,7 +106,7 @@ Reviewing **group memberships** and **permissions** will help you identify if an
     - BloodHound will show group memberships when you click on a user or group.
 - **Permissions Enumeration**:
     - When selecting a group or user, use the **Permissions** tab to identify who has access to what resources, and whether any excessive permissions have been granted.
-    - 
+    
 
 ---
 
@@ -125,7 +125,7 @@ SPNs are used by service accounts to authenticate to AD services. These service 
 
 - **Search for SPNs**: BloodHound will show **Service Accounts** when searching for user types. Check if the account has an SPN associated with it.
 - **Kerberoasting Pathways**: Identify if the user or group has access to service accounts with SPNs. These service accounts can be targeted by Kerberoasting.
-- 
+
 
 ---
 
