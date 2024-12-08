@@ -11,7 +11,8 @@ The flag `-c <number>` can be used to specify the number of packets that must to
 
 ## Fping
 Similar to ping but designed for bulk testing multiple hosts simultaneously.
-
+- **`-a`**: Display only the hosts that are alive (responding to ping).
+- **`-g`**: Specify a range of IP addresses to ping.
 ```bash
 fping -a -g 192.169.1.0/24 2>/dev/null
 ```
