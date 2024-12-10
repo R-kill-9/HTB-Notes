@@ -1,7 +1,7 @@
 **Netexec** can enumerate users and their privileges on Windows systems using different type of protocols.
 ### Basic Usage
 ```bash
-netexec smb <ip> -u 'username' -p 'password'
+netexec <protocol> <ip> -u 'username' -p 'password'
 ```
 
 Once you have successfully authenticated to the SMB service on the target machine using **CrackMapExec** (CME), there are several actions you can take to further assess the security of the system or gather more information. Here’s a list of potential next steps:
@@ -9,39 +9,38 @@ Once you have successfully authenticated to the SMB service on the target machin
 - Enumerate Shares
 
 ```bash
-netexec smb <ip> -u 'username' -p 'password' --shares
-```
-
-- Access shared files
-
-```bash
-netexec smb <ip> -u 'username' -p 'password' --get 'share_name/file_path'
-```
-
-- Access shared files
-
-```bash
-netexec smb <ip> -u 'username' -p 'password' --get 'share_name/file_path'
+netexec <protocol> <ip> -u 'username' -p 'password' --shares
 ```
 
 - Execute Commands Remotely
 
 ```bash
-netexec smb <ip> -u 'username' -p 'password' --exec -c 'command'
+netexec <protocol> <ip> -u 'username' -p 'password' -x 'command'
 ```
 
+- Access shared files
+
+```bash
+netexec <protocol> <ip> -u 'username' -p 'password' --get 'share_name/file_path'
+```
+
+- Access shared files
+
+```bash
+netexec <protocol> <ip> -u 'username' -p 'password' --get 'share_name/file_path'
+```
 
 - Check User and Group Information
 
 ```bash
-netexec smb <ip> -u 'username' -p 'password'--users
+netexec <protocol> <ip> -u 'username' -p 'password' --users
 ```
 
 
 - Password Dumping
 
 ```bash
-netexec smb <ip> -u 'username' -p 'password'--ntds
+netexec smb <ip> -u 'username' -p 'password' --ntds
 ```
 
 ### --rid-brute
