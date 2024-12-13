@@ -1,8 +1,3 @@
-There are several tools that can help us escalate privileges on Windows machines.
-
-- [winPEAS.exe](#wpeas)
-- [psexec.py](#pspy)
-
 
 # winPEAS.exe <a name="wpeas"></a>
 
@@ -22,7 +17,6 @@ powershell
 ````bash
 C:\Users\sql_svc\Downloads> .\winPEASx64.exe
 ````
-
 
 
 # psexec.py <a name="pspy"></a>
