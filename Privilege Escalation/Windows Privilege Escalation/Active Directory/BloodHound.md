@@ -76,7 +76,7 @@ To identify **high-privilege accounts**, you should focus on certain **groups** 
 1. In the **BloodHound interface**, search for a user, and look at their **Node Info**.
 2. Under **Outbound Object Control**, check if the value is different than **0**. This indicates that the user has permissions to affect objects in other systems or domains.
 
-![](../Images/bloodhound-outbound-object.png)
+![](bloodhound-outbound-object.png)
 #### **Key Options**:
 
 - **Check the "Outbound Object Control" field**:

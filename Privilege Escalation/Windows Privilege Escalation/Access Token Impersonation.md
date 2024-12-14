@@ -1,4 +1,4 @@
-lisA **security token** is a data structure used by the Windows operating system to represent a user's identity, permissions, and privileges. Tokens are created when a user logs in to the system, and they are associated with processes the user starts. These tokens are used by the system to determine which resources a user can access and what actions they can perform.
+A **security token** is a data structure used by the Windows operating system to represent a user's identity, permissions, and privileges. Tokens are created when a user logs in to the system, and they are associated with processes the user starts. These tokens are used by the system to determine which resources a user can access and what actions they can perform.
 
 Security tokens contain the following key information:
 

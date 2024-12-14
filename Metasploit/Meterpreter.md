@@ -3,7 +3,6 @@ Meterpreter is an advanced and flexible payload used in **Metasploit Framework**
 ## **Common Meterpreter Commands**:
 
 1. **Basic Commands**:
-
 - `sysinfo`: Displays system information (OS, architecture, logged-in users).
 - `getuid`: Displays the current user ID.
 - `shell`: Opens a system shell for further command execution.
