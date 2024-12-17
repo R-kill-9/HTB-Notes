@@ -19,6 +19,6 @@ This file is commonly stored on installation media or left on systems in `C:\Win
 The password is stored in base64, so it would need to be decoded.
 
 ```bash
-echo  "password"  > <password_file>
+echo  "password" > <password_file>
 base64 --decode <password_file> 
 ```
