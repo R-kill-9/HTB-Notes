@@ -1,5 +1,3 @@
-
-# Chisel 
 **Chisel** is a TCP/UDP tunnel over HTTP that enables secure port forwarding, often used in penetration testing to bypass firewalls and NAT.
 
 - You can download the Chisel last releases here: [link](https://github.com/jpillora/chisel/releases)
@@ -14,59 +12,37 @@ If you want to access using the remote mode you will need to use:
 ./chisel server -p 9999 --reverse
 ```
 
-- **Local Port Forwarding**
+**Local Port Forwarding**
 
-Target machine:
+Allows forwarding traffic from a local port to a specific port on the target machine through the Chisel server.
+
+*Target machine*
 ```bash
 ./chisel server -p <port>
 ```
-Local machine
+*Local machine*
 ```bash
 chisel client <chisel server address>:<chisel server port> <local port to open>:<address to point to>:<port to point to on the target address>
 ```
-- **Remote Port Forwarding** 
 
-Local machine
+**Remote Port Forwarding** 
+
+Allows opening a port on the **target machine** (via the Chisel client) that points to a service on the **local machine**.
+
+*Local machine*
 ```bash
 chisel server -p 9999 --reverse
 ```
-Target machine
+*Target machine*
 ```bash
 ./chisel client <local_ip>:<local_listener_port> R:<remote_port_to_open>:127.0.0.1:<target_machine_port_to_open>
 ```
 
-- **Dynamic Port Forwarding**
+**Dynamic Port Forwarding**
+
+Creates a local SOCKS proxy that dynamically forwards traffic to any destination through the Chisel server.
+
 ```bash
 ./chisel client <server_ip>:<port> dynamic :<local_port>
 ```
-
-
-# Netstat
-**Netstat** (Network Statistics) is a command-line tool to display network connections, routing tables, and interface statistics. It can be useful to find open ports to execute a port forwarding.
-
-#### **Key Flags**
-
-| Option | Description |
-|--------|-------------|
-| **`-a`** | Show all connections and listening ports. |
-| **`-n`** | Show numerical addresses and port numbers (no DNS resolution). |
-| **`-t`** | Display TCP connections. |
-| **`-u`** | Display UDP connections. |
-| **`-l`** | Show only listening ports. |
-| **`-p`** | Show the PID/program name associated with each connection. |
-
-
-### **Basic Commands**
-
-- **Show active connections**:
-```bash
-netstat -an
-```
-- **List listening ports**:
-```bash
-netstat -tuln
-```
-
-
-
 
